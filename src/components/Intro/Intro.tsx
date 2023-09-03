@@ -42,31 +42,34 @@ const blackSquareVariants = {
 
 const Intro = ({ onAnimationComplete }: Props) => {
   const [close, setClose] = useState(false)
+
   return (
-    <motion.div
-      initial={{ opacity: 0, scale: 0 }}
-      animate={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.3 }}
-      className="h-44 w-1/3 bg-white flex flex-col justify-center items-center gap-4 relative"
-    >
-      <img src={LogoGDG.src} alt="GDG Cali" className="w-80" />
+    <section className="px-4 lg:px-0 lg:w-1/3">
+      <motion.div
+        initial={{ opacity: 0, scale: 0 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.3 }}
+        className="h-36 lg:h-44 w-full bg-white flex flex-col justify-center items-center gap-4 relative"
+      >
+        <img src={LogoGDG.src} alt="GDG Cali" className="w-64 md:w-80" />
 
-      <motion.span
-        animate={close ? 'closed' : 'open'}
-        variants={whiteSquareVariants}
-        className={`absolute -top-9 w-9 h-9 bg-white -left-9`}
-      ></motion.span>
+        <motion.span
+          animate={close ? 'closed' : 'open'}
+          variants={whiteSquareVariants}
+          className={`absolute -top-9 w-9 h-9 bg-white -left-9`}
+        ></motion.span>
 
-      <motion.span
-        animate={close ? 'closed' : 'open'}
-        variants={blackSquareVariants}
-        onAnimationComplete={(variantName) => {
-          if (variantName === 'open') setClose(true)
-          if (variantName === 'closed') onAnimationComplete()
-        }}
-        className="absolute -bottom-16 w-16 h-16 bg-black -right-16 -z-10"
-      ></motion.span>
-    </motion.div>
+        <motion.span
+          animate={close ? 'closed' : 'open'}
+          variants={blackSquareVariants}
+          onAnimationComplete={(variantName) => {
+            if (variantName === 'open') setClose(true)
+            if (variantName === 'closed') onAnimationComplete()
+          }}
+          className="absolute -bottom-16 w-16 h-16 bg-black -right-16 -z-10"
+        ></motion.span>
+      </motion.div>
+    </section>
   )
 }
 
