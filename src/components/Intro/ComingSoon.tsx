@@ -84,8 +84,12 @@ const ComingSoon = (props: Props) => {
           <span className="font-body text-lg">
             Quieres recibir noticias del evento?
           </span>
-          <a href="#" className=" text-df-blue font-body hover:underline">
-            forms.com/3j87s
+          <a
+            href="https://forms.gle/6GW8RoWjw1s1LEco9"
+            target="_blank"
+            className=" text-df-blue font-body hover:underline"
+          >
+            forms.gle/6GW8RoWjw1s1LEco9
           </a>
         </div>
       </motion.div>
