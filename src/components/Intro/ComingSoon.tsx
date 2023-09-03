@@ -48,7 +48,7 @@ const ComingSoon = (props: Props) => {
             y: [blackSectionHeigth * -1, 0],
           }}
           transition={{ duration: 0.8 }}
-          className="bg-black text-white h-1/2 flex flex-col justify-center items-center"
+          className="bg-black text-white h-1/3 flex flex-col justify-center items-center"
         >
           <div className=" w-80">
             <motion.img
@@ -72,7 +72,7 @@ const ComingSoon = (props: Props) => {
           y: [whiteSectionWidth * 2, 0],
         }}
         transition={{ duration: 0.8 }}
-        className="absolute bg-white p-12 bottom-0 right-0 lg:max-w-2xl flex flex-col gap-6 h-1/2 lg:h-auto"
+        className="absolute bg-white p-12 bottom-0 right-0 lg:max-w-2xl flex flex-col gap-6 h-2/3 lg:h-auto"
       >
         <h2 className="font-code text-4xl">02/2023</h2>
         <p className="font-body text-2xl">
