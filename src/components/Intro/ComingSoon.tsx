@@ -57,6 +57,7 @@ const ComingSoon = (props: Props) => {
               }}
               transition={{
                 delay: 0.8,
+                duration: 0.4,
               }}
               src={DevFestLogo.src}
               alt="Devfest Cali Logo"
