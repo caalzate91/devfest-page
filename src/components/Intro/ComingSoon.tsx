@@ -75,7 +75,7 @@ const ComingSoon = (props: Props) => {
         transition={{ duration: 0.8 }}
         className="absolute bg-white p-8 lg:p-12 bottom-0 right-0 lg:max-w-2xl flex flex-col gap-6 h-2/3 lg:h-auto"
       >
-        <h2 className="font-code text-4xl">02/2023</h2>
+        <h2 className="font-code text-4xl">02/12/2023</h2>
         <p className="font-body text-2xl">
           Prepárate para vivir una experiencia única y conectar con la comunidad
           de tecnología de nuestra región.
