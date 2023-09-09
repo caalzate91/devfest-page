@@ -1,0 +1,51 @@
+---
+import { Image } from 'astro:assets'
+
+import DevFestLogoImage from '../../assets/images/devfest-logo.svg'
+import Counter from '../Counter';
+---
+
+<header class="">
+  <div
+    class="bg-white w-full flex flex-row justify-center items-center md:gap-4"
+  >
+    <span class="font-bold hidden md:block">Empieza en...</span>
+
+    <div class="flex flex-1 md:flex-none flex-row justify-center bg-green-500">
+      <Counter targetDate='02/12/2023' client:load />
+      <div class="">
+        <a
+          href="#"
+          class="h-16 grow flex flex-col justify-center items-center px-2 md:px-8 bg-df-yellow hover:bg-df-yellow/90 uppercase font-bold"
+          >Conseguir Ticket</a
+        >
+      </div>
+    </div>
+  </div>
+  <div
+    class="hero relative flex flex-col justify-center items-center py-12 md:py-12 h-auto md:h-[calc(100vh-128px)]"
+  >
+    <div
+      class="hero-image flex flex-col justify-center items-center md:h-[549px] md:w-[878px]"
+    >
+      <Image
+        class="w-[328px] md:w-[378px]"
+        src={DevFestLogoImage}
+        alt="DevFest Cali 2023"
+      />
+    </div>
+
+    <div class="bg-hero-mobile"></div>
+  </div>
+
+  <div
+    class="flex flex-col md:flex-row items-center justify-center gap-4 bg-black text-white py-8"
+  >
+    <span>No te puedes quedar sin vivir esta experiencia</span>
+    <a
+      href="#"
+      class="flex flex-col justify-center items-center px-8 py-4 bg-df-yellow uppercase font-bold text-black"
+      >Conseguir Ticket</a
+    >
+  </div>
+</header>

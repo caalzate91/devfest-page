@@ -3,9 +3,44 @@
 @tailwind utilities;
 
 @layer base {
+* {
+  box-sizing: border-box;
+  }
   body {
     font-family: "Open Sans", "Merriweather Sans", sans-serif;
     font-size: 16px;
-    background-image: url("/assets/images/bg.svg");
+  }
+
+  .hero {
+    z-index: 1;
+    @media (min-width: 768px) {
+      background-image: url('/assets/images/bg.svg');
+    }
+    @media (max-width: 768px) {
+      background: #000000;
+    }
+  }
+
+  .hero-image {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    z-index: 0;
+    @media (min-width: 768px) {
+      background-image: url('/assets/images/hero.svg');
+    }
+  }
+
+  .bg-hero-mobile {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom 0px right 0px;
+    width: 135px;
+    height: 90px;
+    z-index: -1;
+    @apply absolute bottom-0 right-0;
+    @media (max-width: 768px) {
+      background-image: url('/assets/images/bg-mobile.svg');
+    }
   }
 }

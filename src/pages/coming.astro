@@ -1,0 +1,10 @@
+---
+import Layout from '../layouts/Layout.astro'
+import CommingSoonComponent from '../components/Intro'
+---
+
+<Layout title="DevFest Cali 2023">
+  <main class="flex flex-col justify-center items-center w-full h-screen">
+    <CommingSoonComponent client:only="react" />
+  </main>
+</Layout>

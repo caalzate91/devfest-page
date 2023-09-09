@@ -14,11 +14,17 @@ module.exports = {
         "df-red-300": "#f28b82",
         "df-red-300": "#f28b82",
         "df-gray-700": "#5f6368",
+        "df-gray-200": "#DADCE0",
         "df-gray-100": "#f1f3f4",
+        "df-white-bg": "#F8F9FA",
       },
       fontFamily: {
         body: ["Nunito Sans", "Roboto"],
         code: ["Roboto Mono"]
+      },
+      spacing: {
+        '128': '32rem',
+        '144': '36rem',
       },
     },
   },
