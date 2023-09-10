@@ -23,6 +23,7 @@ const speakers = defineCollection({
   type: "data",
   schema: z.object({
     name: z.string(),
+    position: z.string(),
     image: z.string(),
     url: z.string().url().optional(),
   }),
