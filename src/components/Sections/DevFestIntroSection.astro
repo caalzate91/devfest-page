@@ -4,48 +4,50 @@ import { Image } from 'astro:assets'
 import DevFestLeftImage from '../../assets/images/about-image-left.svg'
 import DevFestLeftImageMb from '../../assets/images/about-image-left-mobile.svg'
 import DevFestRightImage from '../../assets/images/about-image-right.png'
+import DevFest2022Image from '../../assets/images/devfest2022.png'
 ---
 
 <section
-      class="bg-white grid grid-rows-[240px_1fr] md:grid-rows-1 sm:grid-cols-[500px_1fr_500px] md:grid-cols-[400px_1fr_300px] lg:grid-cols-[500px_1fr_300px] gap-y-0 md:gap-x-4"
-    >
-      <div>
-        <Image
-          class="hidden md:block w-[497px]"
-          src={DevFestLeftImage}
-          alt="DevFest Cali 2023"
-        />
-        <Image
-          class="block md:hidden w-full bg-white"
-          src={DevFestLeftImageMb}
-          alt="DevFest Cali 2023"
-        />
-      </div>
-      <div class="flex flex-col items-center justify-center mx-4 md:ml-8 mb-8">
-        <p class="mb-4">
-          DevFest Cali 2023. Atrévete a vivir la experiencia del evento más
-          grande de tecnología de los Grupos Google Developers en todo el mundo.
-          En este evento aprenderás de tecnologías como Android, Web, Firebase,
-          Flutter, GCP, Open Source y muchas más, con expertos en el área.
-        </p>
+  class="bg-white grid grid-rows-[240px_1fr] md:grid-rows-1 sm:grid-cols-[500px_1fr_500px] md:grid-cols-[400px_1fr_300px] lg:grid-cols-[500px_1fr_300px] gap-y-0 md:gap-x-4"
+>
+  <div>
+    <Image
+      class="hidden md:block w-[497px]"
+      src={DevFestLeftImage}
+      alt="DevFest Cali 2023"
+    />
+    <Image
+      class="block md:hidden w-full bg-white"
+      src={DevFestLeftImageMb}
+      alt="DevFest Cali 2023"
+    />
+  </div>
+  <div class="flex flex-col items-center justify-center mx-4 md:ml-8 mb-8">
+    <p class="mb-4">
+      DevFest Cali 2023. Atrévete a vivir la experiencia del evento más grande
+      de tecnología de los Grupos Google Developers en todo el mundo. En este
+      evento aprenderás de tecnologías como Android, Web, Firebase, Flutter,
+      GCP, Open Source y muchas más, con expertos en el área.
+    </p>
 
-        <p>
-          Este gran encuentro tecnológico tendrá lugar el día 2 de Diciembre de
-          2023 en la vibrante ciudad de Cali. Esta edición del DevFest será una
-          experiencia de un día, brindando un escenario propicio para que
-          participantes de diversas áreas - desde emprendedores, desarrolladores
-          de software y diseñadores gráficos hasta profesionales del marketing -
-          se beneficien de valiosas charlas sobre tecnología de software, con un
-          enfoque particular en herramientas open source y las novedosas
-          tecnologías de Google.
-        </p>
-      </div>
+    <p>
+      Este gran encuentro tecnológico tendrá lugar el día 2 de Diciembre de 2023
+      en la vibrante ciudad de Cali. Esta edición del DevFest será una
+      experiencia de un día, brindando un escenario propicio para que
+      participantes de diversas áreas - desde emprendedores, desarrolladores de
+      software y diseñadores gráficos hasta profesionales del marketing - se
+      beneficien de valiosas charlas sobre tecnología de software, con un
+      enfoque particular en herramientas open source y las novedosas tecnologías
+      de Google.
+    </p>
+  </div>
 
-      <div class="hidden md:flex justify-end">
-        <Image
-          class="w-[200px]"
-          src={DevFestRightImage}
-          alt="DevFest Cali 2023"
-        />
-      </div>
-    </section>
+  <div class="hidden md:flex justify-end">
+    <Image class="w-[200px]" src={DevFestRightImage} alt="DevFest Cali 2023" />
+  </div>
+</section>
+
+
+<section class="">
+  <Image class="w-full" src={DevFest2022Image} alt="DevFest Cali 2022" />
+</section>
