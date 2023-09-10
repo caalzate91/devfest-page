@@ -20,7 +20,7 @@ const { organizers } = Astro.props;
         <div class="flex flex-col w-60 group">
           <a href={organizer.data.url} target="_blank">
             <div class="mb-4 rounded-full overflow-hidden">
-              <img class="w-full transition-all duration-100 group-hover:scale-110" src={`/assets/images/organizers/${organizer.data.image}`} alt={organizer.data.name} />
+              <img class="w-full transition-all duration-100 group-hover:scale-110 animate__animated animate__fadeIn" loading="lazy" src={`/assets/images/organizers/${organizer.data.image}`} alt={organizer.data.name} />
             </div>
 
             <div class="flex flex-col gap-2 text-center">
