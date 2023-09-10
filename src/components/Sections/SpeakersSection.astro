@@ -1,0 +1,65 @@
+---
+import { Image } from 'astro:assets'
+import type { CollectionEntry } from 'astro:content'
+
+import SpeakerLayer from '../../assets/images/speaker-layer.svg'
+
+interface Props {
+  speakers: CollectionEntry<'speakers'>[]
+}
+
+const { speakers } = Astro.props
+---
+
+<section class="py-16 flex flex-col items-center">
+  <div class="container flex flex-col items-center space-y-16">
+    <h2 class="font-bold text-4xl">Ponentes</h2>
+
+    {
+      speakers.length > 1 ? (
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-y-8 md:gap-4">
+          {speakers.map(speaker => (
+            <div class="flex flex-col w-full">
+              <div class="mb-4 relative">
+                <img
+                  src={`/assets/images/speakers/${speaker.data.image}`}
+                  alt={speaker.data.name}
+                />
+                <Image
+                  class="absolute bottom-0 left-0"
+                  src={SpeakerLayer}
+                  alt="DevFest"
+                />
+              </div>
+
+              <div class="flex flex-col gap-2 text-center">
+                <span class="font-bold uppercase text-xl">{speaker.data.name}</span>
+                <span class="text-df-gray-700">{speaker.data.position}</span>
+              </div>
+            </div>
+          ))}
+        </div>
+      ) : (
+        <div class="flex flex-col items-center border border-df-gray-200 rounded-md py-8 px-4 text-center space-y-8 mx-4 md:mx-0">
+          <h3 class=" text-xl font-bold">Call for proposals</h3>
+
+          <p>
+            Únete a nosotros en el DevFest de Cali el 2 de diciembre de 2023!
+            Estamos buscando apasionados expertos en desarrollo de software para
+            compartir sus conocimientos en charlas centradas en herramientas
+            open source y las innovadoras tecnologías de Google. ¡Envía tu
+            propuesta y sé parte de este emocionante evento!"
+          </p>
+
+          <a
+            href="https://www.papercall.io/devfestcali"
+            target="_blank"
+            class="flex flex-col justify-center items-center px-5 py-3 bg-df-blue hover:bg-df-blue-600 transition-all duration-300 rounded-md uppercase font-bold text-sm text-white"
+          >
+            Enviar Propuesta
+          </a>
+        </div>
+      )
+    }
+  </div>
+</section>

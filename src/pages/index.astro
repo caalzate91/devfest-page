@@ -1,273 +1,33 @@
 ---
-import Layout from '../layouts/Layout.astro'
-import HeaderSection from '../components/Sections/HeaderSection.astro'
-import { Image } from 'astro:assets'
+import { getCollection } from "astro:content";
 
-import DevFestLeftImage from '../assets/images/about-image-left.svg'
-import DevFestLeftImageMb from '../assets/images/about-image-left-mobile.svg'
-import DevFestRightImage from '../assets/images/about-image-right.png'
-import UndefinedImage from '../assets/images/speakers/undefined.png'
-import SpeakerLayer from '../assets/images/speaker-layer.svg'
-import GoogleSponsor from '../assets/images/sponsors/google-colored.png'
-import CarlosTeam from '../assets/images/organizers/carlos-arboleda.jpg'
+import Layout from '../layouts/Layout.astro'
+
+import DevFestIntroSection from '../components/Sections/DevFestIntroSection.astro'
+import HeaderSection from '../components/Sections/HeaderSection.astro'
+import OrganizersSection from '../components/Sections/OrganizersSection.astro'
+import SpeakersSection from '../components/Sections/SpeakersSection.astro'
+import SponsorsSection from '../components/Sections/SponsorsSection.astro'
+import LocationSection from '../components/Sections/LocationSection.astro'
+import CallToActionCard from '../components/Sections/CallToActionCard.astro'
+
+const organizers = await getCollection('organizers');
+const sponsors = await getCollection('sponsors');
+const speakers = await getCollection('speakers');
+console.log("👻 ~ file: index.astro:17 ~ speakers:", speakers);
+
 ---
 
 <Layout title="DevFest Cali 2023">
   <HeaderSection />
+
   <main class="flex flex-col w-full overflow-hidden">
-    <section
-      class="bg-white grid grid-rows-[240px_1fr] md:grid-rows-1 sm:grid-cols-[500px_1fr_500px] md:grid-cols-[400px_1fr_300px] gap-y-0 md:gap-x-4"
-    >
-      <div>
-        <Image
-          class="hidden md:block w-[497px]"
-          src={DevFestLeftImage}
-          alt="DevFest Cali 2023"
-        />
-        <Image
-          class="block md:hidden w-full bg-white"
-          src={DevFestLeftImageMb}
-          alt="DevFest Cali 2023"
-        />
-      </div>
-      <div class="flex flex-col items-center justify-center mx-4 md:ml-8 mb-8">
-        <p class="mb-4">
-          DevFest Cali 2023. Atrévete a vivir la experiencia del evento más
-          grande de tecnología de los Grupos Google Developers en todo el mundo.
-          En este evento aprenderás de tecnologías como Android, Web, Firebase,
-          Flutter, GCP, Open Source y muchas más, con expertos en el área.
-        </p>
-
-        <p>
-          Este gran encuentro tecnológico tendrá lugar el día 2 de Diciembre de
-          2023 en la vibrante ciudad de Cali. Esta edición del DevFest será una
-          experiencia de un día, brindando un escenario propicio para que
-          participantes de diversas áreas - desde emprendedores, desarrolladores
-          de software y diseñadores gráficos hasta profesionales del marketing -
-          se beneficien de valiosas charlas sobre tecnología de software, con un
-          enfoque particular en herramientas open source y las novedosas
-          tecnologías de Google.
-        </p>
-      </div>
-
-      <div class="hidden md:flex justify-end">
-        <Image
-          class="w-[200px]"
-          src={DevFestRightImage}
-          alt="DevFest Cali 2023"
-        />
-      </div>
-    </section>
-
-    <section class="py-16 flex flex-col items-center">
-      <!-- container -->
-      <div class="container flex flex-col items-center space-y-16">
-        <h2 class="font-bold text-4xl">Ponentes</h2>
-
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-y-8 md:gap-4">
-          <!-- Speaker card -->
-          <div class="flex flex-col w-full">
-            <div class="mb-4 relative">
-              <Image class="w-full" src={UndefinedImage} alt="Undefined" />
-              <Image
-                class="absolute bottom-0 left-0"
-                src={SpeakerLayer}
-                alt="DevFest"
-              />
-            </div>
-
-            <div class="flex flex-col gap-2 text-center">
-              <span class="font-bold uppercase text-xl">Carlos Arboleda</span>
-              <span class="text-df-gray-700">Staff Developer at EPAM</span>
-            </div>
-          </div>
-          <div class="flex flex-col w-full">
-            <div class="mb-4 relative">
-              <Image class="w-full" src={UndefinedImage} alt="Undefined" />
-              <Image
-                class="absolute bottom-0 left-0"
-                src={SpeakerLayer}
-                alt="DevFest"
-              />
-            </div>
-
-            <div class="flex flex-col gap-2 text-center">
-              <span class="font-bold uppercase text-xl">Carlos Arboleda</span>
-              <span class="text-df-gray-700">Staff Developer at EPAM</span>
-            </div>
-          </div>
-          <div class="flex flex-col w-full">
-            <div class="mb-4 relative">
-              <Image class="w-full" src={UndefinedImage} alt="Undefined" />
-              <Image
-                class="absolute bottom-0 left-0"
-                src={SpeakerLayer}
-                alt="DevFest"
-              />
-            </div>
-
-            <div class="flex flex-col gap-2 text-center">
-              <span class="font-bold uppercase text-xl">Carlos Arboleda</span>
-              <span class="text-df-gray-700">Staff Developer at EPAM</span>
-            </div>
-          </div>
-          <div class="flex flex-col w-full">
-            <div class="mb-4 relative">
-              <Image class="w-full" src={UndefinedImage} alt="Undefined" />
-              <Image
-                class="absolute bottom-0 left-0"
-                src={SpeakerLayer}
-                alt="DevFest"
-              />
-            </div>
-
-            <div class="flex flex-col gap-2 text-center">
-              <span class="font-bold uppercase text-xl">Carlos Arboleda</span>
-              <span class="text-df-gray-700">Staff Developer at EPAM</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Call for papers -->
-        <div class="flex flex-col items-center border border-df-gray-200 rounded-md py-8 px-4 text-center space-y-8 mx-4 md:mx-0">
-          <h3 class=" text-xl font-bold">Call for proposals</h3>
-
-          <p>
-            Únete a nosotros en el DevFest de Cali el 2 de diciembre de 2023!
-            Estamos buscando apasionados expertos en desarrollo de software para
-            compartir sus conocimientos en charlas centradas en herramientas
-            open source y las innovadoras tecnologías de Google. ¡Envía tu
-            propuesta y sé parte de este emocionante evento!"
-          </p>
-
-          <a
-            href="#"
-            class="flex flex-col justify-center items-center px-8 py-4 bg-df-blue uppercase font-bold text-white"
-            >Enviar Propuesta</a
-          >
-        </div>
-      </div>
-    </section>
-
-    <section class="py-16 flex flex-col items-center bg-df-white-bg px-4">
-      <div class="container flex flex-col items-center space-y-16">
-        <div class="text-center">
-          <h2 class="font-bold text-4xl mb-6">Patrocinadores</h2>
-          <p>Nuestros patrocinadores contribuyen a hacer posible este acontecimiento.</p>
-        </div>
-
-        <div class="grid grid-cols-2 md:grid-cols-3 gap-5">
-          <div>
-            <Image src={GoogleSponsor} alt="Google" />
-          </div>
-          <div>
-            <Image src={GoogleSponsor} alt="Google" />
-          </div>
-          <div>
-            <Image src={GoogleSponsor} alt="Google" />
-          </div>
-          <div>
-            <Image src={GoogleSponsor} alt="Google" />
-          </div>
-          <div>
-            <Image src={GoogleSponsor} alt="Google" />
-          </div>
-          <div>
-            <Image src={GoogleSponsor} alt="Google" />
-          </div>
-          <div>
-            <Image src={GoogleSponsor} alt="Google" />
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <section class="py-16 flex flex-col items-center bg-white px-4">
-      <div class="container flex flex-col items-center space-y-16">
-        <div class="text-center">
-          <h2 class="font-bold text-4xl mb-6">Equipo Organizador</h2>
-          <p>Nuestro equipo de logística que trabaja día y noche para llevar a cabo este gran evento.</p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-4 px-8 md:px-0 gap-y-8 md:gap-8">
-          <div class="flex flex-col w-full">
-            <div class="mb-4 rounded-full overflow-hidden">
-              <Image class="w-full " src={CarlosTeam} alt="Undefined" />
-            </div>
-
-            <div class="flex flex-col gap-2 text-center">
-              <span class="font-bold uppercase text-xl">Carlos Arboleda</span>
-              <span class="text-df-gray-700">Staff Developer at EPAM</span>
-            </div>
-          </div>
-          <div class="flex flex-col w-full">
-            <div class="mb-4 rounded-full overflow-hidden">
-              <Image class="w-full " src={CarlosTeam} alt="Undefined" />
-            </div>
-
-            <div class="flex flex-col gap-2 text-center">
-              <span class="font-bold uppercase text-xl">Carlos Arboleda</span>
-              <span class="text-df-gray-700">Staff Developer at EPAM</span>
-            </div>
-          </div>
-          <div class="flex flex-col w-full">
-            <div class="mb-4 rounded-full overflow-hidden">
-              <Image class="w-full " src={CarlosTeam} alt="Undefined" />
-            </div>
-
-            <div class="flex flex-col gap-2 text-center">
-              <span class="font-bold uppercase text-xl">Carlos Arboleda</span>
-              <span class="text-df-gray-700">Staff Developer at EPAM</span>
-            </div>
-          </div>
-          <div class="flex flex-col w-full">
-            <div class="mb-4 rounded-full overflow-hidden">
-              <Image class="w-full " src={CarlosTeam} alt="Undefined" />
-            </div>
-
-            <div class="flex flex-col gap-2 text-center">
-              <span class="font-bold uppercase text-xl">Carlos Arboleda</span>
-              <span class="text-df-gray-700">Staff Developer at EPAM</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="py-16 flex flex-col items-center bg-df-white-bg px-4">
-      <div class="container flex flex-col items-center space-y-8">
-        <div class="text-center">
-          <h2 class="font-bold text-4xl mb-6">Ubicación</h2>
-        </div>
-
-        <div class="flex flex-col items-center space-y-8">
-          <p class=" text-center">Actualmente nos encontramos en búsqueda de un auditorio en la ciudad de Cali, Colombia.
-            ¿Conoces alguno?</p>
-            <a
-            href="#"
-            class="flex flex-col justify-center items-center px-8 py-4 bg-df-blue uppercase font-bold text-white"
-            >Contáctanos</a
-          >
-        </div>
-      </div>
-    </section>
-
-    <section class="py-16 flex flex-col items-center bg-white px-4">
-      <div class="container flex flex-col items-center space-y-8">
-        <div class="flex flex-col items-start justify-center space-y-6 p-8 border border-df-gray-200 rounded-md">
-          <h3 class=" text-2xl font-bold">¿Estás listo para unirte al DevFest Cali 2023?</h3>
-
-          <p class="!mb-4">Únete a nosotros en Cali para vivir una experiencia inolvidable. Conoce a los expertos, aprende de los mejores y diviértete con la comunidad.</p>
-
-          <a
-            href="#"
-            class="flex w-full md:w-auto flex-col justify-center items-center px-8 py-4 bg-df-yellow uppercase font-bold text-black"
-            >Conseguir Tickets</a
-          >
-        </div>
-      </div>
-    </section>
+    <DevFestIntroSection />
+    <SpeakersSection speakers={speakers} />
+    <SponsorsSection sponsors={sponsors} />
+    <OrganizersSection organizers={organizers} />
+    <LocationSection />
+    <CallToActionCard />
   </main>
 
   <footer class=" bg-df-blue text-white py-12 flex flex-col justify-center items-center">

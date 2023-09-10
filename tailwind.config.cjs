@@ -5,10 +5,12 @@ module.exports = {
     extend: {
       colors: {
         "df-blue": "#4285f4",
+        "df-blue-600": "#1765cc",
         "df-blue-300": "#8ab4f8",
         "df-green": "#34a853",
         "df-green-300": "#81c995",
         "df-yellow": "#f9ab00",
+        "df-yellow-700": "#e69e00",
         "df-yellow-300": "#fde293",
         "df-red": "#ea4335",
         "df-red-300": "#f28b82",
@@ -17,6 +19,9 @@ module.exports = {
         "df-gray-200": "#DADCE0",
         "df-gray-100": "#f1f3f4",
         "df-white-bg": "#F8F9FA",
+      },
+      gridTemplateColumns: {
+        'organizer': 'repeat(4, minmax(0, 280px))',
       },
       fontFamily: {
         body: ["Nunito Sans", "Roboto"],

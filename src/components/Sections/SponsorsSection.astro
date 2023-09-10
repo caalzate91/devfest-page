@@ -1,0 +1,27 @@
+---
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  sponsors:  CollectionEntry<"sponsors">[];
+}
+
+const { sponsors } = Astro.props;
+---
+
+<section class="py-16 flex flex-col items-center bg-df-white-bg px-4">
+  <div class="container flex flex-col items-center space-y-16">
+    <div class="text-center">
+      <h2 class="font-bold text-4xl mb-6">Patrocinadores</h2>
+      <p>Nuestros patrocinadores contribuyen a hacer posible este acontecimiento.</p>
+    </div>
+
+    <div class="flex flex-row justify-center flex-wrap items-center gap-5">
+
+      {sponsors.map(sponsor => (
+        <a href={sponsor.data.url} class="block hover:scale-110 transition-transform duration-75 w-64">
+          <img src={`/assets/images/sponsors/${sponsor.data.image}`} alt={sponsor.data.name} />
+        </a>
+      ))}
+    </div>
+  </div>
+</section>
