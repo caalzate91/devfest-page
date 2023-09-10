@@ -7,6 +7,9 @@ export interface Props {
 
 const { title } = Astro.props;
 const description = "DevFest Cali, 2 de Diciembre de 2023 - Prepárate para vivir una experiencia única y conectar con la comunidad de tecnología de nuestra región."
+const socialImage = new URL("/assets/images/open_graph_image.png", Astro.url)
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+
 ---
 <meta charset="UTF-8" />
 <meta name="description" content="DevFest Cali, 2 de Diciembre de 2023">
@@ -21,19 +24,19 @@ const description = "DevFest Cali, 2 de Diciembre de 2023 - Prepárate para vivi
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website" />
-<meta property="og:url" content={Astro.url} />
+<meta property="og:url" content={canonicalURL} />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
-<meta property="og:image" content={new URL("/assets/images/open_graph_image.png", Astro.url)} />
+<meta property="og:image" content={socialImage} />
 <meta property="og:image:width" content="926" />
 <meta property="og:image:height" content="486" />
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image" />
-<meta property="twitter:url" content={Astro.url} />
+<meta property="twitter:url" content={canonicalURL} />
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
-<meta property="twitter:image" content={new URL("/assets/images/open_graph_image.png", Astro.url)} />
+<meta property="twitter:image" content={socialImage} />
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
