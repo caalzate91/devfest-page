@@ -8,6 +8,8 @@ module.exports = {
         "df-blue-600": "#1765cc",
         "df-blue-300": "#8ab4f8",
         "df-green": "#34a853",
+        "df-lime-400": "#E4F675",
+        "df-lime-500": "#D8E971",
         "df-green-300": "#81c995",
         "df-yellow": "#f9ab00",
         "df-yellow-700": "#e69e00",
@@ -19,6 +21,8 @@ module.exports = {
         "df-gray-200": "#DADCE0",
         "df-gray-100": "#f1f3f4",
         "df-white-bg": "#F8F9FA",
+        "df-esmerald-900": "#004135",
+        "df-esmerald-700": "#167261",
       },
       gridTemplateColumns: {
         'organizer': 'repeat(4, minmax(0, 280px))',

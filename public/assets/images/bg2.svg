@@ -1,0 +1,30 @@
+<svg width="124" height="124" viewBox="0 0 124 124" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="62.25" y="0.25" width="61.5" height="61.5" fill="#4285F4" stroke="#8AB4F8" stroke-width="0.5"/>
+<mask id="mask0_2_25" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="62" y="0" width="62" height="62">
+<rect x="62.5" y="0.5" width="61" height="61" fill="#4285F4" stroke="#8AB4F8"/>
+</mask>
+<g mask="url(#mask0_2_25)">
+<circle cx="124" r="61.5" stroke="#8AB4F8"/>
+</g>
+<rect x="0.25" y="61.75" width="61.5" height="61.5" transform="rotate(-90 0.25 61.75)" fill="#4285F4" stroke="#8AB4F8" stroke-width="0.5"/>
+<mask id="mask1_2_25" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="62" height="62">
+<rect x="0.5" y="61.5" width="61" height="61" transform="rotate(-90 0.5 61.5)" fill="#4285F4" stroke="#8AB4F8"/>
+</mask>
+<g mask="url(#mask1_2_25)">
+<circle cx="7.39343e-07" cy="7.39343e-07" r="61.5" transform="rotate(-90 7.39343e-07 7.39343e-07)" stroke="#8AB4F8"/>
+</g>
+<rect x="123.75" y="62.25" width="61.5" height="61.5" transform="rotate(90 123.75 62.25)" fill="#4285F4" stroke="#8AB4F8" stroke-width="0.5"/>
+<mask id="mask2_2_25" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="62" y="62" width="62" height="62">
+<rect x="123.5" y="62.5" width="61" height="61" transform="rotate(90 123.5 62.5)" fill="#4285F4" stroke="#8AB4F8"/>
+</mask>
+<g mask="url(#mask2_2_25)">
+<circle cx="124" cy="124" r="61.5" transform="rotate(90 124 124)" stroke="#8AB4F8"/>
+</g>
+<rect x="61.75" y="123.75" width="61.5" height="61.5" transform="rotate(-180 61.75 123.75)" fill="#4285F4" stroke="#8AB4F8" stroke-width="0.5"/>
+<mask id="mask3_2_25" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="62" width="62" height="62">
+<rect x="61.5" y="123.5" width="61" height="61" transform="rotate(-180 61.5 123.5)" fill="#4285F4" stroke="#8AB4F8"/>
+</mask>
+<g mask="url(#mask3_2_25)">
+<circle cx="5.42021e-06" cy="124" r="61.5" transform="rotate(-180 5.42021e-06 124)" stroke="#8AB4F8"/>
+</g>
+</svg>

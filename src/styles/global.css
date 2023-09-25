@@ -4,6 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --animate-delay: 0.2s;
+}
+
 @layer base {
 * {
   box-sizing: border-box;
@@ -19,7 +23,7 @@
       background-image: url('/assets/images/bg.svg');
     }
     @media (max-width: 768px) {
-      background: #000000;
+      background: #E4F675;
     }
   }
 
@@ -29,7 +33,7 @@
     background-position: center;
     z-index: 0;
     @media (min-width: 768px) {
-      background-image: url('/assets/images/hero.svg');
+      background-image: url('/assets/images/devfest-2023.svg');
     }
   }
 

@@ -1,31 +1,31 @@
 <svg width="135" height="90" viewBox="0 0 135 90" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="0.25" y="0.25" width="44.5" height="44.5" fill="#4285F4" stroke="#8AB4F8" stroke-width="0.5"/>
+<rect x="0.25" y="0.25" width="44.5" height="44.5" fill="#004135" stroke="#167261" stroke-width="0.5"/>
 <mask id="mask0_84_97" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="45" height="45">
 <rect x="0.5" y="0.5" width="44" height="44" fill="#4285F4" stroke="#8AB4F8"/>
 </mask>
 <g mask="url(#mask0_84_97)">
-<circle cx="45" cy="-7.86805e-06" r="44.5" stroke="#8AB4F8"/>
+<circle cx="45" cy="-7.86805e-06" r="44.5" stroke="#167261"/>
 </g>
-<rect x="134.75" y="44.75" width="44.5" height="44.5" transform="rotate(-180 134.75 44.75)" fill="#4285F4" stroke="#8AB4F8" stroke-width="0.5"/>
+<rect x="134.75" y="44.75" width="44.5" height="44.5" transform="rotate(-180 134.75 44.75)" fill="#004135" stroke="#167261" stroke-width="0.5"/>
 <mask id="mask1_84_97" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="90" y="0" width="45" height="45">
 <rect x="134.5" y="44.5" width="44" height="44" transform="rotate(-180 134.5 44.5)" fill="#4285F4" stroke="#8AB4F8"/>
 </mask>
 <g mask="url(#mask1_84_97)">
-<circle cx="90" cy="45" r="44.5" transform="rotate(-180 90 45)" stroke="#8AB4F8"/>
+<circle cx="90" cy="45" r="44.5" transform="rotate(-180 90 45)" stroke="#167261"/>
 </g>
-<rect x="90.25" y="89.75" width="44.5" height="44.5" transform="rotate(-90 90.25 89.75)" fill="#4285F4" stroke="#8AB4F8" stroke-width="0.5"/>
+<rect x="90.25" y="89.75" width="44.5" height="44.5" transform="rotate(-90 90.25 89.75)" fill="#004135" stroke="#167261" stroke-width="0.5"/>
 <mask id="mask2_84_97" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="90" y="45" width="45" height="45">
 <rect x="90.5" y="89.5" width="44" height="44" transform="rotate(-90 90.5 89.5)" fill="#4285F4" stroke="#8AB4F8"/>
 </mask>
 <g mask="url(#mask2_84_97)">
-<circle cx="90" cy="45" r="44.5" transform="rotate(-90 90 45)" stroke="#8AB4F8"/>
+<circle cx="90" cy="45" r="44.5" transform="rotate(-90 90 45)" stroke="#167261"/>
 </g>
-<rect x="89.75" y="89.75" width="44.5" height="44.5" transform="rotate(-180 89.75 89.75)" fill="#4285F4" stroke="#8AB4F8" stroke-width="0.5"/>
+<rect x="89.75" y="89.75" width="44.5" height="44.5" transform="rotate(-180 89.75 89.75)" fill="#004135" stroke="#167261" stroke-width="0.5"/>
 <mask id="mask3_84_97" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="45" y="45" width="45" height="45">
 <rect x="89.5" y="89.5" width="44" height="44" transform="rotate(-180 89.5 89.5)" fill="#4285F4" stroke="#8AB4F8"/>
 </mask>
 <g mask="url(#mask3_84_97)">
-<circle cx="45" cy="90" r="44.5" transform="rotate(-180 45 90)" stroke="#8AB4F8"/>
+<circle cx="45" cy="90" r="44.5" transform="rotate(-180 45 90)" stroke="#167261"/>
 </g>
 <rect x="90" y="45" width="24" height="24" fill="black"/>
 </svg>
