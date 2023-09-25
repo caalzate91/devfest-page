@@ -1,3 +1,9 @@
+---
+import { Image } from 'astro:assets'
+import MapImage from '../../assets/images/map.png'
+
+---
+
 <section class="py-16 flex flex-col items-center bg-df-white-bg px-4">
   <div class="container flex flex-col items-center space-y-8">
     <div class="text-center">
@@ -5,14 +11,34 @@
     </div>
 
     <div class="flex flex-col items-center space-y-8">
-      <p class=" text-center">Actualmente nos encontramos en búsqueda de un auditorio en la ciudad de Cali, Colombia.
-        ¿Conoces alguno?</p>
-        <a
-        href="https://gdg.community.dev/gdg-cali/"
-        target="_blank"
-        class="flex flex-col justify-center items-center px-5 py-3 bg-df-blue hover:bg-df-blue-600 transition-all duration-300 rounded-md uppercase font-bold text-sm text-white"
-        >Contáctanos</a
-      >
+      <p class=" text-center">Universidad Autónoma de Occidente, Vía Cali - Puerto Tejada</p>
     </div>
+
+    <div class="w-2/3 flex">
+      <a href="https://www.google.com/maps/place/Universidad+Aut%C3%B3noma+de+Occidente/@3.3537908,-76.5233384,17z/data=!4m6!3m5!1s0x8e30a1bce83eb4eb:0x374b9a9955d030e8!8m2!3d3.3536526!4d-76.5229863!16s%2Fm%2F0cmcw4z?entry=ttu">
+        <Image
+          class="w-full animate__animated animate__bounceInUp"
+          src={MapImage}
+          alt="Ubicación de Universidad Autónoma de Occidente"
+        />
+      </a>
+    </div>
+
+    <div class="flex flex-row justify-center gap-4">
+
+      <a
+          href="https://www.google.com/maps/place/Universidad+Aut%C3%B3noma+de+Occidente/@3.3537908,-76.5233384,17z/data=!4m6!3m5!1s0x8e30a1bce83eb4eb:0x374b9a9955d030e8!8m2!3d3.3536526!4d-76.5229863!16s%2Fm%2F0cmcw4z?entry=ttu"
+          target="_blank"
+          class="flex flex-col justify-center items-center px-5 py-3 bg-df-blue hover:bg-df-blue-600 transition-all duration-300 rounded-md uppercase font-bold text-sm text-white"
+          >Abrir con Gmaps</a
+        >
+      <a
+          href="https://www.waze.com/ul?ll=3.3538871946811373%2C-76.52297357904051&navigate=yes&zoom=17"
+          target="_blank"
+          class="flex flex-col justify-center items-center px-5 py-3 bg-df-blue hover:bg-df-blue-600 transition-all duration-300 rounded-md uppercase font-bold text-sm text-white"
+          >Abrir con Waze</a
+        >
+    </div>
+
   </div>
 </section>

@@ -16,6 +16,7 @@ const sponsors = defineCollection({
     name: z.string(),
     image: z.string(),
     url: z.string().url().optional(),
+    type: z.string()
   }),
 });
 

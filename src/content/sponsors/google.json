@@ -1,5 +1,6 @@
 {
   "name": "Google",
   "image": "google.png",
+  "type": "company",
   "url": "https://developers.google.com/"
 }

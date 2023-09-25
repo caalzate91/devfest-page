@@ -2,14 +2,15 @@
 import type { CollectionEntry } from 'astro:content';
 
 interface Props {
-  sponsors:  CollectionEntry<"sponsors">[];
+  communities:  CollectionEntry<"sponsors">[];
+  companies:  CollectionEntry<"sponsors">[];
 }
 
-const { sponsors } = Astro.props;
+const { communities, companies } = Astro.props;
 ---
 
 <section class="py-16 flex flex-col items-center bg-df-white-bg px-4">
-  <div class="container flex flex-col items-center space-y-16">
+  <div class="container flex flex-col items-center space-y-8 mb-16">
     <div class="text-center">
       <h2 class="font-bold text-4xl mb-6">Patrocinadores</h2>
       <p>Nuestros patrocinadores contribuyen a hacer posible este acontecimiento.</p>
@@ -17,7 +18,22 @@ const { sponsors } = Astro.props;
 
     <div class="flex flex-row justify-center flex-wrap items-center gap-8">
 
-      {sponsors.map(sponsor => (
+      {companies.map(sponsor => (
+        <a href={sponsor.data.url} class="block hover:scale-110 transition-transform duration-75 w-48">
+          <img class="w-full" src={`/assets/images/sponsors/${sponsor.data.image}`} alt={sponsor.data.name} />
+        </a>
+      ))}
+    </div>
+  </div>
+  <div class="container flex flex-col items-center space-y-8">
+    <div class="text-center">
+      <h2 class="font-bold text-4xl mb-6">Comunidades</h2>
+      <p>Comunidades locales que hacen parte de este gran evento.</p>
+    </div>
+
+    <div class="flex flex-row justify-center flex-wrap items-center gap-8">
+
+      {communities.map(sponsor => (
         <a href={sponsor.data.url} class="block hover:scale-110 transition-transform duration-75 w-40">
           <img class="w-full" src={`/assets/images/sponsors/${sponsor.data.image}`} alt={sponsor.data.name} />
         </a>

@@ -12,7 +12,12 @@ import LocationSection from '../components/Sections/LocationSection.astro'
 import CallToActionCard from '../components/Sections/CallToActionCard.astro'
 
 const organizers = await getCollection('organizers');
-const sponsors = await getCollection('sponsors');
+const communitySponsors = await getCollection('sponsors', (({data}) => {
+  return data.type === "community"
+}));
+const companySponsors = await getCollection('sponsors', (({data}) => {
+  return data.type === "company"
+}));
 const speakers = await getCollection('speakers');
 
 ---
@@ -23,7 +28,7 @@ const speakers = await getCollection('speakers');
   <main class="flex flex-col w-full overflow-hidden">
     <DevFestIntroSection />
     <SpeakersSection speakers={speakers} />
-    <SponsorsSection sponsors={sponsors} />
+    <SponsorsSection companies={companySponsors} communities={communitySponsors} />
     <OrganizersSection organizers={organizers} />
     <LocationSection />
     <CallToActionCard />
