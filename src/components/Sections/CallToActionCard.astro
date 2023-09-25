@@ -1,22 +1,29 @@
 ---
-import Tooltip from "../Common/Tooltip.astro";
-
+import Tooltip from '../Common/Tooltip.astro'
 ---
 
 <section class="py-16 flex flex-col items-center bg-white px-4">
   <div class="container flex flex-col items-center space-y-8">
-    <div class="flex flex-col items-start justify-center space-y-6 p-8 border border-df-gray-200 rounded-md">
-      <h3 class=" text-2xl font-bold">¿Estás listo para unirte al DevFest Cali 2023?</h3>
+    <div
+      class="flex flex-col items-start justify-center space-y-6 p-8 border border-df-gray-200 rounded-md"
+    >
+      <h3 class="text-2xl font-bold">
+        ¿Estás listo para unirte al DevFest Cali 2023?
+      </h3>
 
-      <p class="!mb-4">Únete a nosotros en Cali para vivir una experiencia inolvidable. Conoce a los expertos, aprende de los mejores y diviértete con la comunidad.</p>
+      <p class="!mb-4">
+        Únete a nosotros en Cali para vivir una experiencia inolvidable. Conoce
+        a los expertos, aprende de los mejores y diviértete con la comunidad.
+      </p>
 
-      <Tooltip title="Muy Pronto" position="right">
-        <button
-          type="button"
-          class="text-sm h-16 grow flex flex-col justify-center items-center rounded-md px-2 md:px-8 bg-df-yellow hover:bg-df-yellow-700 transition-all duration-300 uppercase font-bold"
-          >Conseguir Ticket</button
-        >
-      </Tooltip>
+      <a
+        href="https://peewah.co/events/devfestcali"
+        type="button"
+        target="_blank"
+        aria-label="Get Tickets"
+        class="text-sm h-16 grow flex flex-col justify-center items-center rounded-md px-2 md:px-8 bg-df-yellow hover:bg-df-yellow-700 transition-all duration-300 uppercase font-bold"
+        >Conseguir Ticket</a
+      >
     </div>
   </div>
 </section>
