@@ -7,11 +7,11 @@ export interface Props {
 
 const { title } = Astro.props;
 const description = "DevFest Cali, 2 de Diciembre de 2023 - Prepárate para vivir una experiencia única y conectar con la comunidad de tecnología de nuestra región."
-const socialImage = new URL("/assets/images/open_graph_image_new.png", Astro.url)
+const socialImage = new URL("/assets/images/open_graph_image_updated.png", Astro.url)
 
 ---
 <meta charset="UTF-8" />
-<meta name="description" content="DevFest Cali, 2 de Diciembre de 2023">
+<meta name="description" content={description}>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
 <meta name="generator" content={Astro.generator} />
