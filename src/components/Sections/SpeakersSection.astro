@@ -13,75 +13,92 @@ const { speakers } = Astro.props
 
 <section class="py-16 flex flex-col items-center">
   <div class="container flex flex-col items-center space-y-16">
-    <div class=" flex flex-col items-center gap-4">
+    <div class="flex flex-col items-center gap-4">
+      <h2 class="font-bold text-4xl">Ponentes</h2>
+    </div>
+
+    <div
+      class="flex flex-row justify-center flex-wrap items-start gap-y-8 md:gap-8 w-full"
+    >
+      {
+        speakers.map((speaker) =>
+          speaker.data.name !== 'Undefined' ? (
+            <div class="flex flex-col w-80 group">
+              <a href={speaker.data.url} target="_blank">
+                <div class="mb-4 relative overflow-hidden">
+                  <img
+                    src={`/assets/images/speakers/${speaker.data.image}`}
+                    alt={speaker.data.name}
+                    class="transition-all duration-100 group-hover:scale-110 animate__animated animate__fadeIn"
+                  />
+                  <Image
+                    class="absolute bottom-0 left-0"
+                    src={SpeakerLayer}
+                    alt="DevFest"
+                  />
+                </div>
+
+                <div class="flex flex-col gap-2 text-center">
+                  <span class="font-bold uppercase text-xl">
+                    {speaker.data.name}
+                  </span>
+                  <span class="text-df-gray-700">{speaker.data.position}</span>
+                </div>
+              </a>
+            </div>
+          ) : (
+            false
+          )
+        )
+      }
+    </div>
+
+    <div class="flex flex-col items-center gap-4">
       <h2 class="font-bold text-4xl">Únete a nosotros</h2>
       <p>Únete a nosotros en el DevFest de Cali el 2 de diciembre de 2023!</p>
     </div>
 
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div
+        class="flex flex-col items-center border border-df-gray-200 rounded-md py-8 px-4 text-center space-y-8 mx-4 md:mx-0"
+      >
+        <h3 class="text-xl font-bold">Call for proposals</h3>
 
-    {
-      speakers.length > 1 ? (
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-y-8 md:gap-4">
-          {speakers.map(speaker => (
-            <div class="flex flex-col w-full">
-              <div class="mb-4 relative">
-                <img
-                  src={`/assets/images/speakers/${speaker.data.image}`}
-                  alt={speaker.data.name}
-                />
-                <Image
-                  class="absolute bottom-0 left-0"
-                  src={SpeakerLayer}
-                  alt="DevFest"
-                />
-              </div>
+        <p>
+          Estamos buscando apasionados expertos en desarrollo de software para
+          compartir sus conocimientos en charlas centradas en herramientas open
+          source y las innovadoras tecnologías de Google. ¡Envía tu propuesta y
+          sé parte de este emocionante evento!"
+        </p>
 
-              <div class="flex flex-col gap-2 text-center">
-                <span class="font-bold uppercase text-xl">{speaker.data.name}</span>
-                <span class="text-df-gray-700">{speaker.data.position}</span>
-              </div>
-            </div>
-          ))}
-        </div>
-      ) : (
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div class="flex flex-col items-center border border-df-gray-200 rounded-md py-8 px-4 text-center space-y-8 mx-4 md:mx-0">
-            <h3 class=" text-xl font-bold">Call for proposals</h3>
+        <a
+          href="https://www.papercall.io/devfestcali"
+          target="_blank"
+          class="flex flex-col justify-center items-center px-5 py-3 bg-df-blue hover:bg-df-blue-600 transition-all duration-300 rounded-md uppercase font-bold text-sm text-white"
+        >
+          Quiero ser Ponente
+        </a>
+      </div>
+      <div
+        class="flex flex-col items-center border border-df-gray-200 rounded-md py-8 px-4 text-center space-y-8 mx-4 md:mx-0"
+      >
+        <h3 class="text-xl font-bold">Volunteer Hub</h3>
 
-            <p>
+        <p>
+          El "Volunteer Hub" es el lugar en el que personas apasionadas como tú
+          pueden conectarse, colaborar y tener un impacto significativo en
+          nuestro evento. Esta es tu puerta de entrada para convertirte en una
+          parte integral del éxito de nuestro evento.
+        </p>
 
-              Estamos buscando apasionados expertos en desarrollo de software para
-              compartir sus conocimientos en charlas centradas en herramientas
-              open source y las innovadoras tecnologías de Google. ¡Envía tu
-              propuesta y sé parte de este emocionante evento!"
-            </p>
-
-            <a
-              href="https://www.papercall.io/devfestcali"
-              target="_blank"
-              class="flex flex-col justify-center items-center px-5 py-3 bg-df-blue hover:bg-df-blue-600 transition-all duration-300 rounded-md uppercase font-bold text-sm text-white"
-            >
-              Quiero ser Ponente
-            </a>
-          </div>
-          <div class="flex flex-col items-center border border-df-gray-200 rounded-md py-8 px-4 text-center space-y-8 mx-4 md:mx-0">
-            <h3 class=" text-xl font-bold">Volunteer Hub</h3>
-
-            <p>
-              El "Volunteer Hub" es el lugar en el que personas apasionadas como tú pueden conectarse, colaborar y tener un impacto significativo en nuestro evento.
-              Esta es tu puerta de entrada para convertirte en una parte integral del éxito de nuestro evento.
-            </p>
-
-            <a
-              href="https://forms.gle/T1UT89x2jdfH7e4J8"
-              target="_blank"
-              class="flex flex-col justify-center items-center px-5 py-3 bg-df-blue hover:bg-df-blue-600 transition-all duration-300 rounded-md uppercase font-bold text-sm text-white"
-            >
-              Quiero ser voluntario
-            </a>
-          </div>
-        </div>
-      )
-    }
+        <a
+          href="https://forms.gle/T1UT89x2jdfH7e4J8"
+          target="_blank"
+          class="flex flex-col justify-center items-center px-5 py-3 bg-df-blue hover:bg-df-blue-600 transition-all duration-300 rounded-md uppercase font-bold text-sm text-white"
+        >
+          Quiero ser voluntario
+        </a>
+      </div>
+    </div>
   </div>
 </section>
