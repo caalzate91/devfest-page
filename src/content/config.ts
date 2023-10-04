@@ -27,6 +27,7 @@ const speakers = defineCollection({
     position: z.string(),
     image: z.string(),
     url: z.string().url().optional(),
+    colorBadge: z.string().optional(),
   }),
 });
 

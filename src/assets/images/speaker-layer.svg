@@ -3,30 +3,30 @@
 <rect width="100" height="33" transform="translate(0 42)" fill="black"/>
 <rect y="42" width="100" height="33" fill="url(#pattern0)"/>
 </g>
-<rect x="20.75" y="21.25" width="20.5" height="20.5" transform="rotate(90 20.75 21.25)" fill="#4285F4" stroke="#8AB4F8" stroke-width="0.5"/>
+<rect x="20.75" y="21.25" width="20.5" height="20.5" transform="rotate(90 20.75 21.25)" fill="current" stroke="#8AB4F8" stroke-width="0.5"/>
 <mask id="mask0_59_2743" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="21" width="21" height="21">
-<rect x="20.5" y="21.5" width="20" height="20" transform="rotate(90 20.5 21.5)" fill="#4285F4" stroke="#8AB4F8"/>
+<rect x="20.5" y="21.5" width="20" height="20" transform="rotate(90 20.5 21.5)" fill="current" stroke="#8AB4F8"/>
 </mask>
 <g mask="url(#mask0_59_2743)">
 <circle cx="21" cy="42" r="20.5" transform="rotate(90 21 42)" stroke="#8AB4F8"/>
 </g>
-<rect x="21.25" y="41.75" width="20.5" height="20.5" transform="rotate(-90 21.25 41.75)" fill="#4285F4" stroke="#8AB4F8" stroke-width="0.5"/>
+<rect x="21.25" y="41.75" width="20.5" height="20.5" transform="rotate(-90 21.25 41.75)" fill="current" stroke="#8AB4F8" stroke-width="0.5"/>
 <mask id="mask1_59_2743" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="21" y="21" width="21" height="21">
-<rect x="21.5" y="41.5" width="20" height="20" transform="rotate(-90 21.5 41.5)" fill="#4285F4" stroke="#8AB4F8"/>
+<rect x="21.5" y="41.5" width="20" height="20" transform="rotate(-90 21.5 41.5)" fill="current" stroke="#8AB4F8"/>
 </mask>
 <g mask="url(#mask1_59_2743)">
 <circle cx="21" cy="21" r="20.5" transform="rotate(-90 21 21)" stroke="#8AB4F8"/>
 </g>
-<rect x="100.25" y="54.25" width="20.5" height="20.5" fill="#4285F4" stroke="#8AB4F8" stroke-width="0.5"/>
+<rect x="100.25" y="54.25" width="20.5" height="20.5" fill="current" stroke="#8AB4F8" stroke-width="0.5"/>
 <mask id="mask2_59_2743" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="100" y="54" width="21" height="21">
-<rect x="100.5" y="54.5" width="20" height="20" fill="#4285F4" stroke="#8AB4F8"/>
+<rect x="100.5" y="54.5" width="20" height="20" fill="current" stroke="#8AB4F8"/>
 </mask>
 <g mask="url(#mask2_59_2743)">
 <circle cx="121" cy="54" r="20.5" stroke="#8AB4F8"/>
 </g>
-<rect x="0.25" y="0.25" width="20.5" height="20.5" fill="#4285F4" stroke="#8AB4F8" stroke-width="0.5"/>
+<rect x="0.25" y="0.25" width="20.5" height="20.5" fill="current" stroke="#8AB4F8" stroke-width="0.5"/>
 <mask id="mask3_59_2743" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="21" height="21">
-<rect x="0.5" y="0.5" width="20" height="20" fill="#4285F4" stroke="#8AB4F8"/>
+<rect x="0.5" y="0.5" width="20" height="20" fill="current" stroke="#8AB4F8"/>
 </mask>
 <g mask="url(#mask3_59_2743)">
 <circle cx="21" cy="3.67176e-06" r="20.5" stroke="#8AB4F8"/>
