@@ -21,7 +21,7 @@ const { speakers } = Astro.props
       {
         speakers.map((speaker) =>
           speaker.data.name !== 'Undefined' ? (
-            <div class="flex flex-col w-80 group">
+            <div class="flex flex-col w-72 group">
               <a href={speaker.data.url} target="_blank">
                 <div class="mb-4 relative overflow-hidden">
                   <img
