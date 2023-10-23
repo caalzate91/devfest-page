@@ -1,0 +1,9 @@
+{
+  "title": "Auditando Render Patterns con las DevTools",
+  "description": "Una charla donde vamos auditar la misma aplicación hecha con diferentes patrones de rendering (csr, ssr, server components y ssg) usando las chrome developer tools para analizar tiempo de carga, renderizado y core web vitals. Ademas revisar algunos ejemplos de código que con simples optimizaciones pueden mejorar el performance de la aplicación.",
+  "startDate": "2023-12-02 14:15:00",
+  "endDate": "2023-12-02 15:00:00",
+  "speaker": "joel-humberto",
+  "type": "talk",
+  "track": ["web"]
+  }

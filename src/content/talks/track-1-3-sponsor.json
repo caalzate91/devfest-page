@@ -1,0 +1,8 @@
+{
+  "title": "Espacio para patrocinador",
+  "startDate": "2023-12-02 11:00:00",
+  "endDate": "2023-12-02 11:15:00",
+  "sponsors": ["autonoma"],
+  "type": "sponsor",
+  "track": ["web", "cloud"]
+  }

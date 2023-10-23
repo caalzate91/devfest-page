@@ -1,0 +1,33 @@
+---
+import { getEntry, type CollectionEntry } from 'astro:content';
+import AgendaItem from './AgendaItem.astro';
+
+interface Props {
+  talk:  CollectionEntry<"talks">;
+}
+const { talk } = Astro.props;
+
+const speaker = talk.data?.speaker ? await getEntry(talk.data.speaker) : null;
+
+---
+
+<AgendaItem talk={talk}>
+  <div class="flex-1">
+    <h4 class="font-bold text-xl m-0">
+      {talk.data.title}
+    </h4>
+    {speaker ?
+      <div class="flex flex-row gap-3 mt-4 items-center">
+        <img
+          class="block object-cover rounded-full shrink-0 w-12 h-12"
+          src={`/assets/images/speakers/${speaker.data.image}`}
+          alt={speaker.data.name}
+        />
+        <div>
+          <p class="text-xl">{speaker.data.name}</p>
+          <p class="text-gray-500 text-sm font-mono">{speaker.data.position}</p>
+        </div>
+      </div> : null
+    }
+  </div>
+</AgendaItem>

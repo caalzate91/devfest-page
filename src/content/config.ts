@@ -1,4 +1,4 @@
-import { z, defineCollection } from "astro:content";
+import { z, defineCollection, reference } from "astro:content";
 
 const organizers = defineCollection({
   type: "data",
@@ -32,4 +32,18 @@ const speakers = defineCollection({
   }),
 });
 
-export const collections = { organizers, sponsors, speakers };
+const talks = defineCollection({
+  type: "data",
+  schema: z.object({
+    title: z.string(),
+    description: z.string().optional(),
+    startDate: z.string(),
+    endDate: z.string(),
+    speaker: reference('speakers').optional(),
+    sponsors: z.array(reference('sponsors')).optional(),
+    type: z.enum(["talk", "break", "sponsor"]),
+    track: z.array(z.string()),
+  }),
+});
+
+export const collections = { organizers, sponsors, speakers, talks };

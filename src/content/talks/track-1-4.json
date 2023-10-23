@@ -1,0 +1,9 @@
+{
+  "title": "Firebase para los Objetivos de Desarrollo Sostenible",
+  "description": "Los Objetivos de Desarrollo Sostenible constituyen un llamamiento universal a la acción para poner fin a la pobreza, proteger el planeta y mejorar las vidas y las perspectivas de las personas en todo el mundo, lo que nos marca una ruta a un mundo más sostenible donde la tecnología juega un rol importante, mediante soluciones como apps IoT, sistemas de monitoreo, predicciones, entre otros… Construir una aplicación que busca dar solución a un problema requiere de un trabajo de investigación y la construcción del sistema o el desarrollo de la aplicación, ¡es una tarea compleja! , sin embargo existen herramientas que facilitan el desarrollo de la solución al problema como Firebase. En esta sesión se tiene el objetivo de motivar a usar Firebase para la construcción de aplicaciones que den solución al problema emergente como los incendio forestales, basándonos en los ODS, demostrando como Firebase te permite enfocarte en resolver el problema y proponer una solución de manera simple mediante un DEMO.",
+  "startDate": "2023-12-02 11:15:00",
+  "endDate": "2023-12-02 12:00:00",
+  "speaker": "adriana-ticonipa",
+  "type": "talk",
+  "track": ["web"]
+  }

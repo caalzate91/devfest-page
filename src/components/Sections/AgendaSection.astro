@@ -1,0 +1,68 @@
+---
+import type { CollectionEntry } from 'astro:content';
+
+import TalkItem from '../AgendaItem/TalkItem.astro';
+import SponsorItem from '../AgendaItem/SponsorItem.astro';
+import BreakItem from '../AgendaItem/BreakItem.astro';
+
+interface Props {
+  talks:  CollectionEntry<"talks">[];
+}
+
+const { talks } = Astro.props;
+
+const sortByDate = (a: CollectionEntry<"talks">, b: CollectionEntry<"talks">) => {
+  const aDate = new Date(a.data.startDate);
+  const bDate = new Date(b.data.startDate);
+
+  return aDate.getTime() - bDate.getTime();
+};
+
+const trackWeb = talks.filter((talk) => talk.data.track.find((t: any) => t === 'web')).sort(sortByDate);
+const trackCloud = talks.filter((talk) => talk.data.track.find((t: any) => t === 'cloud')).sort(sortByDate);
+---
+
+<section class="py-16 flex flex-col items-center bg-white px-4" id="agenda">
+  <div class="container flex flex-col items-center space-y-16">
+    <div class="text-center">
+      <h2 class="font-bold text-4xl mb-6">Agenda</h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div>
+        <div class="track-web px-4 py-8 bg-df-blue flex flex-col items-center justify-center mb-4">
+          <h3 class="text-2xl font-bold text-center m-0 text-white">Track Web y Mobile</h3>
+        </div>
+
+        {trackWeb.map((talk) => {
+          switch(talk.data.type) {
+            case "talk":
+              return <TalkItem talk={talk} />;
+            case "sponsor":
+              return <SponsorItem talk={talk} />;
+            default:
+              return <BreakItem talk={talk} />;
+          }
+        })}
+      </div>
+
+      <div>
+        <div class="track-cloud px-4 py-8 bg-[#0F46A0] flex flex-col items-center justify-center mb-4">
+          <h3 class="text-2xl font-bold text-center m-0 text-white">Track Cloud y AI</h3>
+        </div>
+
+        {trackCloud.map((talk) => {
+          switch(talk.data.type) {
+            case "talk":
+              return <TalkItem talk={talk} />;
+            case "sponsor":
+              return <SponsorItem talk={talk} />;
+            default:
+              return <BreakItem talk={talk} />;
+          }
+        })}
+      </div>
+
+    </div>
+  </div>
+</section>

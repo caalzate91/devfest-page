@@ -23,13 +23,15 @@ module.exports = {
         "df-white-bg": "#F8F9FA",
         "df-esmerald-900": "#004135",
         "df-esmerald-700": "#167261",
+        "df-aquamarine-100": "#D8F8FF"
       },
       gridTemplateColumns: {
         'organizer': 'repeat(4, minmax(0, 280px))',
       },
       fontFamily: {
         body: ["Nunito Sans", "Roboto"],
-        code: ["Roboto Mono"]
+        code: ["Roboto Mono"],
+        mono: ["Roboto Mono"],
       },
       spacing: {
         '128': '32rem',

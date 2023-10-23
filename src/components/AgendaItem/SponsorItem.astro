@@ -1,0 +1,37 @@
+---
+import { type CollectionEntry, getEntries } from 'astro:content';
+import AgendaItem from './AgendaItem.astro';
+
+interface Props {
+  talk:  CollectionEntry<"talks">;
+}
+const { talk } = Astro.props;
+
+const sponsors = talk.data?.sponsors ? await getEntries(talk.data.sponsors) : null;
+
+---
+
+<AgendaItem talk={talk}>
+  <div class="flex flex-row items-center justify-between flex-1 gap-2">
+    <h4 class="font-bold text-lg m-0">{talk.data.title}</h4>
+
+    <div class="text-gray-500 font-mono text-sm">
+      {sponsors?.map((sponsor) => (
+        <span>{sponsor.data.name}</span>
+      ))}
+    </div>
+
+    <!-- <div class="flex flex-row items-center">
+      {sponsors?.map((sponsor) => (
+        <div class="w-24">
+          <img
+            class="w-full"
+            src={`/assets/images/sponsors/${sponsor.data.image}`}
+            alt={sponsor.data.name}
+          />
+        </div>
+      ))}
+    </div> -->
+
+  </div>
+</AgendaItem>

@@ -1,0 +1,8 @@
+{
+  "title": "Espacio para patrocinador",
+  "startDate": "2023-12-02 14:50:00",
+  "endDate": "2023-12-02 15:00:00",
+  "sponsors": ["google"],
+  "type": "sponsor",
+  "track": ["web", "cloud"]
+  }

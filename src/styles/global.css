@@ -13,7 +13,7 @@
   box-sizing: border-box;
   }
   body {
-    font-family: "Open Sans", "Merriweather Sans", sans-serif;
+    font-family: "Nunito Sans", "Merriweather Sans", sans-serif;
     font-size: 16px;
   }
 
@@ -48,5 +48,19 @@
     @media (max-width: 768px) {
       background-image: url('/assets/images/bg-mobile.svg');
     }
+  }
+
+  .track-web {
+    background-image: url('/assets/images/web.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+  .track-cloud {
+    background-image: url('/assets/images/cloud.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
   }
 }

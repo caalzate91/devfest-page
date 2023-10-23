@@ -1,45 +1,71 @@
 ---
-import type { CollectionEntry } from 'astro:content';
+import type { CollectionEntry } from 'astro:content'
 
 interface Props {
-  communities:  CollectionEntry<"sponsors">[];
-  companies:  CollectionEntry<"sponsors">[];
+  communities: CollectionEntry<'sponsors'>[]
+  companies: CollectionEntry<'sponsors'>[]
 }
 
-const { communities, companies } = Astro.props;
-const goldCompanies = companies.filter(company => company.data.category === 'gold');
-const silverCompanies = companies.filter(company => company.data.category === 'silver');
+const { communities, companies } = Astro.props
+const goldCompanies = companies.filter(
+  (company) => company.data.category === 'gold'
+)
+const silverCompanies = companies.filter(
+  (company) => company.data.category === 'silver'
+)
 ---
 
 <section class="py-16 flex flex-col items-center bg-df-white-bg px-4">
   <div class="container flex flex-col items-center space-y-8 mb-16 text-center">
     <div class="text-center">
       <h2 class="font-bold text-4xl mb-6">Patrocinadores</h2>
-      <p>Nuestros patrocinadores contribuyen a hacer posible este acontecimiento.</p>
+      <p>
+        Nuestros patrocinadores contribuyen a hacer posible este acontecimiento.
+      </p>
     </div>
 
     <div>
       <h2 class="font-bold text-2xl mb-4">Patrocinadores Oro</h2>
 
       <div class="flex flex-row justify-center flex-wrap items-center gap-8">
-        {goldCompanies.map(sponsor => (
-          <a href={sponsor.data.url} class="block hover:scale-110 transition-transform duration-75 w-56">
-            <img class="w-full" src={`/assets/images/sponsors/${sponsor.data.image}`} alt={sponsor.data.name} />
-          </a>
-        ))}
+        {
+          goldCompanies.map((sponsor) => (
+            <a
+              href={sponsor.data.url}
+              class="block hover:scale-110 transition-transform duration-75 w-56"
+            >
+              <img
+                class="w-full"
+                src={`/assets/images/sponsors/${sponsor.data.image}`}
+                alt={sponsor.data.name}
+              />
+            </a>
+          ))
+        }
       </div>
     </div>
-    <div>
-      <h2 class="font-bold text-2xl mb-4">Patrocinadores Plata</h2>
+    {
+      silverCompanies.length ? (
+        <div>
+          <h2 class="font-bold text-2xl mb-4">Patrocinadores Plata</h2>
 
-      <div class="flex flex-row justify-center flex-wrap items-center gap-8">
-        {silverCompanies.map(sponsor => (
-          <a href={sponsor.data.url} class="block hover:scale-110 transition-transform duration-75 w-48">
-            <img class="w-full" src={`/assets/images/sponsors/${sponsor.data.image}`} alt={sponsor.data.name} />
-          </a>
-        ))}
-      </div>
-    </div>
+          <div class="flex flex-row justify-center flex-wrap items-center gap-8">
+            {silverCompanies.map((sponsor) => (
+              <a
+                href={sponsor.data.url}
+                class="block hover:scale-110 transition-transform duration-75 w-48"
+              >
+                <img
+                  class="w-full"
+                  src={`/assets/images/sponsors/${sponsor.data.image}`}
+                  alt={sponsor.data.name}
+                />
+              </a>
+            ))}
+          </div>
+        </div>
+      ) : null
+    }
   </div>
 
   <div class="container flex flex-col items-center space-y-8">
@@ -49,12 +75,20 @@ const silverCompanies = companies.filter(company => company.data.category === 's
     </div>
 
     <div class="flex flex-row justify-center flex-wrap items-center gap-8">
-
-      {communities.map(sponsor => (
-        <a href={sponsor.data.url} class="block hover:scale-110 transition-transform duration-75 w-40">
-          <img class="w-full" src={`/assets/images/sponsors/${sponsor.data.image}`} alt={sponsor.data.name} />
-        </a>
-      ))}
+      {
+        communities.map((sponsor) => (
+          <a
+            href={sponsor.data.url}
+            class="block hover:scale-110 transition-transform duration-75 w-40"
+          >
+            <img
+              class="w-full"
+              src={`/assets/images/sponsors/${sponsor.data.image}`}
+              alt={sponsor.data.name}
+            />
+          </a>
+        ))
+      }
     </div>
   </div>
 </section>

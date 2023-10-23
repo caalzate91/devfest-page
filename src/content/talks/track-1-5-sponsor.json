@@ -1,0 +1,8 @@
+{
+  "title": "Espacio para patrocinador",
+  "startDate": "2023-12-02 12:00:00",
+  "endDate": "2023-12-02 12:15:00",
+  "sponsors": ["nearsure"],
+  "type": "sponsor",
+  "track": ["web", "cloud"]
+  }

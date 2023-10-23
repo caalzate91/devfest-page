@@ -1,0 +1,16 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import dayjs from 'dayjs';
+
+interface Props {
+  talk:  CollectionEntry<"talks">;
+}
+const { talk } = Astro.props;
+
+---
+
+
+<div class="flex flex-col md:flex-row gap-4 items-stretch border-b py-8 px-4 hover:bg-df-white-bg group">
+  <p class="text-gray-500 text-sm font-mono">{dayjs(talk.data.startDate).format('hh:mm A')} - {dayjs(talk.data.endDate).format('hh:mm A')}</p>
+  <slot />
+</div>

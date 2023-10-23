@@ -9,10 +9,13 @@ interface Props {
 const { speakers } = Astro.props
 ---
 
-<section class="py-16 flex flex-col items-center">
+<section class="py-16 flex flex-col items-center bg-df-white-bg">
   <div class="container flex flex-col items-center space-y-16">
     <div class="flex flex-col items-center gap-4">
       <h2 class="font-bold text-4xl">Ponentes</h2>
+      <p>
+        Grandes Líderes de la Tecnología que nos compartirán sus conocimientos
+      </p>
     </div>
 
     <div
@@ -41,7 +44,7 @@ const { speakers } = Astro.props
                   <span class="font-bold uppercase text-xl">
                     {speaker.data.name}
                   </span>
-                  <span class="text-df-gray-700">{speaker.data.position}</span>
+                  <span class="text-df-gray-700 font-mono">{speaker.data.position}</span>
                 </div>
               </a>
             </div>
