@@ -3,5 +3,6 @@
   "position": "Google Developer Expert",
   "image": "jigyasa-grover.png",
   "url": "https://twitter.com/jigyasa_grover",
-  "colorBadge": "green"
+  "colorBadge": "green",
+  "hidden": true
 }

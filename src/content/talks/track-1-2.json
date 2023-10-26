@@ -1,8 +1,9 @@
 {
-  "title": "Por definir ----",
-  "description": "Por definir ----",
+  "title": "Experiencias inmersivas en la web: Aprovechando al máximo WebGPU y lo último en Web Technologies",
+  "description": "En esta charla, aprenderemos cómo crear experiencias inmersivas en la web utilizando WebGPU y las últimas tecnologías web. Veremos cómo aprovechar el poder de la GPU para crear gráficos 3D y 2D avanzados, así como cómo usar las últimas APIs web para crear experiencias interactivas y envolventes.",
   "startDate": "2023-12-02 10:00:00",
   "endDate": "2023-12-02 10:50:00",
+  "speaker": "antonio-cardenas",
   "type": "talk",
   "track": ["web"]
   }

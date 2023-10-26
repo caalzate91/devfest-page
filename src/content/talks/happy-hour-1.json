@@ -1,0 +1,8 @@
+{
+  "title": "¡Happy Hour!",
+  "startDate": "2023-12-02 17:00:00",
+  "endDate": "2023-12-02 18:00:00",
+  "sponsors": ["autonoma", "nearsure", "public-sapient"],
+  "type": "break",
+  "track": ["cloud"]
+}

@@ -19,7 +19,9 @@ const communitySponsors = await getCollection('sponsors', (({data}) => {
 const companySponsors = await getCollection('sponsors', (({data}) => {
   return data.type === "company"
 }));
-const speakers = await getCollection('speakers');
+const speakers = await getCollection('speakers', (({data}) => {
+  return !data.hidden
+}));
 const talks = await getCollection('talks');
 
 ---
