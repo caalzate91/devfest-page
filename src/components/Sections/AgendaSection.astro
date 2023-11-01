@@ -4,6 +4,9 @@ import type { CollectionEntry } from 'astro:content';
 import TalkItem from '../AgendaItem/TalkItem.astro';
 import SponsorItem from '../AgendaItem/SponsorItem.astro';
 import BreakItem from '../AgendaItem/BreakItem.astro';
+import Modal from '../Common/Modal.astro';
+import ModalTalwind from '../Common/ModalTalwind.astro';
+import SpeakerCard from '../Common/SpeakerCard.astro';
 
 interface Props {
   talks:  CollectionEntry<"talks">[];

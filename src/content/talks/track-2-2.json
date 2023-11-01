@@ -1,8 +1,9 @@
 {
-  "title": "Por definir ----",
-  "description": "Por definir ----",
+  "title": "La arquitectura Transformer y su Impacto en la Actual Revolución de la Inteligencia Artificial",
+  "description": "Con el surgimiento de aplicaciones como ChatGPT, BARD y otros modelos de lenguaje generadores de texto, además, de los modelos generadores de imágenes  como Dalle-2 e Stable Diffusion, da la sensación que estos tipos de desarrollos en el campo de la Inteligencia Artificial (IA) son relativamente nuevos, sin embargo, llegar  a este tipo de implementaciones, es el resultado de años de investigación particularmente en el campo del Deep Learning que condujo a una arquitectura de red neuronal artificial llamada Transformer, la cual es la base de estos modelos. En esta charla, haremos un recorrido desde los conceptos generales de la Inteligencia artificial, del aprendizaje automático y del Deep Learning que nos permitirán centrarnos particularmente en algunos desarrollos que podemos denominar los bloques fundamentales o básicos del Deep Learning, los cuales hacen parte de las diferentes arquitecturas de redes neuronales artificiales. Lo anterior, nos permitirá entender de manera generar cómo se llegó a la arquitectura Transformer y ver como a partir de ella, se comenzó a generarse todo el ecosistema de modelos o aplicaciones de la IA que actualmente la hacen una tecnología con tanto impacto.",
   "startDate": "2023-12-02 10:00:00",
   "endDate": "2023-12-02 10:50:00",
+  "speaker": "jesus-lopez",
   "type": "talk",
   "track": ["cloud"]
   }
