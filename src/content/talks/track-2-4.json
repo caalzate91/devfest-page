@@ -1,9 +1,9 @@
 {
-  "title": "Deep Learning for coders Vol. 3: KerasCV&KerasNLP",
-  "description": "En esta sesión conoceremos más sobre KerasCV y KerasNLP, dos poderosas herramientas integradas en Keras y TensorFlow, exploraremos el increíble potencial de visión por computadora y procesamiento de lenguaje natural a través de Inteligencia Artificial Generativa(GenAI). Revisaremos ejemplos prácticos de detección y clasificación de imágenes, stable difussion, clasificación y generación de texto. A través de estas herramientas, exploraremos las fronteras de frameworks, machine learning y lo que es posible construir con un par de líneas de código para desatar nuestra creatividad y llevar nuestras ideas al siguiente nivel.",
+  "title": "Cloud Run Descodificado: Un viaje técnico a través de la arquitectura sin servidor.",
+  "description": "¡Bienvenidos al fascinante viaje técnico a través de las entrañas de Google Cloud Run y la arquitectura sin servidor. En esta sesión, desentrañaremos los misterios de Google Cloud Run, desde tácticas de optimización de costos hasta despliegues estratégicos de servicios frontends y backends. Exploraremos patrones arquitectónicos avanzados, desde implementaciones de microservicios hasta la perfecta integración con otros servicios estrella de Google Cloud Platform (GCP). Tambien te guiaremos a través de casos prácticos y montajes, ilustrando cómo Cloud Run se adapta a cada desafío.",
   "startDate": "2023-12-02 11:00:00",
   "endDate": "2023-12-02 11:50:00",
-  "speaker": "adrian-catalan",
+  "speaker": "camilo-alzate",
   "type": "talk",
   "track": ["cloud"]
   }
