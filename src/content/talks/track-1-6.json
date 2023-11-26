@@ -1,9 +1,9 @@
 {
-  "title": "Build your first Chatbot using PaLM API and Angular",
-  "description": "Chatbots have become increasingly popular in recent years, as they can provide a convenient and engaging way to interact with users. In this talk, you’ll learn how to build a chatbot using Google AI’s PaLM API and the latest version of the Angular Framework. Whether you’re a beginner or an experienced developer, this talk will give you the skills you need to build a chatbot that can use LLM’s capabilities to generate messages and engage with users in a meaningful way.",
+  "title": "Building an Android app for IOS with KMP and Compose Multiplatform",
+  "description": "As a language, Kotlin has everything that Android developers asked for, It even went further and today allows us to build apps on Android and make them run on other operating systems and especially on IOS, thanks to Kotlin multiplatform and Compose Multiplatform, despite which is still in an alpha stage, this is something that promises a lot and more compared to other technologies that are on the market since one can create new apps or simply migrate and make an Android App run on IOS. In this talk, we will see how to create multiplatform apps with Kotlin multiplatform and Compose Multiplatform and even take our Android app to work on IOS.",
   "startDate": "2023-12-02 12:15:00",
   "endDate": "2023-12-02 12:50:00",
-  "speaker": "luis-aviles",
+  "speaker": "yury-camacho",
   "type": "talk",
   "track": ["web"]
-  }
+}
