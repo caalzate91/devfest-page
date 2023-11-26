@@ -1,9 +1,9 @@
 {
-  "title": "MakerSuite y el poder de PALM en tus manos :D",
-  "description": "Exploramos la herramienta MakerSuite para prototipar con ayuda del Generative AI y el modelo de lenguaje de Google: PALM.",
+  "title": "Aprendamos machine learning con herramientas de Google",
+  "description": "Google BigQuery ML destaca por permitir la creación y ejecución de modelos de ML directamente en BigQuery, facilitando la tarea a quienes no son expertos en programación. Por otro lado, las APIs de Google proporcionan capacidades de ML pre-entrenadas que impulsan una rápida implementación en diversos proyectos. Exploraremos también cómo AutoML facilita la creación de modelos de ML sin requerir experiencia técnica previa, y cómo el entrenamiento personalizado con herramientas de Google permite una mayor flexibilidad y adaptación según las necesidades del proyecto. Esta charla brindará una visión práctica y teórica, ideal tanto para novatos como para aquellos con conocimientos previos en ML, demostrando cómo las herramientas de Google pueden ser un gran aliado en su camino hacia el dominio del Machine Learning.",
   "startDate": "2023-12-02 09:15:00",
   "endDate": "2023-12-02 10:00:00",
-  "speaker": "lesly-zerna",
+  "speaker": "maris-botero",
   "type": "talk",
   "track": ["cloud"]
   }

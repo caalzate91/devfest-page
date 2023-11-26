@@ -1,9 +1,9 @@
 {
-  "title": "Aprendamos machine learning con herramientas de Google",
-  "description": "En esta sesión conoceremos más sobre KerasCV y KerasNLP, dos poderosas herramientas integradas en Keras y TensorFlow, exploraremos el increíble potencial de visión por computadora y procesamiento de lenguaje natural a través de Inteligencia Artificial Generativa(GenAI). Revisaremos ejemplos prácticos de detección y clasificación de imágenes, stable difussion, clasificación y generación de texto. A través de estas herramientas, exploraremos las fronteras de frameworks, machine learning y lo que es posible construir con un par de líneas de código para desatar nuestra creatividad y llevar nuestras ideas al siguiente nivel.",
+  "title": "MakerSuite y el poder de PALM en tus manos :D",
+  "description": "Exploramos la herramienta MakerSuite para prototipar con ayuda del Generative AI y el modelo de lenguaje de Google: PALM.",
   "startDate": "2023-12-02 12:00:00",
   "endDate": "2023-12-02 12:50:00",
-  "speaker": "maris-botero",
+  "speaker": "lesly-zerna",
   "type": "talk",
   "track": ["cloud"]
-  }
+}
