@@ -4,5 +4,6 @@
   "image": "yury-camacho.jpg",
   "url": "https://twitter.com/camachoyury",
   "colorBadge": "green",
-  "country": "bo"
+  "country": "bo",
+  "hidden": true
 }

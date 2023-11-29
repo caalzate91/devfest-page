@@ -1,9 +1,9 @@
 {
-  "title": "Building an Android app for IOS with KMP and Compose Multiplatform",
-  "description": "As a language, Kotlin has everything that Android developers asked for, It even went further and today allows us to build apps on Android and make them run on other operating systems and especially on IOS, thanks to Kotlin multiplatform and Compose Multiplatform, despite which is still in an alpha stage, this is something that promises a lot and more compared to other technologies that are on the market since one can create new apps or simply migrate and make an Android App run on IOS. In this talk, we will see how to create multiplatform apps with Kotlin multiplatform and Compose Multiplatform and even take our Android app to work on IOS.",
+  "title": "Auditando Render Patterns con las DevTools",
+  "description": "Una charla donde vamos auditar la misma aplicación hecha con diferentes patrones de rendering (csr, ssr, server components y ssg) usando las chrome developer tools para analizar tiempo de carga, renderizado y core web vitals. Ademas revisar algunos ejemplos de código que con simples optimizaciones pueden mejorar el performance de la aplicación.",
   "startDate": "2023-12-02 12:15:00",
   "endDate": "2023-12-02 12:50:00",
-  "speaker": "yury-camacho",
+  "speaker": "joel-humberto",
   "type": "talk",
   "track": ["web"]
 }

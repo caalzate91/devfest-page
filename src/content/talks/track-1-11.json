@@ -1,9 +1,9 @@
 {
-  "title": "Herramientas de Inteligencia Artificial para Developers",
-  "description": "¡Descubre el futuro de la programación! Exploraremos las “Herramientas de Inteligencia Artificial para Developers”. Aprende cómo la IA revoluciona el desarrollo de software y cómo puedes aprovecharla para crear aplicaciones 50% más rápido y 30% más efectivas.",
+  "title": "La Web Como Plataforma: Como usamos WebCrypto en helpyoufind.me",
+  "description": "En esta charla exploraremos cómo HelpYouFind.Me (HYF.M) aprovecha la web como plataforma para garantizar la seguridad y privacidad de los usuarios mediante la API WebCrypto.Tendrás con una breve introducción a los conceptos básicos de criptografía y a la API WebCrypto, sentando las bases para comprender su importancia en la protección de datos en línea.Y finalmente vamos a explorar cómo HYF.M permite a los usuarios cifrar información de extremo a extremo, mediante una pequeña aplicación de toma de notas, y todo desde su navegador.",
   "startDate": "2023-12-02 15:15:00",
   "endDate": "2023-12-02 16:00:00",
-  "speaker": "oscar-barajas",
+  "speaker": "oscar-cortez",
   "type": "talk",
   "track": ["web"]
   }
