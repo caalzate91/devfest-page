@@ -1,9 +1,9 @@
 {
-  "title": "Desbloqueando la eficiencia en la industria legal con Google Cloud y la IA generativa",
-  "description": "En esta charla te llevaremos detrás de escena del despliegue de Llama2 en Vertex AI de Google. Descubrirás los secretos del modelo y cómo se cargó en la plataforma, además de aprender cómo se evaluó su capacidad para resumir documentos y cómo se midió su calidad. También debatiremos las reglas simples utilizadas para evaluar los resultados en un contexto donde las salidas no son determinísticas.",
+  "title": "Tackling problems that matter",
+  "description": "Machine learning is helping us mitigate the effects of climate change, reducing the human cost of wildfires and floods. Learn how Google is using ML to develop new tools and strategies for predicting, preventing, and responding to these disasters.",
+  "speaker": "santiago-potes",
   "startDate": "2023-12-02 16:00:00",
   "endDate": "2023-12-02 16:50:00",
-  "speaker": "sergio-ferro",
   "type": "talk",
   "track": ["cloud"]
 }
