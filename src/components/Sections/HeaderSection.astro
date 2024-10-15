@@ -3,18 +3,24 @@ import { Image } from 'astro:assets'
 
 import DevFestLogoImage from '../../assets/images/devfest-cali-2023.svg'
 import BarranqueroImage from '../../assets/images/barranquero.svg'
+import GeneralWebImage from '../../assets/images/GeneralWeb.png'
+import BackgroundLogo from '../../assets/images/BackgroundLogo.png'
 import Counter from '../Counter'
 ---
 
 <header class="">
-  <div
-    class="bg-white w-full flex flex-row justify-center items-center md:gap-4"
-  >
-    <span class="font-bold hidden md:block">Empieza en...</span>
+  <div class="relative w-full h-full">
+    <Image
+    src={GeneralWebImage}
+    alt="GeneralWeb DevFest Cali 2024"
+    />
+  </div>
 
+  <div class="bg-black w-full flex flex-row justify-center items-center md:gap-4">
+    <span class="font-regular hidden md:block text-white">Empieza en...</span>
     <div class="flex flex-1 md:flex-none flex-row justify-center bg-green-500">
       <Counter targetDate="02/12/2023" client:load />
-      <div class=" hidden">
+      <div>
         <a
           href="https://peewah.co/events/devfestcali"
           aria-label="Get Tickets"
@@ -41,12 +47,6 @@ import Counter from '../Counter'
         />
       </div>
     </div>
-
-    <div class="bg-hero-mobile"></div>
   </div>
-
-
-  <div class="flex flex-col md:flex-row items-center justify-center gap-4 bg-black text-white py-8 px-4 text-center md:text-left" >
-    <span>Cerramos la venta de entradas, gracias a todos los que adquirieron la suya. Nos Vemos en #DevFest2023 en Cali</span>
-  </div>
+  <div class="flex flex-col md:flex-row items-center justify-center gap-4 bg-black text-white py-8 px-4 text-center md:text-left"></div>
 </header>
