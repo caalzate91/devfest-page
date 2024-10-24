@@ -1,9 +1,11 @@
 {
-  "title": "Auditando Render Patterns con las DevTools",
-  "description": "Una charla donde vamos auditar la misma aplicación hecha con diferentes patrones de rendering (csr, ssr, server components y ssg) usando las chrome developer tools para analizar tiempo de carga, renderizado y core web vitals. Ademas revisar algunos ejemplos de código que con simples optimizaciones pueden mejorar el performance de la aplicación.",
-  "startDate": "2023-12-02 12:15:00",
-  "endDate": "2023-12-02 12:50:00",
-  "speaker": "joel-humberto",
+  "title": "Cómo tunear un LLM en Google Cloud",
+  "description": "Alguna vez haz sentido que un LLM no te entiende o tienes que explicarle demasiadas cosas para que te de una respuesta? Si te ha ocurrido entonces debes venir y aprender cómo tunear un LLM para tu caso específico. Se pueden tunear modelos para responder de maneras más acertadas en ciertas industrias. Mostrare un ejemplo práctico donde se puede tunear un LLM con información médica para la realización de diagnosticos.",
+  "startDate": "2024-11-30 12:00:00",
+  "endDate": "2024-11-30 12:50:00",
+  "speaker": "angie-zuniga",
   "type": "talk",
-  "track": ["web"]
+  "track": [
+    "cloud"
+  ]
 }

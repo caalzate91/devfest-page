@@ -1,8 +1,11 @@
 {
-  "title": "Registro y Bienvenida",
+  "title": "Registro",
   "description": "",
-  "startDate": "2023-12-02 08:00:00",
-  "endDate": "2023-12-02 09:15:00",
+  "startDate": "2024-11-30 08:00:00",
+  "endDate": "2024-11-30 09:00:00",
   "type": "sponsor",
-  "track": ["web", "cloud"]
+  "track": [
+    "web",
+    "cloud"
+  ]
 }

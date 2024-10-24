@@ -1,9 +1,11 @@
 {
-  "title": "Build your first Chatbot using PaLM API and Angular",
-  "description": "Chatbots have become increasingly popular in recent years, as they can provide a convenient and engaging way to interact with users. In this talk, you’ll learn how to build a chatbot using Google AI’s PaLM API and the latest version of the Angular Framework. Whether you’re a beginner or an experienced developer, this talk will give you the skills you need to build a chatbot that can use LLM’s capabilities to generate messages and engage with users in a meaningful way.",
-  "startDate": "2023-12-02 09:15:00",
-  "endDate": "2023-12-02 10:00:00",
-  "speaker": "luis-aviles",
+  "title": "Diseñando una arquitectura a prueba de balas en GCP",
+  "description": "En esta sesión abordaremos los puntos principales para diseñar una arquitectura sólida en Google Cloud en el año 2024, teniendo en cuenta principios como: Scalability, High availability y Disaster recovery en la nube de Google Cloud, teniendo en cuenta una arquitectura de referencia de la vida real.",
+  "startDate": "2024-11-30 09:15:00",
+  "endDate": "2024-11-30 10:00:00",
+  "speaker": "adriana-moya",
   "type": "talk",
-  "track": ["web"]
+  "track": [
+    "cloud"
+  ]
 }

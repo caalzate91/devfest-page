@@ -5,5 +5,7 @@
   "endDate": "2023-12-02 12:50:00",
   "speaker": "lesly-zerna",
   "type": "talk",
-  "track": ["cloud"]
+  "track": [
+    "web"
+  ]
 }

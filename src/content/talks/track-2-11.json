@@ -5,5 +5,7 @@
   "startDate": "2023-12-02 15:00:00",
   "endDate": "2023-12-02 15:50:00",
   "type": "talk",
-  "track": ["cloud"]
-  }
+  "track": [
+    "web"
+  ]
+}

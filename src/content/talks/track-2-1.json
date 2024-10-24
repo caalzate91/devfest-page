@@ -5,5 +5,7 @@
   "endDate": "2023-12-02 10:00:00",
   "speaker": "maris-botero",
   "type": "talk",
-  "track": ["cloud"]
-  }
+  "track": [
+    "web"
+  ]
+}
