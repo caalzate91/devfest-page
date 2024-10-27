@@ -11,24 +11,25 @@ const { talk } = Astro.props
 const sponsors = talk.data?.sponsors ? await getEntries(talk.data.sponsors) : null
 ---
 
-<div class="flex flex-col lg:flex-row bg-white shadow-md rounded-md p-6 space-y-4 lg:space-y-0 lg:space-x-6 my-3">
+<!-- <div class="flex flex-col lg:flex-row bg-white shadow-md rounded-md p-6 space-y-4 lg:space-y-0 lg:space-x-6 my-3">
 	<div class="flex flex-row w-full">
 		<p class="text-blue-600 font-semibold max-w-lg content-center">
 			{dayjs(talk.data.startDate).format('hh:mm A')} - {dayjs(talk.data.endDate).format('hh:mm A')}
 		</p>
 		<h4 class="text-2xl font-bold text-gray-900 my-3 flex-grow pl-5 lg:pl-10">{talk.data.title}</h4>
 	</div>
-</div>
+</div> -->
+<AgendaItem talk={talk}>
+	<div class="flex flex-row items-center justify-between flex-1 gap-2">
+		<h4 class="font-bold text-lg m-0">{talk.data.title}</h4>
 
-<!-- <AgendaItem talk={talk}>
-  <div class="flex flex-row items-center justify-between flex-1 gap-2">
-    <h4 class="font-bold text-lg m-0">{talk.data.title}</h4>
+		<div class="text-gray-500 font-mono text-sm">
+			{sponsors?.map((sponsor) => <span>{sponsor.data.name}</span>)}
+		</div>
+	</div>
+</AgendaItem>
 
-    <div class="text-gray-500 font-mono text-sm">
-      {sponsors?.map((sponsor) => (
-        <span>{sponsor.data.name}</span>
-      ))}
-    </div> --><!-- <div class="flex flex-row items-center">
+<!-- <div class="flex flex-row items-center">
       {sponsors?.map((sponsor) => (
         <div class="w-24">
           <img
@@ -39,4 +40,5 @@ const sponsors = talk.data?.sponsors ? await getEntries(talk.data.sponsors) : nu
         </div>
       ))}
     </div> --><!-- </div>
-</AgendaItem> -->
+</AgendaItem>
+-->

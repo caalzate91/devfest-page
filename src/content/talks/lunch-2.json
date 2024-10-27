@@ -1,8 +1,14 @@
 {
   "title": "Almuerzo y Networking",
-  "startDate": "2023-12-02 13:00:00",
-  "endDate": "2023-12-02 14:00:00",
-  "sponsors": ["autonoma", "google", "nearsure"],
+  "startDate": "2024-11-30 13:00:00",
+  "endDate": "2024-11-30 14:00:00",
+  "sponsors": [
+    "autonoma",
+    "google",
+    "nearsure"
+  ],
   "type": "break",
-  "track": ["web"]
+  "track": [
+    "web"
+  ]
 }

@@ -17,10 +17,9 @@ const speaker = talk.data?.speaker ? await getEntry(talk.data.speaker) : null
 			{talk.data.title}
 		</h4>
 		{speaker ? <SpeakerCard speaker={speaker} /> : null}
-	</div> --><!-- COMPONTENTE NUEVO -->
-<div class="flex flex-col lg:flex-row bg-white shadow-md rounded-md p-6 space-y-4 lg:space-y-0 lg:space-x-6 my-3">
+	</div> --><!-- COMPONTENTE NUEVO --><!-- <div class="flex flex-col lg:flex-row bg-white shadow-md rounded-md p-6 space-y-4 lg:space-y-0 lg:space-x-6 my-3">
 	<div class="flex flex-col w-full">
-		<p class="text-blue-600 font-semibold">
+		<p class="text-[#F09828] font-semibold">
 			{dayjs(talk.data.startDate).format('hh:mm A')} - {dayjs(talk.data.endDate).format('hh:mm A')}
 		</p>
 		<h4 class="text-2xl font-bold text-gray-900 my-3">{talk.data.title}</h4>
@@ -43,8 +42,15 @@ const speaker = talk.data?.speaker ? await getEntry(talk.data.speaker) : null
 			</div>
 		</div>
 	</div>
-</div>
-<!-- </AgendaItem> -->
+</div> --><!-- </AgendaItem> -->
+<AgendaItem talk={talk}>
+	<div class="flex-1 cursor-pointer" id={talk.id}>
+		<h4 class="font-bold text-xl m-0 group-hover:underline">
+			{talk.data.title}
+		</h4>
+		{speaker ? <SpeakerCard speaker={speaker} /> : null}
+	</div>
+</AgendaItem>
 
 <style lang="css" scoped>
 	dialog {
