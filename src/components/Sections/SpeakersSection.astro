@@ -3,76 +3,106 @@ import { Image } from 'astro:assets'
 import type { CollectionEntry } from 'astro:content'
 
 interface Props {
-	speakers: CollectionEntry<'speakers'>[]
+    speakers: CollectionEntry<'speakers'>[]
 }
 
 const { speakers } = Astro.props
 ---
 
 <section class="py-16 flex flex-col items-center bg-df-white-bg">
-	<div class="container flex flex-col items-center space-y-16">
-		<div class="flex flex-col items-center gap-4">
-			<h2 class="font-bold text-4xl">Ponentes</h2>
-			<p>Próximamente tendrás la oportunidad de conocer a nuestros ponentes. ¡Queda atento a nuestras redes!</p>
-		</div>
+    <div class="container flex flex-col items-center space-y-16">
+        <!-- <div class="flex flex-col items-center gap-4">
+            <h2 class="font-bold text-4xl">Ponentes</h2>
+            <p>Próximamente tendrás la oportunidad de conocer a nuestros ponentes. ¡Queda atento a nuestras redes!</p>
+        </div>
 
-		<div class="flex flex-row justify-center flex-wrap items-start gap-y-8 md:gap-8 w-full">
+        <div class="flex flex-row justify-center flex-wrap items-start gap-y-8 md:gap-8 w-full">
+            <div class="flex flex-col w-72 group">
+                <div class="mb-4 relative overflow-hidden">
+                    <img
+                        src={`/assets/images/speakers/undefined.png`}
+                        alt="Ponente sorpresa"
+                        class="transition-all duration-100 group-hover:scale-110 animate__animated animate__fadeIn"
+                    />
+                </div>
+                <div class="flex flex-col gap-2 text-center">
+                    <span class="font-bold uppercase text-xl">???</span>
+
+                    <div class="flex flex-row items-center justify-center gap-1">
+                        <span class="text-df-gray-700 font-mono">Proximamente...</span>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+	<!-- Fila superior de ponentes (movimiento hacia la izquierda) -->
+	<div class="flex flex-row justify-center overflow-hidden animate-scroll-row-1 gap-x-24">
+		{[
+		...speakers.slice(0, Math.ceil(speakers.length / 2)),
+		...speakers.slice(0, Math.ceil(speakers.length / 2)),
+		].map((speaker) =>
+		speaker.data.name !== 'Undefined' ? (
 			<div class="flex flex-col w-72 group">
-				<div class="mb-4 relative overflow-hidden">
+				<div class="flex flex-col items-center">
+					<a href={speaker.data.url} target="_blank" class="speaker-image rounded-full overflow-hidden">
+						<img
+							src={`/assets/images/speakers/${speaker.data.image}`}
+							alt={speaker.data.name}
+							class="w-full h-full object-cover transition-all duration-100 group-hover:scale-110 animate__animated animate__fadeIn"
+						/>
+					</a>
+					<span class="font-bold uppercase text-xl">{speaker.data.name}</span>
+				<div class="flex flex-row items-center justify-center gap-1">
+					{speaker.data.country && (
 					<img
-						src={`/assets/images/speakers/undefined.png`}
-						alt="Ponente sorpresa"
-						class="transition-all duration-100 group-hover:scale-110 animate__animated animate__fadeIn"
+						class="object-cover w-5 h-5 rounded-full border-2 border-white"
+						src={`/src/assets/images/flags/${speaker.data.country}.svg`}
+						alt={speaker.data.country.toUpperCase()}
+						title={speaker.data.country.toUpperCase()}
 					/>
+					)}
+					<span class="text-df-gray-700 font-mono">{speaker.data.position}</span>
 				</div>
-				<div class="flex flex-col gap-2 text-center">
-					<span class="font-bold uppercase text-xl">???</span>
-
-					<div class="flex flex-row items-center justify-center gap-1">
-						<span class="text-df-gray-700 font-mono">Proximamente...</span>
-					</div>
 				</div>
 			</div>
-		</div>
-		<!-- {
-				speakers.map((speaker) =>
-					speaker.data.name !== 'Undefined' ? (
-						<div class="flex flex-col w-72 group">
-							<a href={speaker.data.url} target="_blank">
-								<div class="mb-4 relative overflow-hidden">
-									<img
-										src={`/assets/images/speakers/${speaker.data.image}`}
-										alt={speaker.data.name}
-										class="transition-all duration-100 group-hover:scale-110 animate__animated animate__fadeIn"
-									/>
-									<img
-										src={`/assets/images/speaker-layer/${speaker.data.colorBadge ?? 'blue'}.svg`}
-										alt={speaker.data.name}
-										class="absolute bottom-0 left-0"
-									/>
-								</div>
+		) : null
+		)}
+	</div>
 
-								<div class="flex flex-col gap-2 text-center">
-									<span class="font-bold uppercase text-xl">{speaker.data.name}</span>
-
-									<div class="flex flex-row items-center justify-center gap-1">
-										{speaker.data.country ? (
-											<Image
-												class="object-cover w-5 h-5 rounded-full border-2 border-white"
-												src={import(`../../assets/images/flags/${speaker.data.country}.svg`)}
-												alt={speaker.data.country.toUpperCase()}
-												title={speaker.data.country.toUpperCase()}
-											/>
-										) : null}
-										<span class="text-df-gray-700 font-mono">{speaker.data.position}</span>
-									</div>
-								</div>
-							</a>
-						</div>
-					) : (
-						false
-					)
-				)
-			} -->
+	<!-- Fila inferior de ponentes (movimiento hacia la derecha) -->
+	<div class="flex flex-row justify-center overflow-hidden animate-scroll-row-2 gap-x-24">
+		{[
+		...speakers.slice(Math.ceil(speakers.length / 2)),
+		...speakers.slice(Math.ceil(speakers.length / 2)),
+		].map((speaker) =>
+		speaker.data.name !== 'Undefined' ? (
+			<div class="flex flex-col w-72 group">
+				<div class="flex flex-col items-center">
+					<a href={speaker.data.url} target="_blank" class="speaker-image rounded-full overflow-hidden">
+						<img
+							src={`/assets/images/speakers/${speaker.data.image}`}
+							alt={speaker.data.name}
+							class="w-full h-full object-cover transition-all duration-100 group-hover:scale-110 animate__animated animate__fadeIn"
+						/>
+					</a>
+				</div>
+				<div class="flex flex-col gap-2 text-center">
+				<span class="font-bold uppercase text-xl">{speaker.data.name}</span>
+				<div class="flex flex-row items-center justify-center gap-1">
+					{speaker.data.country && (
+					<img
+						class="object-cover w-5 h-5 rounded-full border-2 border-white"
+						src={`/src/assets/images/flags/${speaker.data.country}.svg`}
+						alt={speaker.data.country.toUpperCase()}
+						title={speaker.data.country.toUpperCase()}
+					/>
+					)}
+					<span class="text-df-gray-700 font-mono">{speaker.data.position}</span>
+				</div>
+				</div>
+			</div>
+		) : null
+		)}
+	</div>
 	</div>
 </section>
