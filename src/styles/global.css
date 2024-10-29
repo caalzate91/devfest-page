@@ -63,4 +63,44 @@
     background-size: contain;
     background-position: center;
   }
+
+.speaker-image {
+  width: 180px; 
+  height: 180px; 
+  border-radius: 50%;
+  object-fit: cover; 
+  border: 2px solid black;
+  display: block; 
+}
+
+/* Animación de las filas */
+@keyframes scroll-row-1 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scroll-row-2 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(50%);
+  }
+}
+
+.animate-scroll-row-1 {
+  display: flex;
+  animation: scroll-row-1 15s linear infinite; 
+  white-space: nowrap;
+}
+
+.animate-scroll-row-2 {
+  display: flex;
+  animation: scroll-row-2 15s linear infinite; 
+  white-space: nowrap;
+}
 }

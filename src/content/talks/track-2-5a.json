@@ -1,0 +1,11 @@
+{
+  "title": "Modular Monolith with Angular & Nx: Returning to the Basics",
+  "description": "In a world obsessed with microservices, is there still a place for monolithic architectures? Absolutely! In Modular Monolith with Angular & Nx: Returning to the Basics, I will show how to build scalable and flexible applications using a modular monolith. With Angular and Nx, this approach simplifies development and improves performance, helping teams avoid the complexity of microservices while still getting the benefits of modularity.",
+  "startDate": "2024-11-30 14:00:00",
+  "endDate": "2024-11-30 14:50:00",
+  "speaker": "joan-serna-leiton",
+  "type": "talk",
+  "track": [
+    "web"
+  ]
+}

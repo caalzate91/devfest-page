@@ -1,0 +1,11 @@
+{
+  "title": "Desarrolla un Clasificador de Imágenes con Flutter y Generative AI ",
+  "description": "Quieres tomarle una foto a algo y saber qué objeto es? o mejor aún, quieres tomarle una foto a una planta que no conoces y saber sus detalles? En este taller, con pocas líneas de código y la ayuda del paquete de IA generativa de Google para Flutter, lo haremos posible de la forma más simple.",
+  "startDate": "2024-11-30 12:00:00",
+  "endDate": "2024-11-30 12:50:00",
+  "speaker": "carlos-daniel-munoz",
+  "type": "talk",
+  "track": [
+    "web"
+  ]
+}

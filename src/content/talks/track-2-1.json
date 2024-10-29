@@ -1,9 +1,11 @@
 {
-  "title": "Aprendamos machine learning con herramientas de Google",
-  "description": "Google BigQuery ML destaca por permitir la creación y ejecución de modelos de ML directamente en BigQuery, facilitando la tarea a quienes no son expertos en programación. Por otro lado, las APIs de Google proporcionan capacidades de ML pre-entrenadas que impulsan una rápida implementación en diversos proyectos. Exploraremos también cómo AutoML facilita la creación de modelos de ML sin requerir experiencia técnica previa, y cómo el entrenamiento personalizado con herramientas de Google permite una mayor flexibilidad y adaptación según las necesidades del proyecto. Esta charla brindará una visión práctica y teórica, ideal tanto para novatos como para aquellos con conocimientos previos en ML, demostrando cómo las herramientas de Google pueden ser un gran aliado en su camino hacia el dominio del Machine Learning.",
-  "startDate": "2023-12-02 09:15:00",
-  "endDate": "2023-12-02 10:00:00",
-  "speaker": "maris-botero",
+  "title": "Transformando el Futuro del Desarrollo: El Poder del Low-Code",
+  "description": "Imagina un mundo donde cualquier persona pueda convertir sus ideas en realidad, sin la necesidad de ser un experto en programación. En esta charla, te mostraré cómo el low-code está haciendo precisamente eso: empoderando a individuos de diversas habilidades para que se conviertan en innovadores. Desde startups hasta grandes empresas, estas herramientas están cambiando la forma en que creamos y colaboramos. Acompáñame en este viaje hacia el futuro del desarrollo, donde el potencial de cada persona puede brillar y donde la tecnología está al alcance de todos. ¡Ven y descubre cómo tú también puedes ser parte de esta transformación!",
+  "startDate": "2024-11-30 09:15:00",
+  "endDate": "2024-11-30 10:00:00",
+  "speaker": "nathalia-ospina",
   "type": "talk",
-  "track": ["cloud"]
-  }
+  "track": [
+    "web"
+  ]
+}
