@@ -24,7 +24,14 @@ const sponsors = talk.data?.sponsors ? await getEntries(talk.data.sponsors) : nu
 		<h4 class="font-bold text-lg m-0">{talk.data.title}</h4>
 
 		<div class="text-gray-500 font-mono text-sm">
-			{sponsors?.map((sponsor) => <span>{sponsor.data.name}</span>)}
+			{
+				sponsors?.map((sponsor) => (
+					<div class="flex flex-row content-center align-middle gap-5">
+						<span class="align-middle content-center">{sponsor.data.name}</span>
+						<img src={`/assets/images/sponsors/${sponsor.data.image}`} alt="" class="w-16" />
+					</div>
+				))
+			}
 		</div>
 	</div>
 </AgendaItem>
