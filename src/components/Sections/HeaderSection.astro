@@ -1,52 +1,28 @@
 ---
 import { Image } from 'astro:assets'
 
-import DevFestLogoImage from '../../assets/images/devfest-cali-2023.svg'
-import BarranqueroImage from '../../assets/images/barranquero.svg'
 import GeneralWebImage from '../../assets/images/GeneralWebDevfest.png'
 import Counter from '../Counter'
 ---
 
-<header class="">
+<header>
 	<div class="relative w-full h-full">
 		<Image src={GeneralWebImage} alt="GeneralWeb DevFest Cali 2024" />
 	</div>
+</header>
 
-	<div class="bg-black w-full flex flex-row justify-center items-center md:gap-4">
-		<span class="font-regular hidden md:block text-white">Empieza en...</span>
-		<div class="flex flex-1 md:flex-none flex-row justify-center bg-green-500">
-			<Counter targetDate="30/11/2024" client:load />
-			<div>
-				<a
-					href="https://peewah.co/events/devfest-cali-2024"
-					aria-label="Get Tickets"
-					target="_blank"
-					class="text-sm h-16 grow flex flex-col justify-center items-center px-2 md:px-8 bg-df-lime-400 hover:bg-df-lime-500 transition-all duration-300 uppercase font-bold"
-					>Conseguir Ticket</a
-				>
-			</div>
+<div class="bg-black w-full flex flex-row justify-center items-center md:gap-4 sticky top-0 z-20">
+	<span class="font-regular hidden md:block text-white">Empieza en...</span>
+	<div class="flex flex-1 md:flex-none flex-row justify-center">
+		<Counter targetDate="30/11/2024" client:load />
+		<div>
+			<a
+				href="https://peewah.co/events/devfest-cali-2024"
+				aria-label="Get Tickets"
+				target="_blank"
+				class="text-sm h-16 grow flex flex-col justify-center items-center px-2 md:px-8 bg-df-lime-400 hover:bg-df-lime-500 transition-all duration-300 uppercase font-bold"
+				>Conseguir Ticket</a
+			>
 		</div>
 	</div>
-
-	<!-- <div class="hero relative flex flex-col justify-center items-center py-12 md:py-12 h-auto md:h-[calc(100vh-128px)]">
-		<div
-			class="hero-image flex flex-col justify-center items-center md:h-[960px] md:w-[1280px] animate__animated animate__jackInTheBox animate__fast"
-		>
-			<div class="relative w-full h-full">
-				<Image
-					class="relative md:absolute md:left-[45%] md:top-[35%] w-[200px] md:w-[190px] xl:w-[200px] animate__animated animate__bounceInUp"
-					src={DevFestLogoImage}
-					alt="DevFest Cali 2023"
-				/>
-				<Image
-					class="hidden md:block absolute left-[29%] top-[32%] w-[185px] md:w-[185px] animate__animated animate__bounceInLeft animate__delay-2s"
-					src={BarranqueroImage}
-					alt="DevFest Cali 2023"
-				/>
-			</div>
-		</div>
-	</div> -->
-	<!-- <div
-		class="flex flex-col md:flex-row items-center justify-center gap-4 bg-black text-white py-8 px-4 text-center md:text-left"
-	> -->
-</header>
+</div>

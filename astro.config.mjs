@@ -5,6 +5,11 @@ import react from "@astrojs/react";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://devfestcali2023.com/",
+  site: "https://devfest.gdgcali.dev/",
   integrations: [tailwind(), react()],
+  build:{
+    rollupOptions:{
+      external:[]
+    }
+  }
 });
