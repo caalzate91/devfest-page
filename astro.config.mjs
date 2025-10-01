@@ -5,7 +5,8 @@ import react from "@astrojs/react";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://devfest.gdgcali.dev/",
+  site: "https://caalzate91.github.io",
+  base: "/devfest-page/",
   integrations: [tailwind(), react()],
   build:{
     rollupOptions:{
