@@ -1,7 +1,7 @@
 {
-  "name": "EPAM",
-  "image": "epam.png",
-  "type": "company",
-  "url": "https://www.epam.com/",
-  "category": "gold"
+	"name": "EPAM",
+	"image": "epam.png",
+	"type": "company",
+	"url": "https://www.epam.com/",
+	"category": "gold"
 }

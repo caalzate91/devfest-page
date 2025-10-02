@@ -6,16 +6,16 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://devfest.gdgcali.dev/",
-  integrations: [ react()],
+	site: "https://devfest.gdgcali.dev/",
+	integrations: [react()],
 
-  build:{
-    rollupOptions:{
-      external:[]
-    }
-  },
+	build: {
+		rollupOptions: {
+			external: [],
+		},
+	},
 
-  vite: {
-    plugins: [tailwindcss()]
-  }
+	vite: {
+		plugins: [tailwindcss()],
+	},
 });

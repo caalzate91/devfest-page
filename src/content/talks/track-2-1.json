@@ -1,11 +1,9 @@
 {
-  "title": "Transformando el Futuro del Desarrollo: El Poder del Low-Code",
-  "description": "Imagina un mundo donde cualquier persona pueda convertir sus ideas en realidad, sin la necesidad de ser un experto en programación. En esta charla, te mostraré cómo el low-code está haciendo precisamente eso: empoderando a individuos de diversas habilidades para que se conviertan en innovadores. Desde startups hasta grandes empresas, estas herramientas están cambiando la forma en que creamos y colaboramos. Acompáñame en este viaje hacia el futuro del desarrollo, donde el potencial de cada persona puede brillar y donde la tecnología está al alcance de todos. ¡Ven y descubre cómo tú también puedes ser parte de esta transformación!",
-  "startDate": "2024-11-30 09:15:00",
-  "endDate": "2024-11-30 10:00:00",
-  "speaker": "nathalia-ospina",
-  "type": "talk",
-  "track": [
-    "web"
-  ]
+	"title": "Transformando el Futuro del Desarrollo: El Poder del Low-Code",
+	"description": "Imagina un mundo donde cualquier persona pueda convertir sus ideas en realidad, sin la necesidad de ser un experto en programación. En esta charla, te mostraré cómo el low-code está haciendo precisamente eso: empoderando a individuos de diversas habilidades para que se conviertan en innovadores. Desde startups hasta grandes empresas, estas herramientas están cambiando la forma en que creamos y colaboramos. Acompáñame en este viaje hacia el futuro del desarrollo, donde el potencial de cada persona puede brillar y donde la tecnología está al alcance de todos. ¡Ven y descubre cómo tú también puedes ser parte de esta transformación!",
+	"startDate": "2024-11-30 09:15:00",
+	"endDate": "2024-11-30 10:00:00",
+	"speaker": "nathalia-ospina",
+	"type": "talk",
+	"track": ["web"]
 }

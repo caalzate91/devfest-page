@@ -1,11 +1,9 @@
 {
-  "title": "Potencia tus Aplicaciones No-Code con la magia de Google AppSheet",
-  "description": "¡Desbloquea el poder de la IA para revolucionar tus flujos de trabajo! En esta sesión, exploraremos Google AppSheet y su integración con IA para automatizar procesos de datos sin esfuerzo. Sin código, pero con infinitas posibilidades. ¡Descubre cómo esta herramienta puede acelerar tu productividad!",
-  "startDate": "2024-11-30 14:00:00",
-  "endDate": "2024-11-30 14:50:00",
-  "speaker": "sary-libreros",
-  "type": "talk",
-  "track": [
-    "cloud"
-  ]
+	"title": "Potencia tus Aplicaciones No-Code con la magia de Google AppSheet",
+	"description": "¡Desbloquea el poder de la IA para revolucionar tus flujos de trabajo! En esta sesión, exploraremos Google AppSheet y su integración con IA para automatizar procesos de datos sin esfuerzo. Sin código, pero con infinitas posibilidades. ¡Descubre cómo esta herramienta puede acelerar tu productividad!",
+	"startDate": "2024-11-30 14:00:00",
+	"endDate": "2024-11-30 14:50:00",
+	"speaker": "sary-libreros",
+	"type": "talk",
+	"track": ["cloud"]
 }

@@ -1,11 +1,11 @@
 ---
-import type { CollectionEntry } from 'astro:content'
-import dayjs from 'dayjs'
+import type { CollectionEntry } from "astro:content";
+import dayjs from "dayjs";
 
 interface Props {
-	talk: CollectionEntry<'talks'>
+	talk: CollectionEntry<"talks">;
 }
-const { talk } = Astro.props
+const { talk } = Astro.props;
 ---
 
 <div class="flex flex-col md:flex-row gap-4 items-stretch border-b py-8 px-4 hover:bg-df-white-bg group">

@@ -1,13 +1,8 @@
 {
-  "title": "Patrocinador",
-  "startDate": "2024-11-30 14:50:00",
-  "endDate": "2024-11-30 15:00:00",
-  "sponsors": [
-    "uao"
-  ],
-  "type": "sponsor",
-  "track": [
-    "web",
-    "cloud"
-  ]
+	"title": "Patrocinador",
+	"startDate": "2024-11-30 14:50:00",
+	"endDate": "2024-11-30 15:00:00",
+	"sponsors": ["uao"],
+	"type": "sponsor",
+	"track": ["web", "cloud"]
 }

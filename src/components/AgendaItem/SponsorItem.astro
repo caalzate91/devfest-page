@@ -1,16 +1,16 @@
 ---
-import { type CollectionEntry, getCollection } from 'astro:content'
-import AgendaItem from './AgendaItem.astro'
+import { type CollectionEntry, getCollection } from "astro:content";
+import AgendaItem from "./AgendaItem.astro";
 
 interface Props {
-  talk: CollectionEntry<'talks'>
+	talk: CollectionEntry<"talks">;
 }
-const { talk } = Astro.props
+const { talk } = Astro.props;
 
-const allSponsors = await getCollection('sponsors')
+const allSponsors = await getCollection("sponsors");
 const sponsors = talk.data?.sponsors
-  ? allSponsors.filter((s) => talk.data.sponsors?.includes(s.id))
-  : null
+	? allSponsors.filter((s) => talk.data.sponsors?.includes(s.id))
+	: null;
 ---
 
 <AgendaItem talk={talk}>

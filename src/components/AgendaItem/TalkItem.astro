@@ -1,18 +1,19 @@
 ---
-import { getCollection, type CollectionEntry } from 'astro:content'
-import AgendaItem from './AgendaItem.astro'
-import SpeakerCard from '../Common/SpeakerCard.astro'
-import dayjs from 'dayjs'
+// biome-ignore assist/source/organizeImports: <explanation>
+import { getCollection, type CollectionEntry } from "astro:content";
+import AgendaItem from "./AgendaItem.astro";
+import SpeakerCard from "../Common/SpeakerCard.astro";
+import dayjs from "dayjs";
 
 interface Props {
-  talk: CollectionEntry<'talks'>
+	talk: CollectionEntry<"talks">;
 }
-const { talk } = Astro.props
+const { talk } = Astro.props;
 
-const speakers = await getCollection('speakers')
+const speakers = await getCollection("speakers");
 const speaker = talk.data?.speaker
-  ? speakers.find((s) => s.id === talk.data.speaker)
-  : null
+	? speakers.find((s) => s.id === talk.data.speaker)
+	: null;
 ---
 
 <!-- <AgendaItem talk={talk}> --><!-- <div class="flex-1 cursor-pointer" id={talk.id}>
