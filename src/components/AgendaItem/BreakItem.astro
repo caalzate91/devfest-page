@@ -3,14 +3,14 @@ import { type CollectionEntry, getCollection } from "astro:content";
 import AgendaItem from "./AgendaItem.astro";
 
 interface Props {
-	talk: CollectionEntry<"talks">;
+  talk: CollectionEntry<"talks">;
 }
 const { talk } = Astro.props;
 
 const allSponsors = await getCollection("sponsors");
 const sponsors = talk.data?.sponsors
-	? allSponsors.filter((s) => talk.data.sponsors?.includes(s.id))
-	: null;
+  ? allSponsors.filter((s) => talk.data.sponsors?.includes(s.id))
+  : null;
 ---
 
 <AgendaItem talk={talk}>
@@ -28,7 +28,9 @@ const sponsors = talk.data?.sponsors
             <div class="w-20 flex-shrink-0">
               <img
                 class="w-full max-w-full object-contain"
-                src={`/assets/images/sponsors/${sponsor.data.image}`}
+                src={`${import.meta.env.BASE_URL}assets/images/sponsors/${
+                  sponsor.data.image
+                }`}
                 alt={sponsor.data.name}
               />
             </div>

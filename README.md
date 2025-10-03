@@ -2,6 +2,12 @@
 
 Landing page for Devfest Cali 2023, created with [Astro](https://docs.astro.build).
 
+## 🚀 Deployment
+
+This site is configured to deploy automatically to GitHub Pages. See [GITHUB_PAGES.md](./GITHUB_PAGES.md) for details.
+
+**Live Site**: https://caalzate91.github.io/devfest-page/
+
 ## 🧞 Commands
 
 All commands are run from the root of the project, from a terminal:
