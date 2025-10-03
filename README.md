@@ -2,6 +2,10 @@
 
 Landing page for Devfest Cali 2023, created with [Astro](https://docs.astro.build).
 
+## 🤝 How to Contribute
+
+See [HOW_TO_CONTRIBUTE.md](./HOW_TO_CONTRIBUTE.md) for guidelines on contributing to this project.
+
 ## 🚀 Deployment
 
 This site is configured to deploy automatically to GitHub Pages. See [GITHUB_PAGES.md](./GITHUB_PAGES.md) for details.
