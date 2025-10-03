@@ -1,8 +1,8 @@
 {
-	"title": "Registro",
-	"description": "",
-	"startDate": "2024-11-30 08:00:00",
-	"endDate": "2024-11-30 09:00:00",
-	"type": "sponsor",
-	"track": ["web", "cloud"]
+  "title": "Registro",
+  "description": "",
+  "startDate": "2024-11-30 08:00:00",
+  "endDate": "2024-11-30 09:00:00",
+  "type": "sponsor",
+  "track": ["web", "cloud"]
 }

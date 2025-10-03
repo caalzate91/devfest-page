@@ -5,15 +5,19 @@ Este proyecto está configurado para desplegarse automáticamente en GitHub Page
 ## Configuración Realizada
 
 ### 1. Configuración de Astro (`astro.config.mjs`)
+
 - **site**: `https://caalzate91.github.io` - El dominio base de GitHub Pages
 - **base**: `/devfest-page/` - El nombre del repositorio como ruta base
 
 ### 2. Workflow de GitHub Actions (`.github/workflows/deploy.yml`)
+
 El workflow se ejecuta automáticamente cuando:
+
 - Se hace push a la rama `main`
 - Se activa manualmente desde GitHub Actions
 
 ### 3. Rutas de Assets
+
 Todas las referencias a assets públicos ahora usan `import.meta.env.BASE_URL` para asegurar que funcionen correctamente con el path base.
 
 ## Activar GitHub Pages

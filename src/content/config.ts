@@ -33,7 +33,7 @@ const speakersCollection = defineCollection({
 });
 
 const talksCollection = defineCollection({
-  schema: ({ image }) =>
+  schema: ({}) =>
     z.object({
       title: z.string(),
       description: z.string().optional(),

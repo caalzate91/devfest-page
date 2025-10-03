@@ -1,9 +1,9 @@
 {
-	"title": "Agentic Workflow con modelos Gemma vs Zero-shot inference",
-	"description": "Explorar las capacidades de workflows de agentes como ReAct o Chain-of-thought para obtener mejores resultados usando modelos mas pequeños lo que impacta en costos y capacidad de computo. Vamos a adentrarnos en el mundo de la automatizaciones con Inteligencia Artificial.",
-	"startDate": "2024-11-30 10:00:00",
-	"endDate": "2024-11-30 10:50:00",
-	"speaker": "jorge-sierra",
-	"type": "talk",
-	"track": ["cloud"]
+  "title": "Agentic Workflow con modelos Gemma vs Zero-shot inference",
+  "description": "Explorar las capacidades de workflows de agentes como ReAct o Chain-of-thought para obtener mejores resultados usando modelos mas pequeños lo que impacta en costos y capacidad de computo. Vamos a adentrarnos en el mundo de la automatizaciones con Inteligencia Artificial.",
+  "startDate": "2024-11-30 10:00:00",
+  "endDate": "2024-11-30 10:50:00",
+  "speaker": "jorge-sierra",
+  "type": "talk",
+  "track": ["cloud"]
 }
