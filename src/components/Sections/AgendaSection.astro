@@ -1,29 +1,36 @@
 ---
-import type { CollectionEntry } from 'astro:content'
+import type { CollectionEntry } from "astro:content";
 
-import TalkItem from '../AgendaItem/TalkItem.astro'
-import SponsorItem from '../AgendaItem/SponsorItem.astro'
-import BreakItem from '../AgendaItem/BreakItem.astro'
-import Modal from '../Common/Modal.astro'
-import ModalTalwind from '../Common/ModalTalwind.astro'
-import SpeakerCard from '../Common/SpeakerCard.astro'
-import { Debug } from 'astro:components'
+import TalkItem from "../AgendaItem/TalkItem.astro";
+import SponsorItem from "../AgendaItem/SponsorItem.astro";
+import BreakItem from "../AgendaItem/BreakItem.astro";
+import Modal from "../Common/Modal.astro";
+import ModalTalwind from "../Common/ModalTalwind.astro";
+import SpeakerCard from "../Common/SpeakerCard.astro";
+import { Debug } from "astro:components";
 
 interface Props {
-	talks: CollectionEntry<'talks'>[]
+	talks: CollectionEntry<"talks">[];
 }
 
-const { talks } = Astro.props
+const { talks } = Astro.props;
 
-const sortByDate = (a: CollectionEntry<'talks'>, b: CollectionEntry<'talks'>) => {
-	const aDate = new Date(a.data.startDate)
-	const bDate = new Date(b.data.startDate)
+const sortByDate = (
+	a: CollectionEntry<"talks">,
+	b: CollectionEntry<"talks">,
+) => {
+	const aDate = new Date(a.data.startDate);
+	const bDate = new Date(b.data.startDate);
 
-	return aDate.getTime() - bDate.getTime()
-}
+	return aDate.getTime() - bDate.getTime();
+};
 
-const trackWeb = talks.filter((talk) => talk.data.track.find((t: any) => t === 'web')).sort(sortByDate)
-const trackCloud = talks.filter((talk) => talk.data.track.find((t: any) => t === 'cloud')).sort(sortByDate)
+const trackWeb = talks
+	.filter((talk) => talk.data.track.find((t: any) => t === "web"))
+	.sort(sortByDate);
+const trackCloud = talks
+	.filter((talk) => talk.data.track.find((t: any) => t === "cloud"))
+	.sort(sortByDate);
 ---
 
 <section class="py-16 flex flex-col items-center bg-white px-4" id="agenda">

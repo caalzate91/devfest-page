@@ -1,106 +1,103 @@
-@import 'animate.css';
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "animate.css";
+@import "tailwindcss";
 
 :root {
-  --animate-delay: 0.2s;
+	--animate-delay: 0.2s;
 }
 
 @layer base {
-* {
-  box-sizing: border-box;
-  }
-  body {
-    font-family: "Nunito Sans", "Merriweather Sans", sans-serif;
-    font-size: 16px;
-  }
+	* {
+		box-sizing: border-box;
+	}
+	body {
+		font-family: "Nunito Sans", "Merriweather Sans", sans-serif;
+		font-size: 16px;
+	}
 
-  .hero {
-    z-index: 1;
-    @media (min-width: 768px) {
-      background-image: url('/assets/images/bg.svg');
-    }
-    @media (max-width: 768px) {
-      background: #BDF3FF;
-    }
-  }
+	.hero {
+		z-index: 1;
+		@media (min-width: 768px) {
+			background-image: url("/assets/images/bg.svg");
+		}
+		@media (max-width: 768px) {
+			background: #bdf3ff;
+		}
+	}
 
-  .hero-image {
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    z-index: 0;
-    @media (min-width: 768px) {
-      background-image: url('/assets/images/devfest-2023.svg');
-    }
-  }
+	.hero-image {
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		z-index: 0;
+		@media (min-width: 768px) {
+			background-image: url("/assets/images/devfest-2023.svg");
+		}
+	}
 
-  .bg-hero-mobile {
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: bottom 0px right 0px;
-    width: 135px;
-    height: 90px;
-    z-index: -1;
-    @apply absolute bottom-0 right-0;
-    @media (max-width: 768px) {
-      background-image: url('/assets/images/bg-mobile.svg');
-    }
-  }
+	.bg-hero-mobile {
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: bottom 0px right 0px;
+		width: 135px;
+		height: 90px;
+		z-index: -1;
+		@apply absolute bottom-0 right-0;
+		@media (max-width: 768px) {
+			background-image: url("/assets/images/bg-mobile.svg");
+		}
+	}
 
-  .track-web {
-    background-image: url('/assets/images/web.svg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-  }
+	.track-web {
+		background-image: url("/assets/images/web.svg");
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+	}
 
-  .track-cloud {
-    background-image: url('/assets/images/cloud.svg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-  }
+	.track-cloud {
+		background-image: url("/assets/images/cloud.svg");
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+	}
 
-.speaker-image {
-  width: 180px; 
-  height: 180px; 
-  border-radius: 50%;
-  object-fit: cover; 
-  border: 2px solid black;
-  display: block; 
-}
+	.speaker-image {
+		width: 180px;
+		height: 180px;
+		border-radius: 50%;
+		object-fit: cover;
+		border: 2px solid black;
+		display: block;
+	}
 
-/* Animación de las filas */
-@keyframes scroll-row-1 {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
+	/* Animación de las filas */
+	@keyframes scroll-row-1 {
+		0% {
+			transform: translateX(0);
+		}
+		100% {
+			transform: translateX(-50%);
+		}
+	}
 
-@keyframes scroll-row-2 {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(50%);
-  }
-}
+	@keyframes scroll-row-2 {
+		0% {
+			transform: translateX(0);
+		}
+		100% {
+			transform: translateX(50%);
+		}
+	}
 
-.animate-scroll-row-1 {
-  display: flex;
-  animation: scroll-row-1 15s linear infinite; 
-  white-space: nowrap;
-}
+	.animate-scroll-row-1 {
+		display: flex;
+		animation: scroll-row-1 15s linear infinite;
+		white-space: nowrap;
+	}
 
-.animate-scroll-row-2 {
-  display: flex;
-  animation: scroll-row-2 15s linear infinite; 
-  white-space: nowrap;
-}
+	.animate-scroll-row-2 {
+		display: flex;
+		animation: scroll-row-2 15s linear infinite;
+		white-space: nowrap;
+	}
 }

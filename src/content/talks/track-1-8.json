@@ -1,11 +1,9 @@
 {
-  "title": "Building Smart Apps with Your Data: A Firebase Genkit RAG Deep Dive",
-  "description": "Retrieval-Augmented Generation (RAG) is revolutionizing how we build AI applications. It allows us to combine the power of large language models with the precision of our own data. In this talk, we'll explore how to leverage Firebase Genkit to create powerful RAG-driven applications.",
-  "startDate": "2024-11-30 15:00:00",
-  "endDate": "2024-11-30 15:50:00",
-  "speaker": "juan-gomez",
-  "type": "talk",
-  "track": [
-    "cloud"
-  ]
+	"title": "Building Smart Apps with Your Data: A Firebase Genkit RAG Deep Dive",
+	"description": "Retrieval-Augmented Generation (RAG) is revolutionizing how we build AI applications. It allows us to combine the power of large language models with the precision of our own data. In this talk, we'll explore how to leverage Firebase Genkit to create powerful RAG-driven applications.",
+	"startDate": "2024-11-30 15:00:00",
+	"endDate": "2024-11-30 15:50:00",
+	"speaker": "juan-gomez",
+	"type": "talk",
+	"track": ["cloud"]
 }

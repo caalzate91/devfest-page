@@ -1,44 +1,60 @@
 ---
-import { getCollection } from 'astro:content'
+import { getCollection } from "astro:content";
 
-import Layout from '../layouts/Layout.astro'
+import Layout from "../layouts/Layout.astro";
 
-import DevFestIntroSection from '../components/Sections/DevFestIntroSection.astro'
-import HeaderSection from '../components/Sections/HeaderSection.astro'
-import OrganizersSection from '../components/Sections/OrganizersSection.astro'
-import SpeakersSection from '../components/Sections/SpeakersSection.astro'
-import SponsorsSection from '../components/Sections/SponsorsSection.astro'
-import LocationSection from '../components/Sections/LocationSection.astro'
-import CallToActionCard from '../components/Sections/CallToActionCard.astro'
-import AgendaSection from '../components/Sections/AgendaSection.astro'
+import DevFestIntroSection from "../components/Sections/DevFestIntroSection.astro";
+import OrganizersSection from "../components/Sections/OrganizersSection.astro";
+import SpeakersSection from "../components/Sections/SpeakersSection.astro";
+import SponsorsSection from "../components/Sections/SponsorsSection.astro";
+import AgendaSection from "../components/Sections/AgendaSection.astro";
 
-const organizers = await getCollection('organizers')
-const communitySponsors = await getCollection('sponsors', ({ data }) => {
-	return data.type === 'community'
-})
-const companySponsors = await getCollection('sponsors', ({ data }) => {
-	return data.type === 'company'
-})
-const speakers = await getCollection('speakers', ({ data }) => {
-	return !data.hidden
-})
-const talks = await getCollection('talks')
+import Header from "@components/Sections/Header.astro";
+import About from "@components/Sections/About.astro";
+import Agenda from "@components/Sections/Agenda.astro";
+import Sponsors from "@components/Sections/Sponsors.astro";
+import Comunities from "@components/Sections/Comunities.astro";
+import Organizers from "@components/Sections/Organizers.astro";
+import Footer from "@components/Sections/Footer.astro";
+
+const organizers = await getCollection("organizers");
+const communitySponsors = await getCollection("sponsors", ({ data }) => {
+	return data.type === "community";
+});
+const companySponsors = await getCollection("sponsors", ({ data }) => {
+	return data.type === "company";
+});
+const speakers = await getCollection("speakers", ({ data }) => {
+	return !data.hidden;
+});
+const talks = await getCollection("talks");
 ---
 
 <Layout title="DevFest Cali 2024">
-	<HeaderSection />
+  <main class="flex flex-col w-full overflow-hidden">
+    <!-- ANTIGUO LAYOUT (A ELIMINAR) -->
+    <DevFestIntroSection />
+    <SpeakersSection speakers={speakers} />
+    <AgendaSection talks={talks} />
+    <SponsorsSection
+      companies={companySponsors}
+      communities={communitySponsors}
+    />
+    <OrganizersSection organizers={organizers} />
 
-	<main class="flex flex-col w-full overflow-hidden">
-		<DevFestIntroSection />
-		<SpeakersSection speakers={speakers} />
-		<AgendaSection talks={talks} />
-		<SponsorsSection companies={companySponsors} communities={communitySponsors} />
-		<OrganizersSection organizers={organizers} />
-		<!-- <CallToActionCard /> -->
-	</main>
-
-	<footer class="bg-df-esmerald-900 text-white py-12 flex flex-col justify-center items-center">
-		<span>DevFest Cali 2024 - GDG Cali</span>
-		<span class="text-sm">Hecho con el ❤️</span>
-	</footer>
+    <!-- NUEVAS SECCIONES DATA DEV FEST 2025 -->
+    <Header/>
+    <About/>
+    <Agenda/>
+    <Sponsors/>
+    <Comunities/>
+    <Organizers/>
+    <Footer/>
+  </main>
+  <footer
+    class="bg-df-esmerald-900 text-white py-12 flex flex-col justify-center items-center"
+  >
+    <span>DevFest Cali 2024 - GDG Cali</span>
+    <span class="text-sm">Hecho con el ❤️</span>
+  </footer>
 </Layout>

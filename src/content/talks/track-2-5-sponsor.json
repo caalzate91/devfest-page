@@ -1,12 +1,8 @@
 {
-  "title": "Patrocinador",
-  "startDate": "2024-11-30 11:50:00",
-  "endDate": "2024-11-30 12:00:00",
-  "sponsors": [
-    "epam"
-  ],
-  "type": "sponsor",
-  "track": [
-    "web"
-  ]
+	"title": "Patrocinador",
+	"startDate": "2024-11-30 11:50:00",
+	"endDate": "2024-11-30 12:00:00",
+	"sponsors": ["epam"],
+	"type": "sponsor",
+	"track": ["web"]
 }
