@@ -1,9 +1,9 @@
 {
-	"name": "Damian Siré",
-	"position": "Google Developer Expert / Ingenious",
-	"bio": "Selected by Google as a developer expert. Speaker at global events and conferences. Organizer of tech events and creator of programming content on YouTube, with over 1.5 million views.\nAngular , Javascript , Databases , Sql , MongoDb , React , Html , Css , NodeJs\nYou can watch my youtube videos: https://www.youtube.com/DamianSireDesarrollo",
-	"image": "damian-sire.png",
-	"url": "https://www.youtube.com/DamianSireDesarrollo",
-	"colorBadge": "red",
-	"country": "uy"
+  "name": "Damian Siré",
+  "position": "Google Developer Expert / Ingenious",
+  "bio": "Selected by Google as a developer expert. Speaker at global events and conferences. Organizer of tech events and creator of programming content on YouTube, with over 1.5 million views.\nAngular , Javascript , Databases , Sql , MongoDb , React , Html , Css , NodeJs\nYou can watch my youtube videos: https://www.youtube.com/DamianSireDesarrollo",
+  "image": "damian-sire.png",
+  "url": "https://www.youtube.com/DamianSireDesarrollo",
+  "colorBadge": "red",
+  "country": "uy"
 }

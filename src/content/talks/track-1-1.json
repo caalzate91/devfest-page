@@ -1,9 +1,9 @@
 {
-	"title": "Diseñando una arquitectura a prueba de balas en GCP",
-	"description": "En esta sesión abordaremos los puntos principales para diseñar una arquitectura sólida en Google Cloud en el año 2024, teniendo en cuenta principios como: Scalability, High availability y Disaster recovery en la nube de Google Cloud, teniendo en cuenta una arquitectura de referencia de la vida real.",
-	"startDate": "2024-11-30 09:15:00",
-	"endDate": "2024-11-30 10:00:00",
-	"speaker": "adriana-moya",
-	"type": "talk",
-	"track": ["cloud"]
+  "title": "Diseñando una arquitectura a prueba de balas en GCP",
+  "description": "En esta sesión abordaremos los puntos principales para diseñar una arquitectura sólida en Google Cloud en el año 2024, teniendo en cuenta principios como: Scalability, High availability y Disaster recovery en la nube de Google Cloud, teniendo en cuenta una arquitectura de referencia de la vida real.",
+  "startDate": "2024-11-30 09:15:00",
+  "endDate": "2024-11-30 10:00:00",
+  "speaker": "adriana-moya",
+  "type": "talk",
+  "track": ["cloud"]
 }

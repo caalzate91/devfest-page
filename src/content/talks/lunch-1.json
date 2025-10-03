@@ -1,8 +1,8 @@
 {
-	"title": "Almuerzo y Networking",
-	"startDate": "2024-11-30 13:00:00",
-	"endDate": "2024-11-30 14:00:00",
-	"sponsors": ["epam", "wizeline", "uao", "google"],
-	"type": "break",
-	"track": ["cloud"]
+  "title": "Almuerzo y Networking",
+  "startDate": "2024-11-30 13:00:00",
+  "endDate": "2024-11-30 14:00:00",
+  "sponsors": ["epam", "wizeline", "uao", "google"],
+  "type": "break",
+  "track": ["cloud"]
 }

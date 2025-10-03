@@ -1,9 +1,9 @@
 {
-	"title": "Cómo tunear un LLM en Google Cloud",
-	"description": "Alguna vez haz sentido que un LLM no te entiende o tienes que explicarle demasiadas cosas para que te de una respuesta? Si te ha ocurrido entonces debes venir y aprender cómo tunear un LLM para tu caso específico. Se pueden tunear modelos para responder de maneras más acertadas en ciertas industrias. Mostrare un ejemplo práctico donde se puede tunear un LLM con información médica para la realización de diagnosticos.",
-	"startDate": "2024-11-30 12:00:00",
-	"endDate": "2024-11-30 12:50:00",
-	"speaker": "angie-zuniga",
-	"type": "talk",
-	"track": ["cloud"]
+  "title": "Cómo tunear un LLM en Google Cloud",
+  "description": "Alguna vez haz sentido que un LLM no te entiende o tienes que explicarle demasiadas cosas para que te de una respuesta? Si te ha ocurrido entonces debes venir y aprender cómo tunear un LLM para tu caso específico. Se pueden tunear modelos para responder de maneras más acertadas en ciertas industrias. Mostrare un ejemplo práctico donde se puede tunear un LLM con información médica para la realización de diagnosticos.",
+  "startDate": "2024-11-30 12:00:00",
+  "endDate": "2024-11-30 12:50:00",
+  "speaker": "angie-zuniga",
+  "type": "talk",
+  "track": ["cloud"]
 }
