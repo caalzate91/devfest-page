@@ -1,18 +1,19 @@
 ---
+import Header from "../components/Common/Header.astro";
 import BaseHead from "../components/Layout/BaseHead.astro";
 interface Props {
-	title: string;
+  title: string;
 }
 
 const { title } = Astro.props;
 ---
 
-<!DOCTYPE html>
 <html lang="es">
   <head>
     <BaseHead title={title} />
   </head>
   <body class="w-full">
+    <Header />
     <slot />
   </body>
 </html>
