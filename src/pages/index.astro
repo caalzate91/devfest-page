@@ -17,7 +17,9 @@ import Organizers from "@components/Sections/Organizers.astro";
 import Footer from "@components/Sections/Footer.astro";
 import Hero from "@components/Sections/Hero.astro";
 
-const organizers = await getCollection("organizers");
+const organizers = await getCollection("organizers", ({ data }) => {
+  return !data.hidden;
+});
 const communitySponsors = await getCollection("sponsors", ({ data }) => {
   return data.type === "community";
 });
@@ -48,7 +50,7 @@ const talks = await getCollection("talks");
     <Agenda />
     <Sponsors />
     <Comunities />
-    <Organizers />
+    <Organizers organizers={organizers} />
     <Footer />
   </main>
 </Layout>
