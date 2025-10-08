@@ -7,6 +7,7 @@ const organizersCollection = defineCollection({
     position: z.string(),
     image: z.string(),
     url: z.string().url().optional(),
+    hidden: z.boolean().optional(),
   }),
 });
 

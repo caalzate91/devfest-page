@@ -1,6 +1,90 @@
 ---
+import type { CollectionEntry } from "astro:content";
 
+interface Props {
+  organizers: CollectionEntry<"organizers">[];
+}
+
+const { organizers } = Astro.props;
 ---
-<section>
-    <h2>Hola, soy una sección de Organizadores</h2>
+
+<section class="footer-section">
+  <div class="footer-bg top">
+    <svg viewBox="0 0 800 120" class="svg" transform="rotate(180, 0, 0)">
+      <path
+        fill="var(--organizers-bg)"
+        d="M 800 60 Q 400 120 0 60 L 0 0 L 800 0 L 800 60 Z"
+      >
+      </path>
+    </svg>
+  </div>
+
+  <div
+    class="footer-bg w-full h-full flex items-center justify-center gap-2 flex-col text-white px-2"
+  >
+    <h3 class="text-2xl font-semibold text-center mb-6">Organizadores</h3>
+    <span class="text-md md:text-lg font-light mb-6 md:mb-12"
+      >Nuestro equipo de logística que trabaja día y noche para llevar a cabo
+      este gran evento.</span
+    >
+    <div class="grid grid-cols-2 md:grid-cols-6 md:w-3/4 gap-2">
+      {
+        organizers.map((org) => (
+          <div class="flex flex-col items-start rounded-lg m-2">
+            <img
+              src={`${import.meta.env.BASE_URL}assets/images/organizers/${
+                org.data.image
+              }`}
+              alt={org.data.name}
+              class="rounded-lg object-cover"
+              loading="lazy"
+            />
+            <div class="w-full py-2 px-2 rounded-b-lg text-start font-light text-sm">
+              <div class="md:text-lg">{org.data.name}</div>
+              <div class="text-xs md:text-sm text-zinc-900">
+                {org.data.position}
+              </div>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+  <div class="footer-bg bottom fixed">
+    <svg viewBox="0 0 800 120" class="svg">
+      <path
+        fill="var(--organizers-bg)"
+        d="M 800 60 Q 400 120 0 60 L 0 0 L 800 0 L 800 60 Z"
+      >
+      </path>
+    </svg>
+  </div>
 </section>
+
+<style>
+  :root {
+    --organizers-bg: #4285f4;
+  }
+
+  .footer-bg {
+    background-color: var(--organizers-bg);
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .footer-section {
+    position: relative;
+    padding-top: 0;
+    margin-top: 0;
+  }
+
+  .footer-section .top {
+    background-color: #fff;
+    top: 1px;
+  }
+
+  .footer-section .bottom {
+    background-color: #003773;
+  }
+</style>
