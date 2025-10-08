@@ -21,10 +21,10 @@ const organizers = await getCollection("organizers", ({ data }) => {
   return !data.hidden;
 });
 const communitySponsors = await getCollection("sponsors", ({ data }) => {
-  return data.type === "community";
+  return !data.hidden && data.type === "community";
 });
 const companySponsors = await getCollection("sponsors", ({ data }) => {
-  return data.type === "company";
+  return !data.hidden && data.type === "company";
 });
 const speakers = await getCollection("speakers", ({ data }) => {
   return !data.hidden;
@@ -48,8 +48,8 @@ const talks = await getCollection("talks");
     <Hero />
     <About />
     <Agenda />
-    <Sponsors />
-    <Comunities />
+    <Sponsors sponsors={companySponsors} />
+    <Comunities communities={communitySponsors} />
     <Organizers organizers={organizers} />
     <Footer />
   </main>
