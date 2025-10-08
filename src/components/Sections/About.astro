@@ -1,6 +1,58 @@
 ---
-
+const base = import.meta.env.BASE_URL;
 ---
-<section>
-    <h2>Hola, soy un ABOUT</h2>
+
+<section class="flex flex-col items-center gap-16 px-2 md:px-36 py-8">
+  {/* Data Day Section */}
+  <div
+    class="flex flex-col-reverse md:flex-row items-center md:items-start justify-between gap-8"
+  >
+    <div class="flex-1 md:flex-none md:w-1/2">
+      <h2 class="text-2xl font-bold mb-2">Conoce el Data Day</h2>
+      <p class="text-gray-500">
+        Dirigido a profesionales, estudiantes y entusiastas del análisis de
+        datos <span role="img" aria-label="brain">📊</span>, ciberseguridad <span
+          role="img"
+          aria-label="lock">🔒</span
+        > y la inteligencia artificial <span role="img" aria-label="robot"
+          >🦾</span
+        >, descubrirás el potencial de emplear los datos en el día a día.
+      </p>
+    </div>
+    <img
+      src={`${base}assets/data-day/datavio1.png`}
+      alt="Data Day Mascot"
+      class="size-32 md:size-48 object-contain"
+      loading="lazy"
+    />
+  </div>
+
+  {/* DevFest Section */}
+  <div
+    class="flex flex-col md:flex-row items-center md:items-start justify-between gap-8"
+  >
+    <div class="flex flex-col items-center md:items-start flex-1">
+      <img
+        src={`${base}assets/gdg/GDGCaliGray.svg`}
+        alt="GDG Cali Logo"
+        class="size-32 md:size-auto object-contain mb-2"
+        loading="lazy"
+      />
+    </div>
+    <div class="flex-1 md:flex-none md:w-1/2">
+      <h2 class="text-2xl font-bold mb-2">Conoce el DevFest</h2>
+      <p class="text-gray-500 mb-2">
+        DevFest Cali 2025 llega con más inspiración, más conocimiento y más
+        comunidad.
+      </p>
+      <p class="text-gray-500">
+        <span role="img" aria-label="brain">🧠</span> Exploraremos tecnologías
+        de vanguardia como Cloud, IA, Desarrollo de aplicaciones y mucho más...
+        de la mano de speakers locales e internacionales <span
+          role="img"
+          aria-label="globe">🌍</span
+        >.
+      </p>
+    </div>
+  </div>
 </section>
