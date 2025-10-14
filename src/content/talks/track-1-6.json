@@ -5,7 +5,5 @@
   "endDate": "2024-11-30 12:50:00",
   "speaker": "angie-zuniga",
   "type": "talk",
-  "track": [
-    "cloud"
-  ]
+  "track": ["cloud"]
 }

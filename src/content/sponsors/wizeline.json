@@ -3,5 +3,6 @@
   "image": "wizeline.png",
   "type": "company",
   "url": "https://www.wizeline.com/es/",
-  "category": "gold"
+  "category": "gold",
+  "hidden": true
 }

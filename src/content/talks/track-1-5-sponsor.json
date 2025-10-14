@@ -2,11 +2,7 @@
   "title": "Patrocinador",
   "startDate": "2024-11-30 11:50:00",
   "endDate": "2024-11-30 12:00:00",
-  "sponsors": [
-    "wizeline"
-  ],
+  "sponsors": ["wizeline"],
   "type": "sponsor",
-  "track": [
-    "cloud"
-  ]
+  "track": ["cloud"]
 }

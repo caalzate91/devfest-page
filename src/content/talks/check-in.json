@@ -4,8 +4,5 @@
   "startDate": "2024-11-30 08:00:00",
   "endDate": "2024-11-30 09:00:00",
   "type": "sponsor",
-  "track": [
-    "web",
-    "cloud"
-  ]
+  "track": ["web", "cloud"]
 }

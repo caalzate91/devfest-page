@@ -1,10 +1,19 @@
-# DevFest Cali 2023
+# Data Dev Fest Cali 2025
 
-Landing page for Devfest Cali 2023, created with [Astro](https://docs.astro.build).
+Landing page for Data Dev Fest Cali 2025, created with [Astro](https://docs.astro.build).
+
+## 🤝 How to Contribute
+
+See [HOW_TO_CONTRIBUTE.md](./HOW_TO_CONTRIBUTE.md) for guidelines on contributing to this project.
 
 ## 🚀 Deployment
 
 This site is configured to deploy automatically to GitHub Pages. See [GITHUB_PAGES.md](./GITHUB_PAGES.md) for details.
+
+## 🎨 Formatter and Linter
+
+For development, we use [Biome](https://biomejs.dev/) , an alternative to Prettier and Eslint with more tools that can be executed with a single command.
+
 
 **Live Site**: https://caalzate91.github.io/devfest-page/
 

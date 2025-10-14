@@ -1,12 +1,12 @@
 ---
-import type { CollectionEntry } from 'astro:content'
+import type { CollectionEntry } from "astro:content";
 
 interface Props {
-	communities: CollectionEntry<'sponsors'>[]
-	companies: CollectionEntry<'sponsors'>[]
+	communities: CollectionEntry<"sponsors">[];
+	companies: CollectionEntry<"sponsors">[];
 }
 
-const { communities, companies } = Astro.props
+const { communities, companies } = Astro.props;
 // const goldCompanies = companies.filter((company) => company.data.category === 'gold')
 // const silverCompanies = companies.filter((company) => company.data.category === 'silver')
 ---

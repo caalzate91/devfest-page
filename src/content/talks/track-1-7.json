@@ -5,7 +5,5 @@
   "endDate": "2024-11-30 14:50:00",
   "speaker": "sary-libreros",
   "type": "talk",
-  "track": [
-    "cloud"
-  ]
+  "track": ["cloud"]
 }

@@ -5,7 +5,5 @@
   "endDate": "2024-11-30 15:50:00",
   "speaker": "juan-gomez",
   "type": "talk",
-  "track": [
-    "cloud"
-  ]
+  "track": ["cloud"]
 }

@@ -1,28 +1,28 @@
-import { z, defineCollection, reference } from "astro:content";
+// biome-ignore assist/source/organizeImports: <explanation>
+import { z, defineCollection } from "astro:content";
 
-const organizers = defineCollection({
-  type: "data",
+const organizersCollection = defineCollection({
   schema: z.object({
     name: z.string(),
     position: z.string(),
     image: z.string(),
     url: z.string().url().optional(),
+    hidden: z.boolean().optional(),
   }),
 });
 
-const sponsors = defineCollection({
-  type: "data",
+const sponsorsCollection = defineCollection({
   schema: z.object({
     name: z.string(),
     image: z.string(),
     url: z.string().url().optional(),
     type: z.string(),
-    category: z.string().optional()
+    category: z.string().optional(),
+    hidden: z.boolean().optional(),
   }),
 });
 
-const speakers = defineCollection({
-  type: "data",
+const speakersCollection = defineCollection({
   schema: z.object({
     name: z.string(),
     position: z.string(),
@@ -34,18 +34,24 @@ const speakers = defineCollection({
   }),
 });
 
-const talks = defineCollection({
-  type: "data",
-  schema: z.object({
-    title: z.string(),
-    description: z.string().optional(),
-    startDate: z.string(),
-    endDate: z.string(),
-    speaker: reference('speakers').optional(),
-    sponsors: z.array(reference('sponsors')).optional(),
-    type: z.enum(["talk", "break", "sponsor"]),
-    track: z.array(z.string()),
-  }),
+const talksCollection = defineCollection({
+  schema: ({}) =>
+    z.object({
+      title: z.string(),
+      description: z.string().optional(),
+      startDate: z.string(),
+      endDate: z.string(),
+      speaker: z.string().optional(), // Reference to speaker slug
+      sponsors: z.array(z.string()).optional(), // Array of sponsor slugs
+      type: z.enum(["talk", "break", "sponsor"]),
+      track: z.array(z.string()),
+    }),
 });
 
-export const collections = { organizers, sponsors, speakers, talks };
+// Export collections
+export const collections = {
+  organizers: organizersCollection,
+  sponsors: sponsorsCollection,
+  speakers: speakersCollection,
+  talks: talksCollection,
+};

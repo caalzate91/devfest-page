@@ -1,10 +1,10 @@
 ---
 interface Props {
-  title: string
-  position: 'up' | 'down' | 'right' | 'left'
+	title: string;
+	position: "up" | "down" | "right" | "left";
 }
 
-const { title, position } = Astro.props
+const { title, position } = Astro.props;
 ---
 
 <span data-tooltip={title} data-flow={position}>

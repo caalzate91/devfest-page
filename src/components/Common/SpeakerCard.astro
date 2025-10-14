@@ -1,35 +1,38 @@
 ---
-import { Image } from 'astro:assets'
-import type { CollectionEntry } from 'astro:content'
+import { Image } from "astro:assets";
+import type { CollectionEntry } from "astro:content";
 
 interface Props {
-	speaker: CollectionEntry<'speakers'>
+  speaker: CollectionEntry<"speakers">;
 }
-const { speaker } = Astro.props
+const { speaker } = Astro.props;
 
-const Flag = import(`../../assets/images/flags/${speaker.data.country}.svg`)
+const Flag = import(`../../../public/assets/flags/${speaker.data.country}.svg`);
+
 // console.log(speaker)
 ---
 
 <div class="flex flex-row gap-3 mt-4 items-center">
-	<div class="relative">
-		<img
-			class="block object-cover rounded-full shrink-0 w-12 h-12"
-			src={`${import.meta.env.BASE_URL}assets/images/speakers/${speaker.data.image}`}
-			alt={speaker.data.name}
-		/>
-		{
-			Flag ? (
-				<Image
-					class="absolute bottom-0 object-cover right-0 w-5 h-5 rounded-full border-2 border-white"
-					src={Flag}
-					alt="Honduras"
-				/>
-			) : null
-		}
-	</div>
-	<div>
-		<p class="text-xl">{speaker.data.name}</p>
-		<p class="text-gray-500 text-sm font-mono">{speaker.data.position}</p>
-	</div>
+  <div class="relative">
+    <img
+      class="block object-cover rounded-full shrink-0 w-12 h-12"
+      src={`${import.meta.env.BASE_URL}assets/images/speakers/${
+        speaker.data.image
+      }`}
+      alt={speaker.data.name}
+    />
+    {
+      Flag ? (
+        <Image
+          class="absolute bottom-0 object-cover right-0 w-5 h-5 rounded-full border-2 border-white"
+          src={Flag}
+          alt="Honduras"
+        />
+      ) : null
+    }
+  </div>
+  <div>
+    <p class="text-xl">{speaker.data.name}</p>
+    <p class="text-gray-500 text-sm font-mono">{speaker.data.position}</p>
+  </div>
 </div>

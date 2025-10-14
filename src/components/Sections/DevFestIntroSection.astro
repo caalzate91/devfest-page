@@ -1,35 +1,41 @@
 ---
-import { Image } from 'astro:assets'
-import MapImage from '../../assets/images/map.png'
+import { Image } from "astro:assets";
+import MapImage from "../../../public/assets/gdg/map.png";
 ---
 
-<section class="bg-white flex flex-col lg:flex-row px-10 lg:px-28 py-12 lg:py-24 gap-5 lg:gap-16 items-center">
-	<div class="w-3/4">
-		<p class="my-5">
-			Ha llegado el <span class="font-bold">DevFest Cali 2024</span>. El DevFest es un evento de aprendizaje y
-			networking que reúne a participantes e interesados en aprender, compartir y crear comunidad sobre tecnologías de
-			desarrollo de software. Es un evento que nace en los GDGs o Google Developers Groups de las diferentes ciudades
-			del mundo. En este evento aprenderás de tecnologías como Android, Web, Firebase, Flutter, GCP, Open Source y
-			muchas más, con expertos en el área. Este gran encuentro tecnológico tendrá lugar el día <span class="font-bold"
-				>30 de Noviembre de 2024</span
-			> en la vibrante ciudad de Cali.
-		</p>
-		<p class="my-5">
-			Esta edición del DevFest contará con varias ponencias, talleres, retos de desarrollo de software y bootcamps o
-			laboratorios de desarrollo con un enfoque particular en herramientas open source y las novedosas tecnologías de
-			Google.
-		</p>
-	</div>
-	<div class="w-full md:w-3/4">
-		<p class="text-center font-semibold text-lg my-4">Ubicación del evento</p>
-		<a
-			href="https://www.google.com/maps/place/Universidad+Aut%C3%B3noma+de+Occidente/@3.3537908,-76.5233384,17z/data=!4m6!3m5!1s0x8e30a1bce83eb4eb:0x374b9a9955d030e8!8m2!3d3.3536526!4d-76.5229863!16s%2Fm%2F0cmcw4z?entry=ttu"
-		>
-			<Image
-				class="w-full animate__animated animate__bounceInUp"
-				src={MapImage}
-				alt="Ubicación de Universidad Autónoma de Occidente"
-			/>
-		</a>
-	</div>
+<section
+  class="bg-white flex flex-col lg:flex-row px-10 lg:px-28 py-12 lg:py-24 gap-5 lg:gap-16 items-center"
+>
+  <div class="w-3/4">
+    <p class="my-5">
+      Ha llegado el <span class="font-bold">DevFest Cali 2024</span>. El DevFest
+      es un evento de aprendizaje y networking que reúne a participantes e
+      interesados en aprender, compartir y crear comunidad sobre tecnologías de
+      desarrollo de software. Es un evento que nace en los GDGs o Google
+      Developers Groups de las diferentes ciudades del mundo. En este evento
+      aprenderás de tecnologías como Android, Web, Firebase, Flutter, GCP, Open
+      Source y muchas más, con expertos en el área. Este gran encuentro
+      tecnológico tendrá lugar el día <span class="font-bold"
+        >30 de Noviembre de 2024</span
+      > en la vibrante ciudad de Cali.
+    </p>
+    <p class="my-5">
+      Esta edición del DevFest contará con varias ponencias, talleres, retos de
+      desarrollo de software y bootcamps o laboratorios de desarrollo con un
+      enfoque particular en herramientas open source y las novedosas tecnologías
+      de Google.
+    </p>
+  </div>
+  <div class="w-full md:w-3/4">
+    <p class="text-center font-semibold text-lg my-4">Ubicación del evento</p>
+    <a
+      href="https://www.google.com/maps/place/Universidad+Aut%C3%B3noma+de+Occidente/@3.3537908,-76.5233384,17z/data=!4m6!3m5!1s0x8e30a1bce83eb4eb:0x374b9a9955d030e8!8m2!3d3.3536526!4d-76.5229863!16s%2Fm%2F0cmcw4z?entry=ttu"
+    >
+      <Image
+        class="w-full animate__animated animate__bounceInUp"
+        src={MapImage}
+        alt="Ubicación de Universidad Autónoma de Occidente"
+      />
+    </a>
+  </div>
 </section>
