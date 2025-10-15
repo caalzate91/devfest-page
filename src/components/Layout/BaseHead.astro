@@ -2,22 +2,23 @@
 import "../../styles/global.css";
 
 export interface Props {
-	title: string;
+  title: string;
 }
 
 const { title } = Astro.props;
 const description =
-	"DevFest Cali, 30 de Noviembre de 2024 - Prepárate para vivir una experiencia única y conectar con la comunidad de tecnología de nuestra región.";
-const socialImage = new URL(
-	"/src/assets/images/SocialMediaPreview2024.jpg",
-	Astro.url,
-);
+  "DataDev Fest Cali, 7 y 8 de Noviembre de 2025 - Prepárate para vivir una experiencia única y conectar con la comunidad de tecnología de nuestra región.";
+const socialImage = new URL("assets/gdg/GDGCaliGray.svg", Astro.url);
 ---
 
 <meta charset="UTF-8" />
 <meta name="description" content={description} />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="icon" type="image/svg+xml" href={`${import.meta.env.BASE_URL}favicon.ico`} />
+<link
+  rel="icon"
+  type="image/svg+xml"
+  href={`${import.meta.env.BASE_URL}favicon.ico`}
+/>
 <meta name="generator" content={Astro.generator} />
 <meta name="google" content="notranslate" />
 <meta name="robots" content="all" />
@@ -43,6 +44,6 @@ const socialImage = new URL(
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link
-	href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,700&family=Roboto:wght@100;400;700&display=swap&family=Roboto+Mono&display=swap"
-	rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,700&family=Roboto:wght@100;400;700&display=swap&family=Roboto+Mono&display=swap"
+  rel="stylesheet"
 />
