@@ -9,8 +9,10 @@ const { sponsors } = Astro.props;
 ---
 
 <section class="flex items-center justify-center flex-col px-2">
-  <h3 class="text-2xl font-bold py-2">Conoce a nuestros sponsors</h3>
-  <p class="text-center">
+  <h3 class="text-2xl font-bold py-2 md:text-5xl md:mb-12">
+    Conoce a nuestros sponsors
+  </h3>
+  <p class="text-center md:text-lg">
     Nuestros patrocinadores contribuyen a hacer posible este acontecimiento
   </p>
   <div class="container flex flex-col items-center space-y-8">
@@ -21,10 +23,10 @@ const { sponsors } = Astro.props;
         sponsors.map((sponsor) => (
           <a
             href={sponsor.data.url}
-            class="block hover:scale-110 transition-transform duration-75 w-40 p-6 bg-gray-50 rounded-2xl"
+            class="block hover:scale-110 transition-transform duration-75 p-6 bg-gray-50 rounded-2xl"
           >
             <img
-              class="w-32 grayscale"
+              class="w-28 md:w-32 grayscale"
               src={`${import.meta.env.BASE_URL}assets/images/sponsors/${
                 sponsor.data.image
               }`}
