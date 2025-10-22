@@ -3,6 +3,7 @@ import BreakItem from "@components/AgendaItem/BreakItem.astro";
 import SponsorItem from "@components/AgendaItem/SponsorItem.astro";
 import TalkItem from "@components/AgendaItem/TalkItem.astro";
 import type { CollectionEntry } from "astro:content";
+import dayjs from "dayjs";
 
 interface Props {
   talks: CollectionEntry<"talks">[];
@@ -20,26 +21,47 @@ const sortByDate = (a: Talk, b: Talk) => {
 };
 
 const DAY = "devfest";
-const tracksNames: Record<string, string> = {
-  track1: "Xepia",
-  track2: "Torreón",
+const tracksData: Record<string, any> = {
+  track1: {
+    name: "Xepia",
+    date: "2025-11-07",
+  },
+  track2: {
+    name: "Torreón",
+    date: "2025-11-08",
+  },
 };
 
+// Build a time slot grid: each row is a time slot, each column is a track
 const trackSchedule = talks
   .find((talk) => talk.id === DAY)
   ?.data.sort(sortByDate);
 
-const tracks = trackSchedule?.reduce((tracks, talk) => {
-  const talkTracks = talk.track || [];
-  talkTracks.forEach((track) => {
-    if (!tracks.has(track)) {
-      tracks.set(track, [talk]);
-    } else {
-      tracks.get(track)?.push(talk);
-    }
-  });
-  return tracks;
-}, new Map<string, Talk[]>());
+// Get all unique start times, sorted
+const allTimes = Array.from(
+  new Set(trackSchedule?.map((talk) => talk.startDate))
+).sort((a, b) => new Date(a).getTime() - new Date(b).getTime());
+
+const trackKeys = Array.from(
+  new Set(
+    trackSchedule?.flatMap((talk) =>
+      Array.isArray(talk.track) ? talk.track.map(String) : []
+    ) ?? []
+  )
+);
+
+// Build a grid: rows = time slots, columns = tracks
+const agendaGrid = allTimes.map((time) => {
+  const row = trackKeys.map((track) =>
+    trackSchedule?.find((talk) => {
+      const talkTracks = Array.isArray(talk.track)
+        ? talk.track.map(String)
+        : [];
+      return talk.startDate === time && talkTracks.includes(track);
+    })
+  );
+  return { time, row };
+});
 ---
 
 <section class="my-8">
@@ -61,38 +83,47 @@ const tracks = trackSchedule?.reduce((tracks, talk) => {
       >Lugar: Universidad Autónoma de Occidente Cali.</span
     >
 
-    <!-- <p>TBD</p> -->
     <div
-      class={`grid grid-cols-1 md:grid-cols-${
-        tracks?.size ?? 2
-      } grid-rows-1 gap-0`}
-      style="align-items: stretch;"
+      class="agenda-grid"
+      style={`display: grid; grid-template-columns: repeat(${trackKeys.length}, 1fr); align-items: stretch;`}
     >
+      {/* Header row */}
       {
-        tracks &&
-          Array.from(tracks.entries()).map(([trackName, trackTalks]) => (
-            <div class="flex flex-col h-full">
-              <div class="px-4 py-8 bg-[#ffe7a5] flex flex-col items-center justify-center mb-4">
-                <h3 class="text-2xl font-bold text-center m-0 text-black">
-                  {tracksNames[trackName] || trackName}
-                </h3>
-              </div>
-              <div class="flex-1 flex flex-col">
-                {trackTalks?.map((talk) => {
-                  switch (talk.type) {
-                    case "talk":
-                      return <TalkItem talk={talk} />;
-                    case "sponsor":
-                      return <SponsorItem talk={talk} />;
-                    case "break":
-                      return <BreakItem talk={talk} />;
-                    default:
-                      return <div />;
-                  }
-                })}
-              </div>
+        trackKeys.map((track) => (
+          <div class="px-4 py-8 flex flex-col items-center justify-center">
+            <h3 class="text-3xl font-bold text-center m-0 text-black">
+              {tracksData[track].name}
+            </h3>
+            <h4 class="text-xl font-normal text-center text-black">
+              {dayjs(tracksData[track].date).format("MMMM D")}
+            </h4>
+          </div>
+        ))
+      }
+      {/* Agenda rows */}
+      {
+        agendaGrid.map(({ time, row }) =>
+          row.map((talk, idx) => (
+            <div class="agenda-cell min-h-[60px] flex flex-col justify-stretch">
+              {talk && (
+                <>
+                  {(() => {
+                    switch (talk.type) {
+                      case "talk":
+                        return <TalkItem talk={talk} />;
+                      case "sponsor":
+                        return <SponsorItem talk={talk} />;
+                      case "break":
+                        return <BreakItem talk={talk} />;
+                      default:
+                        return <div />;
+                    }
+                  })()}
+                </>
+              )}
             </div>
           ))
+        )
       }
     </div>
   </div>
@@ -136,5 +167,14 @@ const tracks = trackSchedule?.reduce((tracks, talk) => {
 
   .footer-section .bottom {
     /* background-color: #003773; */
+  }
+  .agenda-grid {
+    background-color: var(--agenda-bg);
+    width: 100%;
+    border-radius: 0 0 8px 8px;
+    overflow: hidden;
+  }
+  .agenda-cell {
+    box-sizing: border-box;
   }
 </style>

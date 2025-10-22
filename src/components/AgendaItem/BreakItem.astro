@@ -15,15 +15,17 @@ const sponsors = talk.sponsors
   : null;
 ---
 
-<AgendaItem talk={talk}>
-  <div class="flex-1">
-    <div
-      class="flex-1 bg-df-white-bg rounded-md p-4 group-hover:bg-black/5 max-w-fit overflow-hidden"
-    >
-      <h4 class="font-bold text-lg m-0 text-gray-500 mb-2">
+<div class="bg-[#ffe7a5]">
+  <AgendaItem talk={talk}>
+    <div class="flex-1 bg-df-white-bg rounded-md max-w-fit overflow-hidden">
+      <h4 class="font-normal text-lg my-4 text-black">
         {talk.title}
       </h4>
-      <span class="text-md text-gray-400">Sponsors:</span>
+      {
+        sponsors && sponsors.length > 0 && (
+          <span class="text-md text-gray-400">Sponsors:</span>
+        )
+      }
       <div class="flex flex-row flex-wrap gap-4 items-center max-w-full">
         {
           sponsors?.map((sponsor) => (
@@ -40,5 +42,5 @@ const sponsors = talk.sponsors
         }
       </div>
     </div>
-  </div>
-</AgendaItem>
+  </AgendaItem>
+</div>
