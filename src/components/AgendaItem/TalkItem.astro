@@ -5,15 +5,19 @@ import AgendaItem from "./AgendaItem.astro";
 import SpeakerCard from "../Common/SpeakerCard.astro";
 import dayjs from "dayjs";
 
+type Talk = CollectionEntry<"talks">["data"][0];
+
 interface Props {
-	talk: CollectionEntry<"talks">;
+  talk: Talk;
 }
+
 const { talk } = Astro.props;
 
+const talkId = talk.title.replaceAll(" ", "-");
 const speakers = await getCollection("speakers");
-const speaker = talk.data?.speaker
-	? speakers.find((s) => s.id === talk.data.speaker)
-	: null;
+const speaker = talk?.speaker
+  ? speakers.find((s) => s.id === talk.speaker)
+  : null;
 ---
 
 <!-- <AgendaItem talk={talk}> --><!-- <div class="flex-1 cursor-pointer" id={talk.id}>
@@ -48,11 +52,11 @@ const speaker = talk.data?.speaker
 	</div>
 </div> --><!-- </AgendaItem> -->
 <AgendaItem talk={talk}>
-  <div class="flex-1 cursor-pointer" id={talk.id}>
-    <h4 class="font-bold text-xl m-0 group-hover:underline">
-      {talk.data.title}
+  <div class="flex-1 cursor-pointer" id={talkId}>
+    <h4 class="font-semibold text-lg m-0 group-hover:underline">
+      {talk.title}
     </h4>
-    {speaker ? <SpeakerCard speaker={speaker} /> : null}
+    {speaker ? <SpeakerCard speaker={speaker} /> : <span>{talk?.speaker}</span>}
   </div>
 </AgendaItem>
 
@@ -70,28 +74,26 @@ const speaker = talk.data?.speaker
 </style>
 
 <dialog
-  id={`${talk.id}-dialog`}
+  id={`${talkId}-dialog`}
   class="z-50 bg-white rounded-sm max-w-2xl animate__animated animate__zoomIn animate__faster"
 >
   <main class="p-4">
     <div class="flex-col">
       <h4 class="font-bold text-xl m-0 mb-2">
-        {talk.data.title}
+        {talk.title}
       </h4>
       <div class="flex flex-row justify-between items-center mb-4">
         <div class="flex flex-row items-end gap-4">
           <span class="text-sm font-mono"
-            >{dayjs(talk.data.startDate).format('hh:mm A')} a {
-              dayjs(talk.data.endDate).format('hh:mm A')
-            }</span
+            >{dayjs(talk.startDate).format("hh:mm A")}</span
           >
           <span class="text-sm font-mono"
-            >Track <span class="capitalize">{talk.data.track}</span></span
+            >Track <span class="capitalize">{talk.track}</span></span
           >
         </div>
       </div>
       <p class="text-md leading-relaxed text-df-gray-700">
-        {talk.data.description}
+        {talk.description}
       </p>
     </div>
     <hr class="my-4" />
@@ -100,19 +102,19 @@ const speaker = talk.data?.speaker
 </dialog>
 
 <script define:vars={{ talk }}>
-  const element = document.querySelector(`#${talk.id}`)
-  const dialog = document.querySelector(`#${talk.id}-dialog`)
-  element.addEventListener('click', () => {
+  const element = document.querySelector(`#${talk.id}`);
+  const dialog = document.querySelector(`#${talk.id}-dialog`);
+  element.addEventListener("click", () => {
     if (dialog.open) {
-      dialog.close()
-      return
+      dialog.close();
+      return;
     }
-    dialog.showModal()
-  })
+    dialog.showModal();
+  });
 
-  dialog.addEventListener('click', (event) => {
+  dialog.addEventListener("click", (event) => {
     if (event.target === dialog) {
-      dialog.close()
+      dialog.close();
     }
-  })
+  });
 </script>

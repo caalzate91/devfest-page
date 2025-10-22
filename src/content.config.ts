@@ -39,16 +39,18 @@ const speakers = defineCollection({
 
 const talks = defineCollection({
   loader: glob({ pattern: "**/*.json", base: "./src/content/talks" }),
-  schema: z.object({
-    title: z.string(),
-    description: z.string().optional(),
-    startDate: z.string(),
-    endDate: z.string(),
-    speaker: z.string().optional(),
-    sponsors: z.array(z.string()).optional(),
-    type: z.enum(["talk", "break", "sponsor"]),
-    track: z.array(z.string()),
-  }),
+  schema: z
+    .object({
+      title: z.string(),
+      description: z.string().optional(),
+      startDate: z.string(),
+      endDate: z.string(),
+      speaker: z.string().optional(),
+      sponsors: z.array(z.string()).optional(),
+      type: z.enum(["talk", "break", "sponsor", "blank"]),
+      track: z.enum(["track1", "track2"]).array(),
+    })
+    .array(),
 });
 
 export const collections = { organizers, sponsors, speakers, talks };

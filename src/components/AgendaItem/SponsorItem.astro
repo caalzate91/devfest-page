@@ -2,20 +2,22 @@
 import { type CollectionEntry, getCollection } from "astro:content";
 import AgendaItem from "./AgendaItem.astro";
 
+type Talk = CollectionEntry<"talks">["data"][0];
+
 interface Props {
-  talk: CollectionEntry<"talks">;
+  talk: Talk;
 }
 const { talk } = Astro.props;
 
 const allSponsors = await getCollection("sponsors");
-const sponsors = talk.data?.sponsors
-  ? allSponsors.filter((s) => talk.data.sponsors?.includes(s.id))
+const sponsors = talk.sponsors
+  ? allSponsors.filter((s) => talk.sponsors?.includes(s.id))
   : null;
 ---
 
 <AgendaItem talk={talk}>
   <div class="flex flex-row items-center justify-between flex-1 gap-2">
-    <h4 class="font-bold text-lg m-0">{talk.data.title}</h4>
+    <h4 class="font-bold text-lg m-0">{talk.title}</h4>
 
     <div class="text-gray-500 font-mono text-sm">
       {
