@@ -174,7 +174,7 @@
     "startDate": "2025-11-08 16:30:00",
     "endDate": "2025-11-08 17:00:00",
     "sponsors": [],
-    "type": "sponsor",
-    "track": ["track1", "track2"]
+    "type": "break",
+    "track": ["track1"]
   }
 ]

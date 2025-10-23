@@ -53,14 +53,14 @@ const speaker = talk?.speaker
 </div> --><!-- </AgendaItem> -->
 <AgendaItem talk={talk}>
   <div class="flex-1 cursor-pointer" id={talkId}>
-    <h4 class="font-[500] text-lg m-0 group-hover:underline">
+    <h4 class="font-semibold md:font-[500] text-sm md:text-lg m-0">
       {talk.title}
     </h4>
     {
       speaker ? (
         <SpeakerCard speaker={speaker} />
       ) : (
-        <span class="font-light">{talk?.speaker}</span>
+        <span class="font-light italic md:not-italic">{talk?.speaker}</span>
       )
     }
   </div>

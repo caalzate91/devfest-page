@@ -67,7 +67,7 @@ const agendaGrid = allTimes.map((time) => {
       <polygon points="0,0 500,20 500,0 0,0" fill="var(--agenda-bg)"></polygon>
     </svg>
   </div>
-  <div class="content flex items-center justify-center flex-col px-2">
+  <div class="content flex items-center justify-center flex-col px-2 py-4">
     <h3 class="text-2xl font-bold py-2 md:text-5xl md:mb-12">Cronograma</h3>
     <div class="text-md md:text-lg font-light mb-6 md:mb-12">
       Lugar: Universidad Autónoma de Occidente Cali.
@@ -76,34 +76,36 @@ const agendaGrid = allTimes.map((time) => {
         <a
           href="/dataday"
           target="_self"
-          class="w-fit px-6 py-2 rounded-full text-sm md:text-base text-center
-            bg-white text-black font-bold hover:bg-gray-200 transition
-            cursor-pointer"
+          class={`w-fit px-6 py-2 rounded-3xl text-sm md:text-base text-center
+        font-bold hover:bg-gray-200 transition cursor-pointer
+        bg-white text-black
+        ${agenda.id === "dataday" ? "ring-4 ring-blue-400" : ""}`}
         >
-          Data Day
+          <div>Data Day</div>
+          <span class="font-light">7 de Noviembre</span>
         </a>
 
         <a
           href="/devfest"
           target="_self"
-          class="w-fit px-6 py-2 rounded-full text-sm md:text-base text-center
-            bg-white text-black font-bold hover:bg-gray-200 transition
-            cursor-pointer"
+          class={`w-fit px-6 py-2 rounded-3xl text-sm md:text-base text-center
+        font-bold hover:bg-gray-200 transition cursor-pointer
+        bg-white text-black
+        ${agenda.id === "devfest" ? "ring-4 ring-yellow-400" : ""}`}
         >
-          DevFest
+          <div>DevFest</div>
+          <span class="font-light">8 de Noviembre</span>
         </a>
       </div>
     </div>
 
-    <div
-      class="agenda-grid"
-      style={`display: grid; grid-template-columns: repeat(${trackKeys.length}, 1fr); align-items: stretch;`}
-    >
+    <!-- style={`display: grid; grid-template-columns: repeat(${trackKeys.length}, 1fr); align-items: stretch;`} -->
+    <div class={`agenda-grid grid grid-cols-${trackKeys.length} items-stretch`}>
       {/* Header row */}
       {
         trackKeys.map((track) => (
           <div class="px-4 py-8 flex flex-col items-center justify-center">
-            <h3 class="text-3xl font-bold text-center m-0 text-black">
+            <h3 class="text-2xl md:text-3xl font-bold text-center m-0 text-black">
               {tracksData[track]}
             </h3>
           </div>
@@ -113,7 +115,7 @@ const agendaGrid = allTimes.map((time) => {
       {
         agendaGrid.map(({ time, row }) =>
           row.map((talk, idx) => (
-            <div class="agenda-cell min-h-[60px] flex flex-col justify-stretch">
+            <div class="agenda-cell md:min-h-[60px] flex flex-col justify-stretch">
               {talk && (
                 <>
                   {(() => {
@@ -157,7 +159,7 @@ const agendaGrid = allTimes.map((time) => {
     const saved = sessionStorage.getItem("scroll-pos");
     if (saved) {
       const y = parseInt(saved, 10);
-      window.scrollTo({ top: y, behavior: "smooth" });
+      window.scrollTo({ top: y, behavior: "instant" });
       sessionStorage.removeItem("scroll-pos");
     }
 
