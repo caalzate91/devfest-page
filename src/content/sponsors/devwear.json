@@ -2,5 +2,6 @@
   "name": "Devwear",
   "image": "devwear.png",
   "type": "company",
-  "url": "https://devwear.co/"
+  "url": "https://devwear.co/",
+  "hidden": true
 }
