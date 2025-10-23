@@ -1,6 +1,14 @@
 ---
 import { getCollection } from "astro:content";
 
+export async function getStaticPaths() {
+  const agendas = await getCollection("talks");
+  return agendas.map((agenda) => ({
+    params: { day: agenda.id },
+    props: { agenda },
+  }));
+}
+
 import Layout from "../layouts/Layout.astro";
 
 // import DevFestIntroSection from "../components/Sections/DevFestIntroSection.astro";
@@ -29,14 +37,15 @@ const companySponsors = await getCollection("sponsors", ({ data }) => {
 const speakers = await getCollection("speakers", ({ data }) => {
   return !data.hidden;
 });
-const talks = await getCollection("talks");
+
+const { agenda } = Astro.props;
 ---
 
 <Layout title="DataDev Fest 2025">
   <main class="flex flex-col w-full overflow-hidden">
     <Hero />
     <About />
-    <Agenda talks={talks} />
+    <Agenda agenda={agenda} />
     <Sponsors sponsors={companySponsors} />
     <Comunities communities={communitySponsors} />
     <Organizers organizers={organizers} />

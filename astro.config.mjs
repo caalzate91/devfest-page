@@ -10,6 +10,10 @@ export default defineConfig({
   base: "/",
   integrations: [react()],
 
+  redirects: {
+    "/": "/dataday",
+  },
+
   build: {
     rollupOptions: {
       external: [],

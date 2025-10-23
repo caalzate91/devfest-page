@@ -3,15 +3,14 @@ import BreakItem from "@components/AgendaItem/BreakItem.astro";
 import SponsorItem from "@components/AgendaItem/SponsorItem.astro";
 import TalkItem from "@components/AgendaItem/TalkItem.astro";
 import type { CollectionEntry } from "astro:content";
-import dayjs from "dayjs";
 
 interface Props {
-  talks: CollectionEntry<"talks">[];
+  agenda: CollectionEntry<"talks">;
 }
 
 type Talk = CollectionEntry<"talks">["data"][0];
 
-const { talks } = Astro.props;
+const { agenda } = Astro.props;
 
 const sortByDate = (a: Talk, b: Talk) => {
   const aDate = new Date(a.startDate);
@@ -20,32 +19,23 @@ const sortByDate = (a: Talk, b: Talk) => {
   return aDate.getTime() - bDate.getTime();
 };
 
-const DAY = "devfest";
 const tracksData: Record<string, any> = {
-  track1: {
-    name: "Xepia",
-    date: "2025-11-07",
-  },
-  track2: {
-    name: "Torreón",
-    date: "2025-11-08",
-  },
+  track1: "Xepia",
+  track2: "Torreón",
 };
 
 // Build a time slot grid: each row is a time slot, each column is a track
-const trackSchedule = talks
-  .find((talk) => talk.id === DAY)
-  ?.data.sort(sortByDate);
+const agendaData = agenda.data;
 
 // Get all unique start times, sorted
 const allTimes = Array.from(
-  new Set(trackSchedule?.map((talk) => talk.startDate))
+  new Set(agendaData?.map((talk) => talk.startDate))
 ).sort((a, b) => new Date(a).getTime() - new Date(b).getTime());
 
 const trackKeys = Array.from(
   new Set(
-    trackSchedule?.flatMap((talk) =>
-      Array.isArray(talk.track) ? talk.track.map(String) : []
+    agendaData?.flatMap((agenda) =>
+      Array.isArray(agenda.track) ? agenda.track.map(String) : []
     ) ?? []
   )
 );
@@ -53,7 +43,7 @@ const trackKeys = Array.from(
 // Build a grid: rows = time slots, columns = tracks
 const agendaGrid = allTimes.map((time) => {
   const row = trackKeys.map((track) =>
-    trackSchedule?.find((talk) => {
+    agendaData?.find((talk) => {
       const talkTracks = Array.isArray(talk.track)
         ? talk.track.map(String)
         : [];
@@ -79,9 +69,31 @@ const agendaGrid = allTimes.map((time) => {
   </div>
   <div class="content flex items-center justify-center flex-col px-2">
     <h3 class="text-2xl font-bold py-2 md:text-5xl md:mb-12">Cronograma</h3>
-    <span class="text-md md:text-lg font-light mb-6 md:mb-12"
-      >Lugar: Universidad Autónoma de Occidente Cali.</span
-    >
+    <div class="text-md md:text-lg font-light mb-6 md:mb-12">
+      Lugar: Universidad Autónoma de Occidente Cali.
+
+      <div class="flex flex-row w-full items-center justify-center gap-8 pt-6">
+        <a
+          href="/dataday"
+          target="_self"
+          class="w-fit px-6 py-2 rounded-full text-sm md:text-base text-center
+            bg-white text-black font-bold hover:bg-gray-200 transition
+            cursor-pointer"
+        >
+          Data Day
+        </a>
+
+        <a
+          href="/devfest"
+          target="_self"
+          class="w-fit px-6 py-2 rounded-full text-sm md:text-base text-center
+            bg-white text-black font-bold hover:bg-gray-200 transition
+            cursor-pointer"
+        >
+          DevFest
+        </a>
+      </div>
+    </div>
 
     <div
       class="agenda-grid"
@@ -92,11 +104,8 @@ const agendaGrid = allTimes.map((time) => {
         trackKeys.map((track) => (
           <div class="px-4 py-8 flex flex-col items-center justify-center">
             <h3 class="text-3xl font-bold text-center m-0 text-black">
-              {tracksData[track].name}
+              {tracksData[track]}
             </h3>
-            <h4 class="text-xl font-normal text-center text-black">
-              {dayjs(tracksData[track].date).format("MMMM D")}
-            </h4>
           </div>
         ))
       }
@@ -140,6 +149,28 @@ const agendaGrid = allTimes.map((time) => {
     </svg>
   </div>
 </section>
+
+<script is:inline>
+  // Preserve scroll position for /dataday and /devfest links
+  document.addEventListener("DOMContentLoaded", () => {
+    // Restore scroll position if available, with smooth scroll
+    const saved = sessionStorage.getItem("scroll-pos");
+    if (saved) {
+      const y = parseInt(saved, 10);
+      window.scrollTo({ top: y, behavior: "smooth" });
+      sessionStorage.removeItem("scroll-pos");
+    }
+
+    // Attach click handler to agenda links
+    document
+      .querySelectorAll('a[href="/dataday"], a[href="/devfest"]')
+      .forEach((link) => {
+        link.addEventListener("click", (e) => {
+          sessionStorage.setItem("scroll-pos", window.scrollY);
+        });
+      });
+  });
+</script>
 
 <style>
   :root {
