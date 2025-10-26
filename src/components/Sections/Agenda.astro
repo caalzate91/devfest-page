@@ -21,8 +21,11 @@ const talks = await getCollection("talks");
   >
     Cronograma
   </h2>
-  <span class="text-md md:text-lg font-light mt-5 lg:mt-0 mb-6"
+  <span class="text-md md:text-lg font-base mt-5 lg:mt-0 mb-2"
     >Lugar: Universidad Autónoma de Occidente Cali.</span
+  >
+  <span class="text-xs sm:text-md md:text-lg font-base mb-10">
+    Centro Valle del Lili - Cl 25 # 115-85 Km. 2 vía Cali-Jamundí</span
   >
   <AgendaManager talks={talks} client:only="react" />
 </section>
