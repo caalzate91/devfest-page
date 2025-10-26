@@ -1,9 +1,0 @@
-{
-  "title": "Server Driven UI: escalabilidad para LATAM en la palma de un JSON",
-  "description": "Vamos a ver los principales problemos que se encontraron en el mundo de direcciones de Latinoamerica, mostrando como fue avanzando el desarrollo del framework según los problemas, ventajas que se presentan y las limitaciones que presenta el uso de este tipo de patrones. Como beneficia la escalabilidad de nuestros proyectos y las grandes ventajas en sistemas con un design system ya definido. Explicando además, como facilita el desarrollo en aplicaciones para dispositivos moviles, en donde a mediano y largo plazo se evitan releases esperando la aprobación de la store. Vamos a ver como evolucionó el patrón a partir de los años, la curva de aprendizaje y como se encuentra hoy en día.",
-  "startDate": "2024-11-30 16:00:00",
-  "endDate": "2024-11-30 16:50:00",
-  "speaker": "franco-galeano",
-  "type": "talk",
-  "track": ["web"]
-}

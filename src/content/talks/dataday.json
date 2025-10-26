@@ -1,0 +1,12 @@
+{
+	"talks": [
+		{
+			"title": "Registro y Recepción",
+			"startDate": "2025-11-08 08:30:00",
+			"endDate": "2025-11-08 09:00:00",
+			"sponsors": [],
+			"type": "break",
+			"track": ["track1"]
+		}
+	]
+}

@@ -1,9 +1,0 @@
-{
-  "title": "Angular Signals: Una introducción profunda en las nuevas Features + Angular with AI",
-  "description": "Más allá de la existencia de 12.938.123 frameworks de frontend hoy en día y que salga uno nuevo cada semana (Por favor, que alguien haga algo sobre esto), la función principal de la gran mayoría de ellos se reduce a que, cuando una variable cambia, se refleje ese cambio en pantalla. Hacer esto eficientemente es fundamental para que los programadores usen y se sientan a gusto con nuestro framework.\nNingún programador de verdad quiere usar un framework lento e ineficiente (Piensen en cómo sufre la gente que tiene que usar S_P o, en su momento, librerías lentas e ineficientes como Moment.js o Lodash. QEP).\nLos Signals (en particular en Angular) vienen a revolucionar esto. En esta charla, veremos cómo los signals pueden ayudarnos a crear aplicaciones más rápidas y eficientes; además, veremos a fondo la implementación que el equipo de Angular eligió y todo lo que podemos hacer con ellos. Finalizaremos con verlos aplicados a una aplicación de inteligencia artificial con Angular + Gemini.",
-  "startDate": "2024-11-30 11:00:00",
-  "endDate": "2024-11-30 11:50:00",
-  "speaker": "damian-sire",
-  "type": "talk",
-  "track": ["web"]
-}

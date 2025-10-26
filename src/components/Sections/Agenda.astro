@@ -1,5 +1,10 @@
 ---
+import { getCollection } from "astro:content";
+import AgendaManager from "@components/AgendaItem/AgendaManager";
 
+// We will capture the Astro collections here and pass throgh React props
+const talks = await getCollection("talks");
+console.log(talks);
 ---
 
 <section class="my-8">
@@ -15,13 +20,12 @@
       <polygon points="0,0 500,20 500,0 0,0" fill="var(--agenda-bg)"></polygon>
     </svg>
   </div>
-  <div class="content flex items-center justify-center flex-col px-2">
-    <h3 class="text-2xl font-bold py-2 md:text-5xl md:mb-12">Cronograma</h3>
+  <div class="content flex items-center justify-center flex-col">
+    <h2 class="text-2xl font-bold py-2 md:text-5xl md:mb-12">Cronograma</h2>
     <span class="text-md md:text-lg font-light mb-6 md:mb-12"
       >Lugar: Universidad Autónoma de Occidente Cali.</span
     >
-
-    <p>TBD</p>
+    <AgendaManager talks={talks} client:only="react" />
   </div>
   <div class="footer-bg bottom fixed">
     <svg

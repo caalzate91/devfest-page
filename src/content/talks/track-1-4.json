@@ -1,9 +1,0 @@
-{
-  "title": "Despliega tu primera carga de trabajo en Kubernetes sobre Google Cloud",
-  "description": "En esta sesión abordaremos el proceso de despliegue de un cluster de Kubernetes usando Terraform. Desplegaremos un servidor web Nginx de prueba y monitoreamos el cluster usando Grafana y Loki.",
-  "startDate": "2024-11-30 11:00:00",
-  "endDate": "2024-11-30 11:50:00",
-  "speaker": "juan-marin-ceron",
-  "type": "talk",
-  "track": ["cloud"]
-}
