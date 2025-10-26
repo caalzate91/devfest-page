@@ -4,12 +4,11 @@ import AgendaManager from "@components/AgendaItem/AgendaManager";
 
 // We will capture the Astro collections here and pass throgh React props
 const talks = await getCollection("talks");
-
-console.log(talks);
 ---
 
 <div
   class="relative bg-[url('/assets/images/BG-Agenda-top-MD.svg')] bg-cover bg-no-repeat w-full"
+  id="agenda"
 >
   <div class="aspect-[1080/170]"></div>
 </div>
@@ -28,7 +27,7 @@ console.log(talks);
   <AgendaManager talks={talks} client:only="react" />
 </section>
 <div
-  class="relative bg-[url('/assets/images/BG-Agenda-bottom-MD.svg')] bg-cover bg-bottom bg-no-repeat w-full mb-10"
+  class="relative bg-[url('/assets/images/BG-Agenda-bottom-MD.svg')] bg-cover bg-bottom bg-no-repeat w-full mb-32"
 >
   <div class="aspect-[1080/190]"></div>
 </div>

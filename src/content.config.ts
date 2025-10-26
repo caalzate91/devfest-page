@@ -23,39 +23,47 @@ const talks = defineCollection({
 export type Talk = z.infer<typeof talkSchema>;
 export type TalkEntry = CollectionEntry<"talks">;
 
+const organizers = defineCollection({
+	loader: glob({ pattern: "**/*.json", base: "./src/content/organizers" }),
+	schema: z.object({
+		name: z.string(),
+		position: z.string(),
+		image: z.string(),
+		url: z.string().url().optional(),
+		hidden: z.boolean().optional(),
+	}),
+});
+
+const sponsors = defineCollection({
+	loader: glob({ pattern: "**/*.json", base: "./src/content/sponsors" }),
+	schema: z.object({
+		name: z.string(),
+		image: z.string(),
+		url: z.string().url().optional(),
+		type: z.string(),
+		category: z.string().optional(),
+		hidden: z.boolean().optional(),
+	}),
+});
+
+const speakers = defineCollection({
+	loader: glob({ pattern: "**/*.json", base: "./src/content/speakers" }),
+	schema: z.object({
+		name: z.string(),
+		position: z.string(),
+		image: z.string(),
+		country: z.string(),
+		url: z.string().url().optional(),
+		colorBadge: z.string().optional(),
+		hidden: z.boolean().optional(),
+	}),
+});
+
+
 export const collections = {
 	talks,
+	organizers,
+	sponsors,
+	speakers
 };
 
-// const organizers = defineCollection({
-// 	schema: z.object({
-// 		name: z.string(),
-// 		position: z.string(),
-// 		image: z.string(),
-// 		url: z.string().url().optional(),
-// 		hidden: z.boolean().optional(),
-// 	}),
-// });
-
-// const sponsors = defineCollection({
-// 	schema: z.object({
-// 		name: z.string(),
-// 		image: z.string(),
-// 		url: z.string().url().optional(),
-// 		type: z.string(),
-// 		category: z.string().optional(),
-// 		hidden: z.boolean().optional(),
-// 	}),
-// });
-
-// const speakers = defineCollection({
-// 	schema: z.object({
-// 		name: z.string(),
-// 		position: z.string(),
-// 		image: z.string(),
-// 		country: z.string(),
-// 		url: z.string().url().optional(),
-// 		colorBadge: z.string().optional(),
-// 		hidden: z.boolean().optional(),
-// 	}),
-// });
