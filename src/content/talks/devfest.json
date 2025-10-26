@@ -7,7 +7,11 @@
 			"endDate": "2025-11-08 09:00:00",
 			"sponsors": [],
 			"type": "break",
-			"track": ["track1"]
+			"track": ["track1"],
+			"speaker": "",
+			"speakerImage": "",
+			"position": "",
+			"description": ""
 		},
 		{
 			"id": "DEV02",
@@ -16,7 +20,11 @@
 			"endDate": "",
 			"sponsors": [],
 			"type": "break",
-			"track": ["track2"]
+			"track": ["track2"],
+			"speaker": "",
+			"speakerImage": "",
+			"position": "",
+			"description": ""
 		},
 		{
 			"id": "DEV03",
@@ -25,7 +33,11 @@
 			"endDate": "2025-11-08 09:30:00",
 			"sponsors": [],
 			"type": "break",
-			"track": ["track2"]
+			"track": ["track2"],
+			"speaker": "",
+			"speakerImage": "",
+			"position": "",
+			"description": ""
 		},
 		{
 			"id": "DEV04",
@@ -34,12 +46,19 @@
 			"endDate": "2025-11-08 09:30:00",
 			"sponsors": [],
 			"type": "break",
-			"track": ["track2"]
+			"track": ["track2"],
+			"speaker": "",
+			"speakerImage": "",
+			"position": "",
+			"description": ""
 		},
 		{
 			"id": "DEV05",
 			"title": "Aprende a desarrollar en 10x y Firebase Studio",
 			"speaker": "Mayra Rodriguez",
+			"speakerImage": "",
+			"position": "",
+			"description": "",
 			"startDate": "2025-11-08 09:30:00",
 			"endDate": "2025-11-08 10:30:00",
 			"sponsors": [],
@@ -50,6 +69,9 @@
 			"id": "DEV06",
 			"title": "Vibe Coding Prototipado Rápido Utilizando IA Generativa (Parte 1)",
 			"speaker": "Santiago Carrillo",
+			"speakerImage": "",
+			"position": "",
+			"description": "",
 			"startDate": "2025-11-08 09:30:00",
 			"endDate": "2025-11-08 10:30:00",
 			"sponsors": [],
@@ -63,7 +85,11 @@
 			"endDate": "2025-11-08 10:40:00",
 			"sponsors": [],
 			"type": "break",
-			"track": ["track1"]
+			"track": ["track1"],
+			"speaker": "",
+			"speakerImage": "",
+			"position": "",
+			"description": ""
 		},
 		{
 			"id": "DEV08",
@@ -72,7 +98,11 @@
 			"endDate": "2025-11-08 10:40:00",
 			"sponsors": [],
 			"type": "break",
-			"track": ["track2"]
+			"track": ["track2"],
+			"speaker": "",
+			"speakerImage": "",
+			"position": "",
+			"description": ""
 		},
 		{
 			"id": "DEV09",
@@ -81,7 +111,11 @@
 			"endDate": "2025-11-08 11:00:00",
 			"sponsors": [],
 			"type": "break",
-			"track": ["track1"]
+			"track": ["track1"],
+			"speaker": "",
+			"speakerImage": "",
+			"position": "",
+			"description": ""
 		},
 		{
 			"id": "DEV10",
@@ -90,12 +124,19 @@
 			"endDate": "2025-11-08 11:00:00",
 			"sponsors": [],
 			"type": "break",
-			"track": ["track2"]
+			"track": ["track2"],
+			"speaker": "",
+			"speakerImage": "",
+			"position": "",
+			"description": ""
 		},
 		{
 			"id": "DEV11",
 			"title": "Del DevOps al Developer experience as a Service: el verdadero rol del Platform Engineering",
 			"speaker": "Oscar Eduardo Castillo Ortiz",
+			"speakerImage": "",
+			"position": "Senior DevOps Engineer",
+			"description": "",
 			"startDate": "2025-11-08 11:00:00",
 			"endDate": "2025-11-08 12:00:00",
 			"sponsors": [],
@@ -106,6 +147,9 @@
 			"id": "DEV12",
 			"title": "Vibe Coding Prototipado Rápido Utilizando IA Generativa (Parte 2)",
 			"speaker": "Santiago Carrillo",
+			"speakerImage": "",
+			"position": "",
+			"description": "",
 			"startDate": "2025-11-08 11:00:00",
 			"endDate": "2025-11-08 12:00:00",
 			"sponsors": [],
@@ -119,7 +163,11 @@
 			"endDate": "2025-11-08 13:00:00",
 			"sponsors": [],
 			"type": "break",
-			"track": ["track1"]
+			"track": ["track1"],
+			"speaker": "",
+			"speakerImage": "",
+			"position": "",
+			"description": ""
 		},
 		{
 			"id": "DEV14",
@@ -128,12 +176,19 @@
 			"endDate": "2025-11-08 13:00:00",
 			"sponsors": [],
 			"type": "break",
-			"track": ["track2"]
+			"track": ["track2"],
+			"speaker": "",
+			"speakerImage": "",
+			"position": "",
+			"description": ""
 		},
 		{
 			"id": "DEV15",
 			"title": "From MCP to A2A: Lessons Learned Building MIRA, a Multi-Agent System to accelerate Scientific Discovery — and the Case for new standards",
 			"speaker": "Henry Ruiz",
+			"speakerImage": "",
+			"position": "Research Scientist, Texas A&M University",
+			"description": "",
 			"startDate": "2025-11-08 13:00:00",
 			"endDate": "2025-11-08 14:00:00",
 			"sponsors": [],
@@ -144,6 +199,9 @@
 			"id": "DEV16",
 			"title": "Intelligent Search: Media Search and Recommendations with Vertex AI",
 			"speaker": "Carlos Peña",
+			"speakerImage": "",
+			"position": "Senior Software Engineer, EPAM",
+			"description": "",
 			"startDate": "2025-11-08 13:00:00",
 			"endDate": "2025-11-08 14:00:00",
 			"sponsors": [],
@@ -157,7 +215,11 @@
 			"endDate": "2025-11-08 14:10:00",
 			"sponsors": [],
 			"type": "break",
-			"track": ["track1"]
+			"track": ["track1"],
+			"speaker": "",
+			"speakerImage": "",
+			"position": "",
+			"description": ""
 		},
 		{
 			"id": "DEV18",
@@ -166,12 +228,19 @@
 			"endDate": "2025-11-08 14:10:00",
 			"sponsors": [],
 			"type": "break",
-			"track": ["track2"]
+			"track": ["track2"],
+			"speaker": "",
+			"speakerImage": "",
+			"position": "",
+			"description": ""
 		},
 		{
 			"id": "DEV19",
 			"title": "IA en Tiempo Real con Angular: Streaming y Structured Ouput",
 			"speaker": "Alfonso López",
+			"speakerImage": "",
+			"position": "",
+			"description": "",
 			"startDate": "2025-11-08 14:10:00",
 			"endDate": "2025-11-08 15:10:00",
 			"sponsors": [],
@@ -182,6 +251,9 @@
 			"id": "DEV20",
 			"title": "Potencia con IA tus apps con Genkit y LLMs",
 			"speaker": "Héctor Romero",
+			"speakerImage": "test.jpg",
+			"position": "Desarrollador de Software, Grupo Retail",
+			"description": "",
 			"startDate": "2025-11-08 14:10:00",
 			"endDate": "2025-11-08 15:10:00",
 			"sponsors": [],
@@ -195,7 +267,11 @@
 			"endDate": "2025-11-08 15:30:00",
 			"sponsors": [],
 			"type": "break",
-			"track": ["track1"]
+			"track": ["track1"],
+			"speaker": "",
+			"speakerImage": "",
+			"position": "",
+			"description": ""
 		},
 		{
 			"id": "DEV22",
@@ -204,12 +280,19 @@
 			"endDate": "2025-11-08 15:30:00",
 			"sponsors": [],
 			"type": "break",
-			"track": ["track2"]
+			"track": ["track2"],
+			"speaker": "",
+			"speakerImage": "",
+			"position": "",
+			"description": ""
 		},
 		{
 			"id": "DEV23",
 			"title": "Del Dato a la IA Generativa con Google Cloud",
 			"speaker": "Nicolas Lescanos",
+			"speakerImage": "",
+			"position": "",
+			"description": "",
 			"startDate": "2025-11-08 15:30:00",
 			"endDate": "2025-11-08 16:30:00",
 			"sponsors": [],
@@ -220,6 +303,9 @@
 			"id": "DEV24",
 			"title": "Agentes en Play AIX en acción",
 			"speaker": "Adrian Catalan",
+			"speakerImage": "",
+			"position": "",
+			"description": "",
 			"startDate": "2025-11-08 15:30:00",
 			"endDate": "2025-11-08 16:30:00",
 			"sponsors": [],
@@ -233,7 +319,11 @@
 			"endDate": "2025-11-08 17:00:00",
 			"sponsors": [],
 			"type": "break",
-			"track": ["track1"]
+			"track": ["track1"],
+			"speaker": "",
+			"speakerImage": "",
+			"position": "",
+			"description": ""
 		},
 		{
 			"id": "DEV26",
@@ -242,7 +332,11 @@
 			"endDate": "2025-11-08 17:00:00",
 			"sponsors": [],
 			"type": "break",
-			"track": ["track2"]
+			"track": ["track2"],
+			"speaker": "",
+			"speakerImage": "",
+			"position": "",
+			"description": ""
 		}
 	]
 }

@@ -11,12 +11,12 @@ interface AgendaManagerProps {
 
 export default function AgendaManager({ talks }: AgendaManagerProps) {
 	const [selectedAgendaDay, setSelectedAgendaDay] =
-		useState<DataDevFestDays>("devfest");
-	const [agendaInfo, setAgendaInfo] = useState(talks[1].data.talks);
+		useState<DataDevFestDays>("dataday");
+	const [agendaInfo, setAgendaInfo] = useState(talks[0].data.talks);
 
-	const oneTrackStyles = " w-full grid grid-cols-1 gap-4  my-8";
+	const oneTrackStyles = " w-full grid grid-cols-1 gap-y-4 my-8";
 	const twoTrackStyles =
-		" w-full grid grid-cols-1 md:grid-cols-2 gap-4  my-8";
+		" w-full grid grid-cols-1 md:grid-cols-2 gap-y-4 my-8";
 
 	useEffect(() => {
 		const selectedDay = talks.find((t) => t.id === selectedAgendaDay);
