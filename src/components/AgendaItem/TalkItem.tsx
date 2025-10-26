@@ -1,5 +1,3 @@
-import React from "react";
-
 import dayjs from "dayjs";
 import type { Talk } from "../../content.config";
 
@@ -25,7 +23,7 @@ export default function TalkItem({ talkInfo }: TalkItemProps) {
 			<div className=" w-full">
 				<h4 className="font-bold my-2 text-sm md:text-base">{title}</h4>
 				<div className="flex flex-row gap-6 items-center">
-					<img src={speakerImg} alt={`Speaker photo ${speaker}`} className="w-14 rounded-full" />
+					<img src={speakerImg} aria-hidden alt={`Speaker photo ${speaker}`} className="w-14 rounded-full" />
 					<div className="flex flex-col">
 						<p className="font-semibold">{speaker}</p>
 						<p>Cargo de la persona</p>

@@ -46,24 +46,9 @@ const sponsors = defineCollection({
 	}),
 });
 
-const speakers = defineCollection({
-	loader: glob({ pattern: "**/*.json", base: "./src/content/speakers" }),
-	schema: z.object({
-		name: z.string(),
-		position: z.string(),
-		image: z.string(),
-		country: z.string(),
-		url: z.string().url().optional(),
-		colorBadge: z.string().optional(),
-		hidden: z.boolean().optional(),
-	}),
-});
-
-
 export const collections = {
 	talks,
 	organizers,
-	sponsors,
-	speakers
+	sponsors
 };
 
