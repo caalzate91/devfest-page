@@ -44,7 +44,7 @@ export default function AgendaManager({ talks }: AgendaManagerProps) {
 					type="button"
 					onClick={() => changeAgendaDay("dataday")}
 
-					className="flex flex-col py-3 px-6 gap-1  bg-pink-200 min-w-36 w-auto cursor-pointer rounded-full "
+					className="flex flex-col py-3 px-6 gap-1  bg-pink-200 hover:bg-[#F5A8CC] min-w-36 md:min-w-52 w-auto cursor-pointer rounded-full "
 				>
 					<span className="font-bold">DataDay</span>
 					<span className="text-xs md:text-sm">7 de noviembre</span>
@@ -52,7 +52,7 @@ export default function AgendaManager({ talks }: AgendaManagerProps) {
 				<button
 					type="button"
 					onClick={() => changeAgendaDay("devfest")}
-					className="flex flex-col py-3 px-6 gap-1  bg-pink-200 min-w-36 w-auto cursor-pointer rounded-full "
+					className="flex flex-col py-3 px-6 gap-1  bg-[#CCF6C5] hover:bg-[#BEECA0] min-w-36 md:min-w-52 w-auto cursor-pointer rounded-full "
 				>
 					<span className="font-bold">DevFest</span>
 					<span className="text-xs md:text-sm">8 de noviembre</span>

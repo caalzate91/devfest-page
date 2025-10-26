@@ -8,65 +8,27 @@ const talks = await getCollection("talks");
 console.log(talks);
 ---
 
-<section class="my-8">
-  <div class="footer-bg top">
-    <svg
-      viewBox="0 0 500 20"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      class="w-full h-auto"
-      preserveAspectRatio="none"
-      style="transform: rotate(180deg);"
-    >
-      <polygon points="0,0 500,20 500,0 0,0" fill="var(--agenda-bg)"></polygon>
-    </svg>
-  </div>
-  <div class="content flex items-center justify-center flex-col">
-    <h2 class="text-2xl font-bold py-2 md:text-5xl md:mb-12">Cronograma</h2>
-    <span class="text-md md:text-lg font-light mb-6 md:mb-12"
-      >Lugar: Universidad Autónoma de Occidente Cali.</span
-    >
-    <AgendaManager talks={talks} client:only="react" />
-  </div>
-  <div class="footer-bg bottom fixed">
-    <svg
-      viewBox="0 0 500 20"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      class="w-full h-auto"
-      preserveAspectRatio="none"
-    >
-      {/* Declination from left (top) to right (bottom) */}
-      <polygon points="0,0 500,20 500,0 0,0" fill="var(--agenda-bg)"></polygon>
-    </svg>
-  </div>
+<div
+  class="relative bg-[url('/assets/images/BG-Agenda-top-MD.svg')] bg-cover bg-no-repeat w-full"
+>
+  <div class="aspect-[1080/170]"></div>
+</div>
+
+<section
+  class="bg-[#8FD9EF] relative flex items-center justify-center flex-col"
+>
+  <h2
+    class="absolute -top-7 md:-top-20 left-1/2 -translate-x-1/2 text-2xl md:text-4xl lg:text-5xl font-bold"
+  >
+    Cronograma
+  </h2>
+  <span class="text-md md:text-lg font-light mt-5 lg:mt-0 mb-6"
+    >Lugar: Universidad Autónoma de Occidente Cali.</span
+  >
+  <AgendaManager talks={talks} client:only="react" />
 </section>
-
-<style>
-  :root {
-    --agenda-bg: #8ed8f8;
-  }
-  .content {
-    background-color: var(--agenda-bg);
-  }
-
-  .footer-bg {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-  }
-
-  .footer-section {
-    position: relative;
-    padding-top: 0;
-    margin-top: 0;
-  }
-
-  .footer-section .top {
-    border-bottom: 1px solid var(--agenda-bg);
-  }
-
-  .footer-section .bottom {
-    /* background-color: #003773; */
-  }
-</style>
+<div
+  class="relative bg-[url('/assets/images/BG-Agenda-bottom-MD.svg')] bg-cover bg-bottom bg-no-repeat w-full mb-10"
+>
+  <div class="aspect-[1080/190]"></div>
+</div>
