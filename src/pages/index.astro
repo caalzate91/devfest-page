@@ -17,18 +17,18 @@ import Organizers from "@components/Sections/Organizers.astro";
 import Footer from "@components/Sections/Footer.astro";
 import Hero from "@components/Sections/Hero.astro";
 
-const organizers = await getCollection("organizers", ({ data }) => {
-  return !data.hidden;
-});
-const communitySponsors = await getCollection("sponsors", ({ data }) => {
-  return !data.hidden && data.type === "community";
-});
-const companySponsors = await getCollection("sponsors", ({ data }) => {
-  return !data.hidden && data.type === "company";
-});
-const speakers = await getCollection("speakers", ({ data }) => {
-  return !data.hidden;
-});
+// const organizers = await getCollection("organizers", ({ data }) => {
+//   return !data.hidden;
+// });
+// const communitySponsors = await getCollection("sponsors", ({ data }) => {
+//   return !data.hidden && data.type === "community";
+// });
+// const companySponsors = await getCollection("sponsors", ({ data }) => {
+//   return !data.hidden && data.type === "company";
+// });
+// const speakers = await getCollection("speakers", ({ data }) => {
+//   return !data.hidden;
+// });
 const talks = await getCollection("talks");
 ---
 
@@ -37,9 +37,9 @@ const talks = await getCollection("talks");
     <Hero />
     <About />
     <Agenda />
-    <Sponsors sponsors={companySponsors} />
-    <Comunities communities={communitySponsors} />
-    <Organizers organizers={organizers} />
+    <!-- <Sponsors sponsors={companySponsors} /> -->
+    <!-- <Comunities communities={communitySponsors} /> -->
+    <!-- <Organizers organizers={organizers} /> -->
     <Footer />
   </main>
 </Layout>

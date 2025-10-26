@@ -1,0 +1,248 @@
+{
+	"talks": [
+		{
+			"id": "DEV01",
+			"title": "Registro y Recepción",
+			"startDate": "2025-11-08 08:30:00",
+			"endDate": "2025-11-08 09:00:00",
+			"sponsors": [],
+			"type": "break",
+			"track": ["track1"]
+		},
+		{
+			"id": "DEV02",
+			"title": "Realizar registro y recepción en Auditorio Xepia",
+			"startDate": "2025-11-08 08:30:00",
+			"endDate": "",
+			"sponsors": [],
+			"type": "break",
+			"track": ["track2"]
+		},
+		{
+			"id": "DEV03",
+			"title": "Bienvenida y Apertura",
+			"startDate": "2025-11-08 09:00:00",
+			"endDate": "2025-11-08 09:30:00",
+			"sponsors": [],
+			"type": "break",
+			"track": ["track2"]
+		},
+		{
+			"id": "DEV04",
+			"title": "Bienvenida y Apertura (Retransmisión desde Xepia)",
+			"startDate": "2025-11-08 09:00:00",
+			"endDate": "2025-11-08 09:30:00",
+			"sponsors": [],
+			"type": "break",
+			"track": ["track2"]
+		},
+		{
+			"id": "DEV05",
+			"title": "Aprende a desarrollar en 10x y Firebase Studio",
+			"speaker": "Mayra Rodriguez",
+			"startDate": "2025-11-08 09:30:00",
+			"endDate": "2025-11-08 10:30:00",
+			"sponsors": [],
+			"type": "talk",
+			"track": ["track1"]
+		},
+		{
+			"id": "DEV06",
+			"title": "Vibe Coding Prototipado Rápido Utilizando IA Generativa (Parte 1)",
+			"speaker": "Santiago Carrillo",
+			"startDate": "2025-11-08 09:30:00",
+			"endDate": "2025-11-08 10:30:00",
+			"sponsors": [],
+			"type": "talk",
+			"track": ["track2"]
+		},
+		{
+			"id": "DEV07",
+			"title": "EPAM",
+			"startDate": "2025-11-08 10:30:00",
+			"endDate": "2025-11-08 10:40:00",
+			"sponsors": [],
+			"type": "break",
+			"track": ["track1"]
+		},
+		{
+			"id": "DEV08",
+			"title": "UAO",
+			"startDate": "2025-11-08 10:30:00",
+			"endDate": "2025-11-08 10:40:00",
+			"sponsors": [],
+			"type": "break",
+			"track": ["track2"]
+		},
+		{
+			"id": "DEV09",
+			"title": "Receso / Coffee Break",
+			"startDate": "2025-11-08 10:40:00",
+			"endDate": "2025-11-08 11:00:00",
+			"sponsors": [],
+			"type": "break",
+			"track": ["track1"]
+		},
+		{
+			"id": "DEV10",
+			"title": "Receso / Coffee Break",
+			"startDate": "2025-11-08 10:40:00",
+			"endDate": "2025-11-08 11:00:00",
+			"sponsors": [],
+			"type": "break",
+			"track": ["track2"]
+		},
+		{
+			"id": "DEV11",
+			"title": "Del DevOps al Developer experience as a Service: el verdadero rol del Platform Engineering",
+			"speaker": "Oscar Eduardo Castillo Ortiz",
+			"startDate": "2025-11-08 11:00:00",
+			"endDate": "2025-11-08 12:00:00",
+			"sponsors": [],
+			"type": "talk",
+			"track": ["track1"]
+		},
+		{
+			"id": "DEV12",
+			"title": "Vibe Coding Prototipado Rápido Utilizando IA Generativa (Parte 2)",
+			"speaker": "Santiago Carrillo",
+			"startDate": "2025-11-08 11:00:00",
+			"endDate": "2025-11-08 12:00:00",
+			"sponsors": [],
+			"type": "talk",
+			"track": ["track2"]
+		},
+		{
+			"id": "DEV13",
+			"title": "Almuerzo",
+			"startDate": "2025-11-08 12:00:00",
+			"endDate": "2025-11-08 13:00:00",
+			"sponsors": [],
+			"type": "break",
+			"track": ["track1"]
+		},
+		{
+			"id": "DEV14",
+			"title": "Almuerzo",
+			"startDate": "2025-11-08 12:00:00",
+			"endDate": "2025-11-08 13:00:00",
+			"sponsors": [],
+			"type": "break",
+			"track": ["track2"]
+		},
+		{
+			"id": "DEV15",
+			"title": "From MCP to A2A: Lessons Learned Building MIRA, a Multi-Agent System to accelerate Scientific Discovery — and the Case for new standards",
+			"speaker": "Henry Ruiz",
+			"startDate": "2025-11-08 13:00:00",
+			"endDate": "2025-11-08 14:00:00",
+			"sponsors": [],
+			"type": "talk",
+			"track": ["track1"]
+		},
+		{
+			"id": "DEV16",
+			"title": "Intelligent Search: Media Search and Recommendations with Vertex AI",
+			"speaker": "Carlos Peña",
+			"startDate": "2025-11-08 13:00:00",
+			"endDate": "2025-11-08 14:00:00",
+			"sponsors": [],
+			"type": "talk",
+			"track": ["track2"]
+		},
+		{
+			"id": "DEV17",
+			"title": "UAO",
+			"startDate": "2025-11-08 14:00:00",
+			"endDate": "2025-11-08 14:10:00",
+			"sponsors": [],
+			"type": "break",
+			"track": ["track1"]
+		},
+		{
+			"id": "DEV18",
+			"title": "EPAM",
+			"startDate": "2025-11-08 14:00:00",
+			"endDate": "2025-11-08 14:10:00",
+			"sponsors": [],
+			"type": "break",
+			"track": ["track2"]
+		},
+		{
+			"id": "DEV19",
+			"title": "IA en Tiempo Real con Angular: Streaming y Structured Ouput",
+			"speaker": "Alfonso López",
+			"startDate": "2025-11-08 14:10:00",
+			"endDate": "2025-11-08 15:10:00",
+			"sponsors": [],
+			"type": "talk",
+			"track": ["track1"]
+		},
+		{
+			"id": "DEV20",
+			"title": "Potencia con IA tus apps con Genkit y LLMs",
+			"speaker": "Héctor Romero",
+			"startDate": "2025-11-08 14:10:00",
+			"endDate": "2025-11-08 15:10:00",
+			"sponsors": [],
+			"type": "talk",
+			"track": ["track2"]
+		},
+		{
+			"id": "DEV21",
+			"title": "Receso / Coffee Break",
+			"startDate": "2025-11-08 15:10:00",
+			"endDate": "2025-11-08 15:30:00",
+			"sponsors": [],
+			"type": "break",
+			"track": ["track1"]
+		},
+		{
+			"id": "DEV22",
+			"title": "Receso / Coffee Break",
+			"startDate": "2025-11-08 15:10:00",
+			"endDate": "2025-11-08 15:30:00",
+			"sponsors": [],
+			"type": "break",
+			"track": ["track2"]
+		},
+		{
+			"id": "DEV23",
+			"title": "Del Dato a la IA Generativa con Google Cloud",
+			"speaker": "Nicolas Lescanos",
+			"startDate": "2025-11-08 15:30:00",
+			"endDate": "2025-11-08 16:30:00",
+			"sponsors": [],
+			"type": "talk",
+			"track": ["track1"]
+		},
+		{
+			"id": "DEV24",
+			"title": "Agentes en Play AIX en acción",
+			"speaker": "Adrian Catalan",
+			"startDate": "2025-11-08 15:30:00",
+			"endDate": "2025-11-08 16:30:00",
+			"sponsors": [],
+			"type": "talk",
+			"track": ["track2"]
+		},
+		{
+			"id": "DEV25",
+			"title": "Cierre del Evento",
+			"startDate": "2025-11-08 16:30:00",
+			"endDate": "2025-11-08 17:00:00",
+			"sponsors": [],
+			"type": "break",
+			"track": ["track1"]
+		},
+		{
+			"id": "DEV26",
+			"title": "Cierre del Evento",
+			"startDate": "2025-11-08 16:30:00",
+			"endDate": "2025-11-08 17:00:00",
+			"sponsors": [],
+			"type": "break",
+			"track": ["track2"]
+		}
+	]
+}
