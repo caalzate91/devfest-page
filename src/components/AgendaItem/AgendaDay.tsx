@@ -3,6 +3,7 @@ import type { DataDevFestDays } from "./AgendaManager";
 import InfoItem from "./InfoItem";
 
 import TalkItem from "./TalkItem";
+import SponsorItem from "./SponsorItem";
 import { useIsMobile } from "../../hooks/useIsMobile";
 
 interface AgendaDayProps {
@@ -40,6 +41,8 @@ export default function AgendaDay({ talks, eventDay }: AgendaDayProps) {
 							return <TalkItem key={t.id} talkInfo={t} />;
 						case "break":
 							return <InfoItem key={t.id} talkInfo={t} />;
+						case "sponsor":
+							return <SponsorItem key={t.id} talkInfo={t} />;
 						default:
 							return <p key={t.id}>{t.title}</p>;
 					}
@@ -62,6 +65,11 @@ export default function AgendaDay({ talks, eventDay }: AgendaDayProps) {
 					<h3 className="font-bold text-3xl mx-auto my-2">Torreón XXXXX</h3>
 				</>
 			)}
+			{eventDay === "dataday" && (
+				<>
+					<h3 className="font-bold text-3xl mx-auto my-2">Auditorio Quincha</h3>
+				</>
+			)}
 
 			{/* RENDER ALL JSON DATA */}
 			{talks.map((t) => {
@@ -70,6 +78,8 @@ export default function AgendaDay({ talks, eventDay }: AgendaDayProps) {
 						return <TalkItem key={t.id} talkInfo={t} />;
 					case "break":
 						return <InfoItem key={t.id} talkInfo={t} />;
+					case "sponsor":
+						return <SponsorItem key={t.id} talkInfo={t} />;
 					default:
 						return <p key={t.id}>{t.title}</p>;
 				}
