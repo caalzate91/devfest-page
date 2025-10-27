@@ -3,9 +3,7 @@
 		{
 			"id": "DATA01",
 			"title": "Registro y Recepción",
-			"speaker": "",
-			"speakerImage": "",
-			"position": "",
+			"speakers": [],
 			"startDate": "2025-11-07 08:30:00",
 			"endDate": "2025-11-07 09:00:00",
 			"sponsors": [],
@@ -15,9 +13,7 @@
 		{
 			"id": "DATA02",
 			"title": "Palabras de Bienvenida",
-			"speaker": "",
-			"speakerImage": "",
-			"position": "",
+			"speakers": [],
 			"description": "Rector - Vicerector - Decana",
 			"startDate": "2025-11-07 08:30:00",
 			"endDate": "2025-11-07 08:55:00",
@@ -28,9 +24,9 @@
 		{
 			"id": "DATA03",
 			"title": "Gobernanza de datos in a nutshell",
-    		"speaker": "Diego Díaz",
-			"speakerImage": "diego_diaz.jpg",
-			"position": "SDG Group",
+    		"speakers": [
+				{ "name": "Diego Díaz", "image": "diego_diaz.jpg", "position": "SDG Group" }
+			],
 			"description": "",
 			"startDate": "2025-11-07 09:00:00",
 			"endDate": "2025-11-07 09:50:00",
@@ -41,9 +37,7 @@
 		{
 			"id": "DATA04",
 			"title": "Espacio de networking",
-			"speaker": "",
-			"speakerImage": "",
-			"position": "",
+			"speakers": [],
 			"startDate": "2025-11-07 09:50:00",
 			"endDate": "2025-11-07 10:30:00",
 			"sponsors": [],
@@ -53,9 +47,9 @@
 		{
 			"id": "DATA05",
 			"title": "Arquitecturas Modernas de Big Data",
-    		"speaker": "Oscar Jímenez",
-			"speakerImage": "oscar_jimenez.jpg",
-			"position": "Celsia Internet",
+    		"speakers": [
+				{ "name": "Oscar Jímenez", "image": "oscar_jimenez.jpg", "position": "Celsia Internet" }
+			],
 			"description": "",
 			"startDate": "2025-11-07 10:30:00",
 			"endDate": "2025-11-07 11:20:00",
@@ -66,9 +60,7 @@
 		{
 			"id": "DATA06",
 			"title": "Sponsor Spot",
-			"speaker": "",
-			"speakerImage": "",
-			"position": "",
+			"speakers": [],
 			"description": "",
 			"startDate": "2025-11-07 11:20:00",
 			"endDate": "2025-11-07 11:25:00",
@@ -79,9 +71,12 @@
 		{
 			"id": "DATA07",
 			"title": "Conversatorio",
-    		"speaker": "Jorge Villegas (UAO) - David Marmolejo (UAO) - Maria Murillo (Fundación Global - Univeridad del Externado)",
-			"speakerImage": "",
-			"position": "",
+    		"speakers": [
+				{ "name": "Jorge Villegas", "image": "undefined.png", "position": "Universidad Autónoma de Occidente"},
+				{ "name": "David Marmolejo", "image": "david_marmolejo.jpg", "position": "Universidad Autónoma de Occidente"},
+				{ "name": "Oscar Jímenez", "image": "oscar_jimenez.jpg", "position": "Celsia Internet"},
+				{ "name": "Diego Díaz", "image": "diego_diaz.jpg", "position": "SDG Group"}
+			],
 			"description": "",
 			"startDate": "2025-11-07 11:30:00",
 			"endDate": "2025-11-07 12:20:00",
@@ -92,9 +87,7 @@
 		{
 			"id": "DATA08",
 			"title": "Sponsor Spot",
-			"speaker": "",
-			"speakerImage": "",
-			"position": "",
+			"speakers": [],
 			"description": "",
 			"startDate": "2025-11-07 12:20:00",
 			"endDate": "2025-11-07 12:25:00",
@@ -105,9 +98,8 @@
 		{
 			"id": "DATA09",
 			"title": "Espacio de almuerzo",
-			"speaker": "",
-			"speakerImage": "",
-			"position": "",
+			"speakers": [],
+			"description": "",
 			"startDate": "2025-11-07 12:30:00",
 			"endDate": "2025-11-07 13:30:00",
 			"sponsors": [],
@@ -117,9 +109,9 @@
 		{
 			"id": "DATA10",
 			"title": "Desmitificando Agentes de IA",
-    		"speaker": "Alejandro Vergara",
-			"speakerImage": "alejandro_vergara.jpg",
-			"position": "Option",
+			"speakers": [
+				{ "name": "Alejandro Vergara", "image": "alejandro_vergara.jpg", "position": "Option" }
+			],
 			"description": "",
 			"startDate": "2025-11-07 13:30:00",
 			"endDate": "2025-11-07 14:20:00",
@@ -130,9 +122,7 @@
 		{
 			"id": "DATA11",
 			"title": "Sponsor Spot",
-			"speaker": "",
-			"speakerImage": "",
-			"position": "",
+			"speakers": [],
 			"description": "",
 			"startDate": "2025-11-07 14:20:00",
 			"endDate": "2025-11-07 14:25:00",
@@ -143,9 +133,9 @@
 		{
 			"id": "DATA12",
 			"title": "Hackeando modelos de Inteligencia Artificial",
-    		"speaker": "Christian Urcuqui",
-			"speakerImage": "christian_urcuqui.jpg",
-			"position": "ICESI - Globant",
+			"speakers": [
+				{ "name": "Christian Urcuqui", "image": "christian_urcuqui.jpg", "position": "ICESI - Globant" }
+			],
 			"description": "",
 			"startDate": "2025-11-07 14:30:00",
 			"endDate": "2025-11-07 15:20:00",
@@ -156,9 +146,7 @@
 		{
 			"id": "DATA13",
 			"title": "Sponsor Spot",
-			"speaker": "",
-			"speakerImage": "",
-			"position": "",
+			"speakers": [],
 			"description": "",
 			"startDate": "2025-11-07 15:20:00",
 			"endDate": "2025-11-07 15:25:00",
@@ -169,9 +157,9 @@
 		{
 			"id": "DATA14",
 			"title": "Democratización de los LLMs, caso de uso NuevaEPS",
-    		"speaker": "Alvaro Mazuera",
-			"speakerImage": "alvaro_mazuera.jpg",
-			"position": "EPAM",
+			"speakers": [
+				{ "name": "Alvaro Mazuera", "image": "alvaro_mazuera.jpg", "position": "EPAM" }
+			],
 			"description": "",
 			"startDate": "2025-11-07 15:30:00",
 			"endDate": "2025-11-07 16:20:00",
@@ -182,9 +170,7 @@
 		{
 			"id": "DATA15",
 			"title": "Sponsor Spot",
-			"speaker": "",
-			"speakerImage": "",
-			"position": "",
+			"speakers": [],
 			"description": "",
 			"startDate": "2025-11-07 16:20:00",
 			"endDate": "2025-11-07 16:25:00",
@@ -195,9 +181,8 @@
 		{
 			"id": "DATA16",
 			"title": "Espacio de networking",
-			"speaker": "",
-			"speakerImage": "",
-			"position": "",
+			"speakers": [],
+			"description": "",
 			"startDate": "2025-11-07 16:30:00",
 			"endDate": "2025-11-07 17:00:00",
 			"sponsors": [],
@@ -207,9 +192,12 @@
 		{
 			"id": "DATA17",
 			"title": "Conversatorio",
-    		"speaker": "Danny Suarez (Xertify) - Maria Pabón (UST) - Manuela Mayorga (UAO) - Santiago Murgueitio (UAO)",
-			"speakerImage": "",
-			"position": "",
+    		"speakers": [
+				{ "name": "Danny Suarez", "image": "danny_suarez.jpg", "position": "Xertify"},
+				{ "name": "Maria Pabón", "image": "maleja_pabon.jpg", "position": "UST"},
+				{ "name": "Manuela Mayorga", "image": "manuela_mayorga.png", "position": "Universidad Autónoma de Occidente"},
+				{ "name": "Santiago Murgueitio", "image": "santiago_murgueitio.jpg", "position": "Universidad Autónoma de Occidente"}
+			],
 			"description": "",
 			"startDate": "2025-11-07 17:00:00",
 			"endDate": "2025-11-07 17:45:00",
@@ -220,9 +208,8 @@
 		{
 			"id": "DATA18",
 			"title": "Cierre del día y palabras finales",
-			"speaker": "",
-			"speakerImage": "",
-			"position": "",
+			"speakers": [],
+			"description": "",
 			"startDate": "2025-11-07 17:45:00",
 			"endDate": "2025-11-07 18:00:00",
 			"sponsors": [],
