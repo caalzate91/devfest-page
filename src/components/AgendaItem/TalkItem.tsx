@@ -38,7 +38,7 @@ export default function TalkItem({ talkInfo }: TalkItemProps) {
 
 						return (
 							<div key={index} className="flex flex-row gap-4 items-center p-2">
-								<img src={speakerSrc} aria-hidden alt={`Speaker photo ${speakerSrc}`} className="w-14 rounded-full"
+								<img src={speakerSrc} aria-hidden alt={`Speaker photo ${speakerSrc}`} className="w-14 h-14 min-h-14 min-w-14 max-h-14 max-w-14 rounded-full"
 									onError={(e) => {
 										e.currentTarget.src = `/assets/images/speakers/undefined.png`
 									}}
