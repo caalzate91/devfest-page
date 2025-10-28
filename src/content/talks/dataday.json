@@ -58,16 +58,16 @@
 			"track": ["track1"]
 		},
 		{
-			"id": "DATA06",
-			"title": "Sponsor Spot",
-			"speakers": [],
-			"description": "",
-			"startDate": "2025-11-07 11:20:00",
-			"endDate": "2025-11-07 11:25:00",
-			"sponsors": ["epam"],
-			"type": "sponsor",
-			"track": ["track1"]
-		},
+      "id": "DATA06",
+      "title": "EPAM Systems",
+      "speakers": [],
+      "description": "",
+      "startDate": "2025-11-07 11:20:00",
+      "endDate": "2025-11-07 11:25:00",
+      "sponsors": ["epam"],
+      "type": "sponsor",
+      "track": ["track1"]
+    },
 		{
 			"id": "DATA07",
 			"title": "Conversatorio sobre tips y estagias para el mercado laboral actual",
@@ -85,16 +85,16 @@
 			"track": ["track1"]
 		},
 		{
-			"id": "DATA08",
-			"title": "Sponsor Spot",
-			"speakers": [],
-			"description": "",
-			"startDate": "2025-11-07 12:20:00",
-			"endDate": "2025-11-07 12:25:00",
-			"sponsors": ["qave"],
-			"type": "sponsor",
-			"track": ["track1"]
-		},
+      "id": "DATA08",
+      "title": "Café Qavé",
+      "speakers": [],
+      "description": "",
+      "startDate": "2025-11-07 12:20:00",
+      "endDate": "2025-11-07 12:25:00",
+      "sponsors": ["qave"],
+      "type": "sponsor",
+      "track": ["track1"]
+    },
 		{
 			"id": "DATA09",
 			"title": "Espacio de almuerzo",
@@ -120,16 +120,16 @@
 			"track": ["track1"]
 		},
 		{
-			"id": "DATA11",
-			"title": "Sponsor Spot",
-			"speakers": [],
-			"description": "",
-			"startDate": "2025-11-07 14:20:00",
-			"endDate": "2025-11-07 14:25:00",
-			"sponsors": ["deliricura"],
-			"type": "sponsor",
-			"track": ["track1"]
-		},
+      "id": "DATA11",
+      "title": "Deli Ricura",
+      "speakers": [],
+      "description": "",
+      "startDate": "2025-11-07 14:20:00",
+      "endDate": "2025-11-07 14:25:00",
+      "sponsors": ["deliricura"],
+      "type": "sponsor",
+      "track": ["track1"]
+    },
 		{
 			"id": "DATA12",
 			"title": "Hackeando modelos de Inteligencia Artificial",
@@ -144,16 +144,16 @@
 			"track": ["track1"]
 		},
 		{
-			"id": "DATA13",
-			"title": "Sponsor Spot",
-			"speakers": [],
-			"description": "",
-			"startDate": "2025-11-07 15:20:00",
-			"endDate": "2025-11-07 15:25:00",
-			"sponsors": ["dancali"],
-			"type": "sponsor",
-			"track": ["track1"]
-		},
+      "id": "DATA13",
+      "title": "Helados Dancali",
+      "speakers": [],
+      "description": "",
+      "startDate": "2025-11-07 15:20:00",
+      "endDate": "2025-11-07 15:25:00",
+      "sponsors": ["dancali"],
+      "type": "sponsor",
+      "track": ["track1"]
+    },
 		{
 			"id": "DATA14",
 			"title": "Democratización de los LLMs, caso de uso NuevaEPS",
@@ -168,16 +168,16 @@
 			"track": ["track1"]
 		},
 		{
-			"id": "DATA15",
-			"title": "Sponsor Spot",
-			"speakers": [],
-			"description": "",
-			"startDate": "2025-11-07 16:20:00",
-			"endDate": "2025-11-07 16:25:00",
-			"sponsors": ["xertify"],
-			"type": "sponsor",
-			"track": ["track1"]
-		},
+      "id": "DATA15",
+      "title": "Xertify",
+      "speakers": [],
+      "description": "",
+      "startDate": "2025-11-07 16:20:00",
+      "endDate": "2025-11-07 16:25:00",
+      "sponsors": ["xertify"],
+      "type": "sponsor",
+      "track": ["track1"]
+    },
 		{
 			"id": "DATA16",
 			"title": "Espacio de networking",
