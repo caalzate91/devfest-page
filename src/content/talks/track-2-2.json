@@ -1,9 +1,0 @@
-{
-  "title": "Avoiding the Memory Leaks",
-  "description": "Estaré hablando de como evitar las fugas de memoria en una aplicación Android y que tan importante es tener esto en cuenta. Estaré dando ejemplo reales en las que podemos evitar esto. Y por último incentivaré a las personas a que desarrollen apps con nativo con Jetpack Compose y Swift UI",
-  "startDate": "2024-11-30 10:00:00",
-  "endDate": "2024-11-30 10:50:00",
-  "speaker": "kevinho-morales",
-  "type": "talk",
-  "track": ["web"]
-}

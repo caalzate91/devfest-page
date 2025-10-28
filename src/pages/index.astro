@@ -1,21 +1,13 @@
 ---
 import { getCollection } from "astro:content";
-
-import Layout from "../layouts/Layout.astro";
-
-// import DevFestIntroSection from "../components/Sections/DevFestIntroSection.astro";
-// import OrganizersSection from "../components/Sections/OrganizersSection.astro";
-// import SpeakersSection from "../components/Sections/SpeakersSection.astro";
-// import SponsorsSection from "../components/Sections/SponsorsSection.astro";
-// import AgendaSection from "../components/Sections/AgendaSection.astro";
-
 import About from "@components/Sections/About.astro";
 import Agenda from "@components/Sections/Agenda.astro";
-import Sponsors from "@components/Sections/Sponsors.astro";
 import Comunities from "@components/Sections/Comunities.astro";
-import Organizers from "@components/Sections/Organizers.astro";
 import Footer from "@components/Sections/Footer.astro";
 import Hero from "@components/Sections/Hero.astro";
+import Organizers from "@components/Sections/Organizers.astro";
+import Sponsors from "@components/Sections/Sponsors.astro";
+import Layout from "../layouts/Layout.astro";
 
 const organizers = await getCollection("organizers", ({ data }) => {
   return !data.hidden;
@@ -26,10 +18,6 @@ const communitySponsors = await getCollection("sponsors", ({ data }) => {
 const companySponsors = await getCollection("sponsors", ({ data }) => {
   return !data.hidden && data.type === "company";
 });
-const speakers = await getCollection("speakers", ({ data }) => {
-  return !data.hidden;
-});
-const talks = await getCollection("talks");
 ---
 
 <Layout title="DataDev Fest 2025">
