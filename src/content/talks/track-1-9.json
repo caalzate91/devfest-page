@@ -1,9 +1,0 @@
-{
-  "title": "Integración de AppSheet y Google Cloud Platform (GCP) con Apps Script",
-  "description": "En Esta charla, aprenderás a conectar y potenciar tus aplicaciones de AppSheet con los servicios de Google Cloud Platform (GCP) usando Google Apps Script. Exploraremos cómo integrar bases de datos, almacenamiento y otros recursos de GCP con AppSheet, para extender las funcionalidades de tus aplicaciones sin necesidad de conocimientos avanzados de código. A lo largo de la sesión, te guiaremos en el uso de Apps Script para autenticar servicios, gestionar archivos en Google Cloud Storage, acceder a datos en BigQuery y automatizar flujos de trabajo entre ambas plataformas. ¡No te pierdas esta oportunidad de llevar tus aplicaciones a un nuevo nivel con la potencia de Google Cloud!\nObjetivos del taller: Conectar AppSheet con Google Cloud Platform utilizando Apps Script, Autenticar y gestionar servicios de GCP desde AppSheet,Acceder a archivos y datos almacenados en Google Cloud Storage y BigQuery, Implementar automatizaciones y flujos de trabajo avanzados, Ideal para desarrolladores, administradores de GCP y usuarios avanzados de AppSheet que buscan maximizar el potencial de sus aplicaciones a través de la integración con GCP.",
-  "startDate": "2024-11-30 16:00:00",
-  "endDate": "2024-11-30 16:50:00",
-  "speaker": "leonardo-del-valle",
-  "type": "talk",
-  "track": ["cloud"]
-}
