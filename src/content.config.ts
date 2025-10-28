@@ -7,10 +7,18 @@ const talkSchema = z.object({
 	description: z.string().optional(),
 	startDate: z.string(),
 	endDate: z.string(),
-	speaker: z.string().optional(),
-	position: z.string().optional(),
+	// speaker: z.string().optional(),
+	// position: z.string().optional(),
 	descripion: z.string().optional(),
-	speakerImage: z.string().optional(),
+	// speakerImage: z.string().optional(),
+	speakers: z.array(
+			z.object({
+				name: z.string(),
+				image: z.string().optional(),
+				position: z.string().optional(),
+				description: z.string().optional(),
+			})
+		).optional(),
 	sponsors: z.array(z.string()).optional(),
 	type: z.enum(["talk", "break", "sponsor"]),
 	track: z.array(z.string()),

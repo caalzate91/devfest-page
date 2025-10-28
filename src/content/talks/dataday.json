@@ -3,6 +3,7 @@
 		{
 			"id": "DATA01",
 			"title": "Registro y Recepción",
+			"speakers": [],
 			"startDate": "2025-11-07 08:30:00",
 			"endDate": "2025-11-07 09:00:00",
 			"sponsors": [],
@@ -11,15 +12,208 @@
 		},
 		{
 			"id": "DATA02",
-			"title": "Speaker talk template 1",
-			"speaker": "Speaker name",
-			"speakerImage": "",
-			"position": "Speaker position",
+			"title": "Palabras de Bienvenida",
+			"speakers": [],
+			"description": "Rector - Vicerector - Decana",
+			"startDate": "2025-11-07 08:30:00",
+			"endDate": "2025-11-07 08:55:00",
+			"sponsors": ["uao"],
+			"type": "sponsor",
+			"track": ["track1"]
+		},
+		{
+			"id": "DATA03",
+			"title": "Gobernanza de datos in a nutshell",
+    		"speakers": [
+				{ "name": "Diego Díaz", "image": "diego_diaz.jpg", "position": "SDG Group" }
+			],
 			"description": "",
 			"startDate": "2025-11-07 09:00:00",
-			"endDate": "2025-11-07 15:10:00",
+			"endDate": "2025-11-07 09:50:00",
 			"sponsors": [],
 			"type": "talk",
+			"track": ["track1"]
+		},
+		{
+			"id": "DATA04",
+			"title": "Espacio de networking",
+			"speakers": [],
+			"startDate": "2025-11-07 09:50:00",
+			"endDate": "2025-11-07 10:30:00",
+			"sponsors": [],
+			"type": "break",
+			"track": ["track1"]
+		},
+		{
+			"id": "DATA05",
+			"title": "Arquitecturas Modernas de Big Data",
+    		"speakers": [
+				{ "name": "Oscar Jímenez", "image": "oscar_jimenez.jpg", "position": "Celsia Internet" }
+			],
+			"description": "",
+			"startDate": "2025-11-07 10:30:00",
+			"endDate": "2025-11-07 11:20:00",
+			"sponsors": [],
+			"type": "talk",
+			"track": ["track1"]
+		},
+		{
+			"id": "DATA06",
+			"title": "Sponsor Spot",
+			"speakers": [],
+			"description": "",
+			"startDate": "2025-11-07 11:20:00",
+			"endDate": "2025-11-07 11:25:00",
+			"sponsors": ["epam"],
+			"type": "sponsor",
+			"track": ["track1"]
+		},
+		{
+			"id": "DATA07",
+			"title": "Conversatorio sobre tips y estagias para el mercado laboral actual",
+    		"speakers": [
+				{ "name": "Jorge Villegas", "image": "undefined.png", "position": "Universidad Autónoma de Occidente"},
+				{ "name": "David Marmolejo", "image": "david_marmolejo.jpg", "position": "Universidad Autónoma de Occidente"},
+				{ "name": "Oscar Jímenez", "image": "oscar_jimenez.jpg", "position": "Celsia Internet"},
+				{ "name": "Diego Díaz", "image": "diego_diaz.jpg", "position": "SDG Group"}
+			],
+			"description": "",
+			"startDate": "2025-11-07 11:30:00",
+			"endDate": "2025-11-07 12:20:00",
+			"sponsors": [],
+			"type": "talk",
+			"track": ["track1"]
+		},
+		{
+			"id": "DATA08",
+			"title": "Sponsor Spot",
+			"speakers": [],
+			"description": "",
+			"startDate": "2025-11-07 12:20:00",
+			"endDate": "2025-11-07 12:25:00",
+			"sponsors": ["qave"],
+			"type": "sponsor",
+			"track": ["track1"]
+		},
+		{
+			"id": "DATA09",
+			"title": "Espacio de almuerzo",
+			"speakers": [],
+			"description": "",
+			"startDate": "2025-11-07 12:30:00",
+			"endDate": "2025-11-07 13:30:00",
+			"sponsors": [],
+			"type": "break",
+			"track": ["track1"]
+		},
+		{
+			"id": "DATA10",
+			"title": "Desmitificando Agentes de IA",
+			"speakers": [
+				{ "name": "Alejandro Vergara", "image": "alejandro_vergara.jpg", "position": "Option" }
+			],
+			"description": "",
+			"startDate": "2025-11-07 13:30:00",
+			"endDate": "2025-11-07 14:20:00",
+			"sponsors": [],
+			"type": "talk",
+			"track": ["track1"]
+		},
+		{
+			"id": "DATA11",
+			"title": "Sponsor Spot",
+			"speakers": [],
+			"description": "",
+			"startDate": "2025-11-07 14:20:00",
+			"endDate": "2025-11-07 14:25:00",
+			"sponsors": ["deliricura"],
+			"type": "sponsor",
+			"track": ["track1"]
+		},
+		{
+			"id": "DATA12",
+			"title": "Hackeando modelos de Inteligencia Artificial",
+			"speakers": [
+				{ "name": "Christian Urcuqui", "image": "christian_urcuqui.jpg", "position": "ICESI - Globant" }
+			],
+			"description": "",
+			"startDate": "2025-11-07 14:30:00",
+			"endDate": "2025-11-07 15:20:00",
+			"sponsors": [],
+			"type": "talk",
+			"track": ["track1"]
+		},
+		{
+			"id": "DATA13",
+			"title": "Sponsor Spot",
+			"speakers": [],
+			"description": "",
+			"startDate": "2025-11-07 15:20:00",
+			"endDate": "2025-11-07 15:25:00",
+			"sponsors": ["dancali"],
+			"type": "sponsor",
+			"track": ["track1"]
+		},
+		{
+			"id": "DATA14",
+			"title": "Democratización de los LLMs, caso de uso NuevaEPS",
+			"speakers": [
+				{ "name": "Alvaro Mazuera", "image": "alvaro_mazuera.jpg", "position": "EPAM" }
+			],
+			"description": "",
+			"startDate": "2025-11-07 15:30:00",
+			"endDate": "2025-11-07 16:20:00",
+			"sponsors": [],
+			"type": "talk",
+			"track": ["track1"]
+		},
+		{
+			"id": "DATA15",
+			"title": "Sponsor Spot",
+			"speakers": [],
+			"description": "",
+			"startDate": "2025-11-07 16:20:00",
+			"endDate": "2025-11-07 16:25:00",
+			"sponsors": ["xertify"],
+			"type": "sponsor",
+			"track": ["track1"]
+		},
+		{
+			"id": "DATA16",
+			"title": "Espacio de networking",
+			"speakers": [],
+			"description": "",
+			"startDate": "2025-11-07 16:30:00",
+			"endDate": "2025-11-07 17:00:00",
+			"sponsors": [],
+			"type": "break",
+			"track": ["track1"]
+		},
+		{
+			"id": "DATA17",
+			"title": "Conversatorio sobre inteligencia artificial y normativa colombiana",
+    		"speakers": [
+				{ "name": "Danny Suarez", "image": "danny_suarez.jpg", "position": "Xertify"},
+				{ "name": "Maria Pabón", "image": "maleja_pabon.jpg", "position": "UST"},
+				{ "name": "Manuela Mayorga", "image": "manuela_mayorga.png", "position": "Universidad Autónoma de Occidente"},
+				{ "name": "Santiago Murgueitio", "image": "santiago_murgueitio.jpg", "position": "Universidad Autónoma de Occidente"}
+			],
+			"description": "",
+			"startDate": "2025-11-07 17:00:00",
+			"endDate": "2025-11-07 17:45:00",
+			"sponsors": [],
+			"type": "talk",
+			"track": ["track1"]
+		},
+		{
+			"id": "DATA18",
+			"title": "Últimas palabras y cierre del día",
+			"speakers": [],
+			"description": "",
+			"startDate": "2025-11-07 17:45:00",
+			"endDate": "2025-11-07 18:00:00",
+			"sponsors": [],
+			"type": "break",
 			"track": ["track1"]
 		}
 	]
