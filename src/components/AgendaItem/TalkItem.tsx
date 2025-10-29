@@ -27,8 +27,9 @@ export default function TalkItem({ talkInfo }: TalkItemProps) {
 				{dayjs(startDate).format("hh:mm A")}
 			</p>
 			<div className=" w-full">
-				<h4 className="font-bold my-2 text-sm md:text-base">{title}</h4>
+				<h4 className="font-bold mt-2 text-sm md:text-base">{title}</h4>
 
+				<p className="font-light mb-2 italic">{description}</p>
 				{/* <div className="flex flex-col gap-4"> */}
 				<div className="grid grid-cols-1 xl:grid-cols-2 gap-4">
 					{speakers.map((spk, index) => {
@@ -56,8 +57,6 @@ export default function TalkItem({ talkInfo }: TalkItemProps) {
 						);
 					})}
 				</div>
-
-				<p className="font-light my-2">{description}</p>
 			</div>
 		</article>
 	);
