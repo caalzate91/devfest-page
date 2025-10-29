@@ -58,24 +58,24 @@
 			"track": ["track1"]
 		},
 		{
-      "id": "DATA06",
-      "title": "EPAM Systems",
-      "speakers": [],
-      "description": "",
-      "startDate": "2025-11-07 11:20:00",
-      "endDate": "2025-11-07 11:25:00",
-      "sponsors": ["epam"],
-      "type": "sponsor",
-      "track": ["track1"]
-    },
+			"id": "DATA06",
+			"title": "EPAM Systems",
+			"speakers": [],
+			"description": "",
+			"startDate": "2025-11-07 11:20:00",
+			"endDate": "2025-11-07 11:25:00",
+			"sponsors": ["epam"],
+			"type": "sponsor",
+			"track": ["track1"]
+		},
 		{
 			"id": "DATA07",
-			"title": "Conversatorio sobre inteligencia artificial y normativa colombiana",
+			"title": "IA bajo la lupa: el lado legal de la revolución digital",
     		"speakers": [
 				{ "name": "David Marmolejo", "image": "david_marmolejo.jpg", "position": "Universidad Autónoma de Occidente"},
 				{ "name": "Maria Murillo", "image": "maria_murillo.jpg", "position": "Fundación Global / Universidad del Externado"}
 			],
-			"description": "",
+			"description": "Conversatorio",
 			"startDate": "2025-11-07 11:30:00",
 			"endDate": "2025-11-07 12:20:00",
 			"sponsors": [],
@@ -83,16 +83,16 @@
 			"track": ["track1"]
 		},
 		{
-      "id": "DATA08",
-      "title": "Café Qavé",
-      "speakers": [],
-      "description": "",
-      "startDate": "2025-11-07 12:20:00",
-      "endDate": "2025-11-07 12:25:00",
-      "sponsors": ["qave"],
-      "type": "sponsor",
-      "track": ["track1"]
-    },
+			"id": "DATA08",
+			"title": "Café Qavé",
+			"speakers": [],
+			"description": "",
+			"startDate": "2025-11-07 12:20:00",
+			"endDate": "2025-11-07 12:25:00",
+			"sponsors": ["qave"],
+			"type": "sponsor",
+			"track": ["track1"]
+		},
 		{
 			"id": "DATA09",
 			"title": "Espacio de almuerzo",
@@ -178,14 +178,14 @@
 		},
 		{
 			"id": "DATA17",
-			"title": "Conversatorio sobre tips y estrategias para el mercado laboral actual",
+			"title": "Del aula al mundo laboral: tu salto al futuro tech",
     		"speakers": [
 				{ "name": "Danny Suarez", "image": "danny_suarez.jpg", "position": "Xertify"},
 				{ "name": "Maria Pabón", "image": "maleja_pabon.jpg", "position": "UST / Tripleten. Cali"},
 				{ "name": "Manuela Mayorga", "image": "manuela_mayorga.png", "position": "Universidad Autónoma de Occidente"},
 				{ "name": "Santiago Murgueitio", "image": "santiago_murgueitio.jpg", "position": "Universidad Autónoma de Occidente"}
 			],
-			"description": "",
+			"description": "Conversatorio",
 			"startDate": "2025-11-07 17:00:00",
 			"endDate": "2025-11-07 17:45:00",
 			"sponsors": [],
