@@ -7,19 +7,19 @@ import SponsorItem from "./SponsorItem";
 import { useIsMobile } from "../../hooks/useIsMobile";
 
 interface AgendaDayProps {
-	talks: Talk[];
-	eventDay: DataDevFestDays;
+  talks: Talk[];
+  eventDay: DataDevFestDays;
 }
 
 export default function AgendaDay({ talks, eventDay }: AgendaDayProps) {
-	const isMobile = useIsMobile();
-	console.log(isMobile);
+  const isMobile = useIsMobile();
+  console.log(isMobile);
 
-	function renderMobileAgenda() {
-		const track1Items = talks.filter(t => t.track.includes("track1"));
-		const track2Items = talks.filter(t => t.track.includes("track2"));
+  function renderMobileAgenda() {
+    const track1Items = talks.filter(t => t.track.includes("track1"));
+    const track2Items = talks.filter(t => t.track.includes("track2"));
 
-		return (
+    return (
       <>
         {eventDay === "devfest" && (
           <>
@@ -75,19 +75,19 @@ export default function AgendaDay({ talks, eventDay }: AgendaDayProps) {
         )}
       </>
     );
-	}
+  }
 
-	if (isMobile) {
-		return renderMobileAgenda()
-	}
+  if (isMobile) {
+    return renderMobileAgenda()
+  }
 
-	return (
+  return (
     <>
       {/* ONLY FOR DEVFEST, WE NEED TO PUT A TITLE FOR EACH TRACK */}
       {eventDay === "devfest" && (
         <>
-          <h3 className="font-bold text-3xl mx-auto my-2">Auditorio Xepia</h3>
-          <h3 className="font-bold text-3xl mx-auto my-2">Torreón</h3>
+          <h3 className="font-bold text-3xl mx-auto my-2">Auditorio Quincha</h3>
+          <h3 className="font-bold text-3xl mx-auto my-2">Aulas 1, Torreón 3</h3>
         </>
       )}
       {eventDay === "dataday" && (
