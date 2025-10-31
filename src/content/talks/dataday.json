@@ -83,17 +83,6 @@
 			"track": ["track1"]
 		},
 		{
-			"id": "DATA08",
-			"title": "Café Qavé",
-			"speakers": [],
-			"description": "",
-			"startDate": "2025-11-07 12:20:00",
-			"endDate": "2025-11-07 12:25:00",
-			"sponsors": ["qave"],
-			"type": "sponsor",
-			"track": ["track1"]
-		},
-		{
 			"id": "DATA09",
 			"title": "Espacio de almuerzo",
 			"speakers": [],
