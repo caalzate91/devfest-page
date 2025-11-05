@@ -94,10 +94,10 @@
 			"track": ["track1"]
 		},
 		{
-			"id": "DATA10",
-			"title": "Desmitificando Agentes de IA",
+			"id": "DATA12",
+			"title": "Hackeando modelos de Inteligencia Artificial",
 			"speakers": [
-				{ "name": "Alejandro Vergara", "image": "alejandro_vergara.jpg", "position": "Option" }
+				{ "name": "Christian Urcuqui", "image": "christian_urcuqui.jpg", "position": "ICESI / Globant" }
 			],
 			"description": "",
 			"startDate": "2025-11-07 13:30:00",
@@ -107,10 +107,10 @@
 			"track": ["track1"]
 		},
 		{
-			"id": "DATA12",
-			"title": "Hackeando modelos de Inteligencia Artificial",
+			"id": "DATA10",
+			"title": "Desmitificando Agentes de IA",
 			"speakers": [
-				{ "name": "Christian Urcuqui", "image": "christian_urcuqui.jpg", "position": "ICESI / Globant" }
+				{ "name": "Alejandro Vergara", "image": "alejandro_vergara.jpg", "position": "Option" }
 			],
 			"description": "",
 			"startDate": "2025-11-07 14:30:00",
@@ -169,7 +169,7 @@
 			"id": "DATA17",
 			"title": "Del aula al mundo laboral: tu salto al futuro tech",
     		"speakers": [
-				{ "name": "Danny Suarez", "image": "danny_suarez.jpg", "position": "Xertify"},
+				{ "name": "Felipe Arenas", "image": "felipe_arenas.jpg", "position": "Xertify"},
 				{ "name": "Maria Pabón", "image": "maleja_pabon.jpg", "position": "UST / Tripleten. Cali"},
 				{ "name": "Manuela Mayorga", "image": "manuela_mayorga.png", "position": "Universidad Autónoma de Occidente"},
 				{ "name": "Santiago Murgueitio", "image": "santiago_murgueitio.jpg", "position": "Universidad Autónoma de Occidente"}
