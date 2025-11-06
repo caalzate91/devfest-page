@@ -72,8 +72,9 @@
 			"id": "DATA07",
 			"title": "IA bajo la lupa: el lado legal de la revolución digital",
     		"speakers": [
-				{ "name": "David Marmolejo", "image": "david_marmolejo.jpg", "position": "Universidad Autónoma de Occidente"},
-				{ "name": "Maria Murillo", "image": "maria_murillo.jpg", "position": "Fundación Global / Universidad del Externado"}
+				{ "name": "David Marmolejo", "image": "david_marmolejo.jpg", "position": "Universidad Autónoma de Occidente / Marmolejo Abogados" },
+				{ "name": "Maria Murillo", "image": "maria_murillo.jpg", "position": "Fundación Global / Global Shapers Community / Freelance"},
+				{ "name": "Stephanie Oliveros", "image": "stephanie_oliveros.jpg", "position": "Universidad Autónoma de Occidente / Freelance"}
 			],
 			"description": "Conversatorio",
 			"startDate": "2025-11-07 11:30:00",
