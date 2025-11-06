@@ -200,10 +200,10 @@
 			"title": "Intelligent Search: Media Search and Recommendations with Vertex AI",
 			"speakers": [
 				{
-					"name": "Carlos Andrés Gómez",
-					"image": "carlos_pena.jpg",
-					"position": "Senior Software Engineer, EPAM"
-				}
+          "name": "Carlos Andrés Gómez",
+          "image": "carlos_pena.jpg",
+          "position": "Lead Software Engineer, EPAM"
+        }
 			],
 			"description": "",
 			"startDate": "2025-11-08 13:00:00",
