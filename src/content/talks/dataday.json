@@ -107,17 +107,6 @@
 			"track": ["track1"]
 		},
 		{
-			"id": "DATA15",
-			"title": "Xertify",
-			"speakers": [],
-			"description": "",
-			"startDate": "2025-11-07 14:20:00",
-			"endDate": "2025-11-07 14:25:00",
-			"sponsors": ["xertify"],
-			"type": "sponsor",
-			"track": ["track1"]
-		},
-		{
 			"id": "DATA10",
 			"title": "Desmitificando Agentes de IA",
 			"speakers": [
@@ -155,11 +144,22 @@
 			"track": ["track1"]
 		},
 		{
+			"id": "DATA15",
+			"title": "Xertify",
+			"speakers": [],
+			"description": "",
+			"startDate": "2025-11-07 16:20:00",
+			"endDate": "2025-11-07 16:25:00",
+			"sponsors": ["xertify"],
+			"type": "sponsor",
+			"track": ["track1"]
+		},
+		{
 			"id": "DATA16",
 			"title": "Espacio de networking",
 			"speakers": [],
 			"description": "",
-			"startDate": "2025-11-07 16:20:00",
+			"startDate": "2025-11-07 16:25:00",
 			"endDate": "2025-11-07 17:00:00",
 			"sponsors": [],
 			"type": "break",
