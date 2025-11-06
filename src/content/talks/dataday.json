@@ -72,8 +72,9 @@
 			"id": "DATA07",
 			"title": "IA bajo la lupa: el lado legal de la revolución digital",
     		"speakers": [
-				{ "name": "David Marmolejo", "image": "david_marmolejo.jpg", "position": "Universidad Autónoma de Occidente"},
-				{ "name": "Maria Murillo", "image": "maria_murillo.jpg", "position": "Fundación Global / Universidad del Externado"}
+				{ "name": "David Marmolejo", "image": "david_marmolejo.jpg", "position": "Universidad Autónoma de Occidente / Marmolejo Abogados" },
+				{ "name": "Maria Murillo", "image": "maria_murillo.jpg", "position": "Fundación Global / Global Shapers Community / Freelance"},
+				{ "name": "Stephanie Oliveros", "image": "stephanie_oliveros.jpg", "position": "Universidad Autónoma de Occidente / Freelance"}
 			],
 			"description": "Conversatorio",
 			"startDate": "2025-11-07 11:30:00",
@@ -94,10 +95,10 @@
 			"track": ["track1"]
 		},
 		{
-			"id": "DATA10",
-			"title": "Desmitificando Agentes de IA",
+			"id": "DATA12",
+			"title": "Hackeando modelos de Inteligencia Artificial",
 			"speakers": [
-				{ "name": "Alejandro Vergara", "image": "alejandro_vergara.jpg", "position": "Option" }
+				{ "name": "Christian Urcuqui", "image": "christian_urcuqui.jpg", "position": "ICESI / Globant" }
 			],
 			"description": "",
 			"startDate": "2025-11-07 13:30:00",
@@ -107,10 +108,10 @@
 			"track": ["track1"]
 		},
 		{
-			"id": "DATA12",
-			"title": "Hackeando modelos de Inteligencia Artificial",
+			"id": "DATA10",
+			"title": "Desmitificando Agentes de IA",
 			"speakers": [
-				{ "name": "Christian Urcuqui", "image": "christian_urcuqui.jpg", "position": "ICESI / Globant" }
+				{ "name": "Alejandro Vergara", "image": "alejandro_vergara.jpg", "position": "Option" }
 			],
 			"description": "",
 			"startDate": "2025-11-07 14:30:00",
@@ -159,7 +160,7 @@
 			"title": "Espacio de networking",
 			"speakers": [],
 			"description": "",
-			"startDate": "2025-11-07 16:30:00",
+			"startDate": "2025-11-07 16:25:00",
 			"endDate": "2025-11-07 17:00:00",
 			"sponsors": [],
 			"type": "break",
@@ -169,7 +170,7 @@
 			"id": "DATA17",
 			"title": "Del aula al mundo laboral: tu salto al futuro tech",
     		"speakers": [
-				{ "name": "Danny Suarez", "image": "danny_suarez.jpg", "position": "Xertify"},
+				{ "name": "Felipe Arenas", "image": "felipe_arenas.jpg", "position": "Xertify"},
 				{ "name": "Maria Pabón", "image": "maleja_pabon.jpg", "position": "UST / Tripleten. Cali"},
 				{ "name": "Manuela Mayorga", "image": "manuela_mayorga.png", "position": "Universidad Autónoma de Occidente"},
 				{ "name": "Santiago Murgueitio", "image": "santiago_murgueitio.jpg", "position": "Universidad Autónoma de Occidente"}
