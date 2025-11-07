@@ -23,7 +23,7 @@ export default function AgendaDay({ talks, eventDay }: AgendaDayProps) {
       <>
         {eventDay === "devfest" && (
           <>
-            <h3 className="font-bold text-3xl mx-auto">Auditorio Xepia</h3>
+            <h3 className="font-bold text-3xl mx-auto">Auditorio Quincha</h3>
 
             {track1Items.map((t) => {
               switch (t.type) {
