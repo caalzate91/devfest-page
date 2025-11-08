@@ -25,13 +25,13 @@ export default function SponsorItem({ talkInfo }: SponsorItemProps) {
         ))}
 
         <div className="flex flex-col">
-          <p className="font-bold text-sm md:text-base truncate max-w-[250px] md:max-w-none">
-          {title}
+          <p className="font-bold text-sm md:text-base  max-w-[250px] md:max-w-none">
+            {title}
           </p>
-          
+
           {description && (
             <p className="italic text-xs md:text-sm text-gray-700">
-            {description}
+              {description}
             </p>
           )}
         </div>

@@ -13,7 +13,7 @@
 		},
 		{
 			"id": "DEV02",
-			"title": "Realizar registro y recepción (Auditorio Quincha)",
+			"title": "Ir a Auditorio Quincha para realizar registro y recepción",
 			"startDate": "2025-11-08 08:30:00",
 			"endDate": "",
 			"sponsors": [],
@@ -29,13 +29,13 @@
 			"endDate": "2025-11-08 09:30:00",
 			"sponsors": [],
 			"type": "sponsor",
-			"track": ["track2"],
+			"track": ["track1"],
 			"speakers": [],
 			"description": ""
 		},
 		{
 			"id": "DEV04",
-			"title": "Bienvenida y Apertura (Auditorio Quincha)",
+			"title": "Ir a Auditorio Quincha para la bienvenida y apertura",
 			"startDate": "2025-11-08 09:00:00",
 			"endDate": "2025-11-08 09:30:00",
 			"sponsors": [],
