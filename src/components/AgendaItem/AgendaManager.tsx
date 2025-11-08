@@ -6,38 +6,38 @@ import AgendaDay from "./AgendaDay";
 export type DataDevFestDays = "dataday" | "devfest";
 
 interface AgendaManagerProps {
-	talks: TalkEntry[];
+  talks: TalkEntry[];
 }
 
 export default function AgendaManager({ talks }: AgendaManagerProps) {
-	const [selectedAgendaDay, setSelectedAgendaDay] =
-		useState<DataDevFestDays>("dataday");
-	const [agendaInfo, setAgendaInfo] = useState(talks[0].data.talks);
+  const [selectedAgendaDay, setSelectedAgendaDay] =
+    useState<DataDevFestDays>("devfest");
+  const [agendaInfo, setAgendaInfo] = useState(talks[1].data.talks);
 
-	const oneTrackStyles = " w-full grid grid-cols-1 gap-y-4 my-8";
-	const twoTrackStyles =
-		" w-full grid grid-cols-1 md:grid-cols-2 gap-y-4 my-8";
+  const oneTrackStyles = " w-full grid grid-cols-1 gap-y-4 my-8";
+  const twoTrackStyles =
+    " w-full grid grid-cols-1 md:grid-cols-2 gap-y-4 my-8";
 
-	useEffect(() => {
-		const selectedDay = talks.find((t) => t.id === selectedAgendaDay);
+  useEffect(() => {
+    const selectedDay = talks.find((t) => t.id === selectedAgendaDay);
 
-		if (!selectedDay || selectedDay.data === undefined)
-			throw new Error(
-				"Nombre de archivo json para la carpeta talks no tratado.",
-			);
-		// Change the agenda depending on the selected day
-		setAgendaInfo(selectedDay.data.talks);
-	}, [selectedAgendaDay]);
+    if (!selectedDay || selectedDay.data === undefined)
+      throw new Error(
+        "Nombre de archivo json para la carpeta talks no tratado.",
+      );
+    // Change the agenda depending on the selected day
+    setAgendaInfo(selectedDay.data.talks);
+  }, [selectedAgendaDay]);
 
-	function changeAgendaDay(day: DataDevFestDays) {
-		setSelectedAgendaDay(day);
-	}
+  function changeAgendaDay(day: DataDevFestDays) {
+    setSelectedAgendaDay(day);
+  }
 
-	function detectDevFestDay() {
-		const isDevFestDay = 1;
-	}
+  function detectDevFestDay() {
+    const isDevFestDay = 1;
+  }
 
-	return (
+  return (
     <section className="flex flex-col w-full px-10">
       <div className="flex flex-row justify-center items-center mx-auto gap-11 w-1/3 h-auto text-sm md:text-base">
         <button
